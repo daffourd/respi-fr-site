@@ -1,0 +1,436 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Respi.info — Ton souffle, accompagné chaque matin</title>
+  <meta name="description" content="L'application gratuite pour respirer mieux au quotidien. Météo respiratoire personnelle, coach IA, plan d'action HAS. Pour les maladies respiratoires chroniques, allergies, asthme et exposition à la pollution." />
+  <meta property="og:title" content="Respi.info — Ton souffle, accompagné chaque matin" />
+  <meta property="og:description" content="L'app qui croise la qualité de l'air, les pollens, la météo et tes pathologies pour te proposer en moins de 4 minutes un geste concret." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://fr.respi.info/" />
+  <meta property="og:image" content="assets/logo-512.png" />
+  <meta name="theme-color" content="#0D1B2A" />
+
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="site-header-inner">
+    <a href="index.html" class="brand">
+      <img src="assets/logo.png" alt="Respi.info" />
+      <span class="brand-txt">Respi.info<small>Respirer mieux, vivre plus</small></span>
+    </a>
+    <button class="nav-toggle" aria-label="Menu" onclick="document.getElementById('nav').classList.toggle('is-open')">☰</button>
+    <nav class="site-nav" id="nav">
+      <a href="#parcours">Le parcours</a>
+      <a href="#stores">Télécharger</a>
+      <a href="#engagements">Engagements</a>
+      <a href="partenaires-sources.html">Partenaires &amp; sources</a>
+      <a href="https://www.respi.info" class="cta">Ouvrir l'app</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ============================================================
+     HERO (style affiche A4)
+     ============================================================ -->
+<section class="hero">
+  <div class="hero-inner">
+    <div>
+      <span class="eyebrow">Application gratuite — sans publicité</span>
+      <h1 class="h-serif">
+        Ton souffle,<br>
+        <em>accompagné chaque matin.</em>
+      </h1>
+      <p class="hero-lede">
+        Respi.info croise <strong>la qualité de l'air, les pollens, la météo</strong> et plus de
+        <strong>11 pathologies</strong> pour te proposer en moins de
+        <strong>4 minutes</strong> une routine de respiration, de mouvement et de sécurité —
+        sans décision à prendre.
+      </p>
+      <div class="hero-cta">
+        <a class="btn primary" href="https://www.respi.info">Ouvrir l'application</a>
+        <a class="btn secondary" href="#stores">Télécharger sur mon téléphone</a>
+      </div>
+      <p class="hero-pathologies">
+        <strong>Maladies respiratoires chroniques</strong>
+        <span>Asthme</span>
+        <span>BPCO</span>
+        <span>Fibrose</span>
+        <span>HTAP</span>
+        <span>PID</span>
+        <span>Allergies</span>
+        <span>Apnées</span>
+      </p>
+    </div>
+
+    <!-- Mockup iPhone (dark mode style affiche) -->
+    <div class="mockup-stage" aria-label="Aperçu de l'écran d'accueil de l'application">
+      <div class="iphone">
+        <div class="iphone-screen">
+          <div class="iphone-status">
+            <span>18:29</span>
+            <span>•••</span>
+          </div>
+          <div class="iphone-app-bar">
+            <span class="brand-mini">Respi.info</span>
+            <span class="iphone-pill">Air dégradé</span>
+          </div>
+          <div class="iphone-greeting">Bonjour Vincent</div>
+
+          <div class="iphone-day-card">
+            <div class="iphone-card-eyebrow">Ma météo respiratoire</div>
+            <div class="iphone-card-title">Journée à gérer avec soin</div>
+            <div class="iphone-score">
+              <div class="iphone-score-circle">
+                <span class="iphone-score-num">62</span>
+              </div>
+              <div class="iphone-score-pills">
+                <span class="iphone-mini-pill amb">⚠ Pollution</span>
+                <span class="iphone-mini-pill sg">🌿 Pollens OK</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="iphone-tip">
+            <strong>Coach Respi :</strong> évite l'effort intense. 4 min de cohérence cardiaque maintenant ?
+          </div>
+
+          <div class="iphone-meta">
+            <span>Indicateurs du moment</span>
+            <span>67 / 100</span>
+          </div>
+          <div class="iphone-bar"></div>
+
+          <div class="iphone-tabbar">
+            <span class="is-active">Bonjour</span>
+            <span>Coach</span>
+            <span>Savoir</span>
+            <span>Journal</span>
+            <span>Profil</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PARCOURS / TROIS PILIERS (recopie du flyer)
+     ============================================================ -->
+<section class="section section--cream" id="parcours">
+  <div class="section-inner">
+    <div style="max-width: 720px; margin: 0 auto; text-align: center;">
+      <span class="eyebrow">Le parcours quotidien</span>
+      <h2 class="h-serif">Trois rendez-vous courts, <em>jamais à la place de ton soignant.</em></h2>
+      <p class="lead" style="margin: 18px auto 0;">
+        Le matin pour comprendre l'air. Le quotidien pour un geste concret. À ton rythme pour apprendre.
+      </p>
+    </div>
+
+    <div class="piliers">
+      <article class="pilier">
+        <div class="pilier-eyebrow">Le matin · /Bonjour</div>
+        <h3>L'air d'aujourd'hui, <em>compris d'un coup d'œil.</em></h3>
+        <p>
+          Un score 0–100, calculé à partir de la qualité de l'air, des pollens, de la météo
+          et de tes pathologies. Le coach propose un geste concret en moins de 4 minutes.
+        </p>
+        <p class="pilier-source">
+          📚 <strong>Sources publiques.</strong> Atmo France · RNSA · Copernicus CAMS · Météo France.
+        </p>
+      </article>
+
+      <article class="pilier">
+        <div class="pilier-eyebrow pilier-eyebrow--sauge">Le quotidien · /Coach</div>
+        <h3>Un compagnon, <em>jamais à ta place.</em></h3>
+        <p>
+          Le Coach Respi adapte son ton à ta pathologie : serein pour l'asthme, rassurant
+          pour la BPCO, respectueux pour le cancer, encourageant pour la fibrose.
+        </p>
+        <p class="pilier-source">
+          🫁 Routine de respiration <strong>cohérence cardiaque, 4 min.</strong> Garde-fous médicaux automatiques.
+        </p>
+      </article>
+
+      <article class="pilier">
+        <div class="pilier-eyebrow pilier-eyebrow--ambre">À ton rythme · /Savoir</div>
+        <h3>Apprendre <em>à mieux respirer.</em></h3>
+        <p>
+          188 pratiques sourcées et tracées : ergothérapie, kiné respi, APA, sophrologie,
+          nutrition respi-friendly, sommeil. Un pas à la fois.
+        </p>
+        <p class="pilier-source">
+          📚 <strong>Sources :</strong> HAS · FFAAIR · EM-Consulte · SPLF.
+        </p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     STORES BAND
+     ============================================================ -->
+<section class="stores-band" id="stores">
+  <div class="stores-inner">
+    <div>
+      <span class="eyebrow eyebrow--blanc">Sur tous tes écrans</span>
+      <h2>Disponible en web,<br>bientôt sur les <em>stores</em>.</h2>
+      <p>
+        Respi.info fonctionne déjà sur tous les téléphones et ordinateurs depuis ton navigateur.
+        Tu peux aussi <strong>l'installer sur ton écran d'accueil</strong> en deux gestes — comme
+        une vraie app, sans passer par un store.
+      </p>
+      <div class="hero-cta" style="margin-top: 24px;">
+        <a class="btn light" href="https://www.respi.info">Utiliser l'app maintenant →</a>
+        <a class="btn outline-light" href="https://www.respi.info" aria-label="Comment installer Respi sur l'écran d'accueil">Installer en 2 gestes</a>
+      </div>
+    </div>
+
+    <div class="stores-buttons">
+
+      <a class="store-btn" aria-disabled="true" href="#stores" onclick="event.preventDefault();return false;">
+        <!-- Apple SVG mark -->
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M16.365 1.43c0 1.14-.41 2.21-1.16 3.01-.85.93-2.21 1.66-3.55 1.55-.13-1.13.4-2.27 1.13-3.05.84-.91 2.31-1.6 3.58-1.51zM20.5 17.27c-.49 1.14-.73 1.65-1.36 2.66-.88 1.41-2.13 3.17-3.66 3.18-1.36.01-1.71-.91-3.56-.9-1.85.01-2.24.92-3.6.91-1.53-.02-2.71-1.6-3.59-3.01-2.46-3.94-2.71-8.55-1.2-11-1.07 1.74-3.51 5.97-1.06 8.69 1.95 2.16 3.16 2.18 4.51 2.18 1.6 0 1.86-.91 3.41-.91s1.79.91 3.4.9c1.51-.02 2.45-1.39 3.36-2.78z"/>
+          <path d="M17.18 6.21c-.7-.84-1.93-1.44-2.79-1.46-1.13-.05-2.41.65-3.16.65-.79 0-1.95-.65-3.18-.62-2 .03-3.57 1.18-4.42 2.86-1.88 3.27-.48 8.13 1.34 10.79.89 1.3 1.94 2.76 3.32 2.7 1.34-.05 1.84-.86 3.45-.86 1.6 0 2.06.86 3.46.83 1.43-.02 2.34-1.32 3.21-2.62a14.36 14.36 0 0 0 1.46-3.04c-3.83-1.46-3.69-7.05.31-7.23z"/>
+        </svg>
+        <div class="store-btn-txt">
+          <span class="store-btn-eyebrow">Télécharger sur l'</span>
+          <span class="store-btn-name">App Store</span>
+        </div>
+        <span class="store-btn-soon">Bientôt</span>
+      </a>
+
+      <a class="store-btn" aria-disabled="true" href="#stores" onclick="event.preventDefault();return false;">
+        <!-- Google Play SVG mark -->
+        <svg width="32" height="32" viewBox="0 0 24 24" aria-hidden="true">
+          <defs>
+            <linearGradient id="gp1" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#00C2FF"/><stop offset="1" stop-color="#0066FF"/>
+            </linearGradient>
+            <linearGradient id="gp2" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#FFD93D"/><stop offset="1" stop-color="#FF8C00"/>
+            </linearGradient>
+            <linearGradient id="gp3" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#FF4B5C"/><stop offset="1" stop-color="#D6213B"/>
+            </linearGradient>
+            <linearGradient id="gp4" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#3DD17E"/><stop offset="1" stop-color="#0F9D58"/>
+            </linearGradient>
+          </defs>
+          <path d="M3.5 2.7c-.3.3-.5.7-.5 1.3v16c0 .6.2 1 .5 1.3l8.5-8.6L3.5 2.7z" fill="url(#gp1)"/>
+          <path d="M16.4 8.4 12 12l4.4 4.4 4.4-2.4c.9-.5 1.2-1.6.7-2.5-.2-.3-.4-.6-.7-.8L16.4 8.4z" fill="url(#gp2)"/>
+          <path d="M3.5 2.7 12 12l3.5-3.5L4.5 2.4c-.4-.2-.8-.1-1 .3z" fill="url(#gp4)"/>
+          <path d="M3.5 21.3c.2.4.6.5 1 .3L15.5 15.5 12 12l-8.5 9.3z" fill="url(#gp3)"/>
+        </svg>
+        <div class="store-btn-txt">
+          <span class="store-btn-eyebrow">Disponible sur</span>
+          <span class="store-btn-name">Google Play</span>
+        </div>
+        <span class="store-btn-soon">Bientôt</span>
+      </a>
+
+      <div class="store-or">ou</div>
+
+      <a class="store-btn" href="https://www.respi.info">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <circle cx="12" cy="12" r="10" stroke="rgba(255,255,255,0.6)" stroke-width="1.5"/>
+          <path d="M2 12h20M12 2c2.5 3 4 6.5 4 10s-1.5 7-4 10c-2.5-3-4-6.5-4-10s1.5-7 4-10z" stroke="rgba(255,255,255,0.6)" stroke-width="1.5"/>
+        </svg>
+        <div class="store-btn-txt">
+          <span class="store-btn-eyebrow">Web — sans installation</span>
+          <span class="store-btn-name">www.respi.info</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     POUR QUI
+     ============================================================ -->
+<section class="section">
+  <div class="section-inner">
+    <div style="max-width: 720px; margin: 0 auto; text-align: center;">
+      <span class="eyebrow">Pour qui</span>
+      <h2 class="h-serif">Pensée pour les personnes, <em>pas pour la maladie.</em></h2>
+    </div>
+
+    <div class="cards-grid">
+      <article class="card">
+        <div class="card-eyebrow">Patients &amp; aidants</div>
+        <h3>Asthme · BPCO · fibrose · HTAP · cancer · apnées</h3>
+        <p>Un outil par et pour les patients. Le module Aidants permet à un proche de suivre tes signaux pendant 90 jours.</p>
+      </article>
+      <article class="card">
+        <div class="card-eyebrow card-eyebrow--sauge">Pros de santé</div>
+        <h3>Pneumologues, généralistes, kinés, IDE Asalée</h3>
+        <p>Un compagnon entre les consultations, pas à la place. Plan d'action HAS éditable et imprimable A4.</p>
+      </article>
+      <article class="card">
+        <div class="card-eyebrow card-eyebrow--ambre">Allergies &amp; pollution</div>
+        <h3>Sensibles aux pollens, à la pollution urbaine</h3>
+        <p>Suivi quotidien des pollens (RNSA), du PM2,5 (Atmo France) et tendance 4 jours (Copernicus CAMS).</p>
+      </article>
+      <article class="card">
+        <div class="card-eyebrow card-eyebrow--corail">Associations &amp; institutions</div>
+        <h3>Santé Respi France · ARS · mutuelles · CHU</h3>
+        <p>Un commun numérique, gratuit, édité par une association loi 1901. Coopération éditoriale ouverte.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     ENGAGEMENTS
+     ============================================================ -->
+<section class="section section--soft" id="engagements">
+  <div class="section-inner">
+    <div style="max-width: 720px; margin: 0 auto; text-align: center;">
+      <span class="eyebrow">Cinq engagements fermes</span>
+      <h2 class="h-serif">Ce que Respi.info <em>ne fait pas.</em></h2>
+      <p class="lead" style="margin: 18px auto 0;">
+        Pas dans des CGU à 20 pages — en clair, ici.
+      </p>
+    </div>
+
+    <div class="cards-grid">
+      <article class="card">
+        <div class="card-eyebrow">Gratuit</div>
+        <h3>Pas de pub, pas de revente.</h3>
+        <p>Pas de publicité, pas de monétisation cachée, pas de revente de données à des labos, mutuelles ou assureurs.</p>
+      </article>
+      <article class="card">
+        <div class="card-eyebrow">RGPD</div>
+        <h3>Données hébergées en UE.</h3>
+        <p>AIPD réalisée, DPO désigné. Migration HDS prévue dès la V1 médicale. Export et effacement à tout moment.</p>
+      </article>
+      <article class="card">
+        <div class="card-eyebrow card-eyebrow--sauge">Médical</div>
+        <h3>Garde-fous systémiques.</h3>
+        <p>Respi.info n'est pas un dispositif médical. Sur signaux sévères, redirection immédiate vers le 15 et l'équipe soignante.</p>
+      </article>
+      <article class="card">
+        <div class="card-eyebrow card-eyebrow--ambre">Sources</div>
+        <h3>Tracées et publiques.</h3>
+        <p>Atmo, RNSA, Copernicus, Météo France pour les données. HAS, GINA, GOLD, FFAAIR, SPLF pour le contenu médical.</p>
+      </article>
+      <article class="card">
+        <div class="card-eyebrow card-eyebrow--corail">Commun</div>
+        <h3>Un commun numérique.</h3>
+        <p>Édité par <strong>JOOY</strong> (association loi 1901). Coopération éditoriale ouverte aux associations de patients.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     APERÇU PARTENAIRES
+     ============================================================ -->
+<section class="section">
+  <div class="section-inner">
+    <div style="max-width: 720px;">
+      <span class="eyebrow">Sources publiques &amp; partenaires</span>
+      <h2 class="h-serif">Tracées, <em>nommées, vérifiables.</em></h2>
+      <p class="lead" style="margin-top: 14px;">
+        Toutes les données et tous les contenus médicaux affichés dans l'app citent leur source.
+        Voici les principales.
+      </p>
+    </div>
+
+    <div class="partner-tags">
+      <span class="partner-tag">Atmo France</span>
+      <span class="partner-tag">RNSA</span>
+      <span class="partner-tag">Copernicus CAMS</span>
+      <span class="partner-tag">Météo France</span>
+      <span class="partner-tag">HAS</span>
+      <span class="partner-tag">GINA</span>
+      <span class="partner-tag">GOLD</span>
+      <span class="partner-tag">FFAAIR</span>
+      <span class="partner-tag">SPLF</span>
+      <span class="partner-tag">EM-Consulte</span>
+      <span class="partner-tag">ANSES</span>
+      <span class="partner-tag">OQAI</span>
+    </div>
+
+    <div style="margin-top: 28px;">
+      <a class="btn ghost" href="partenaires-sources.html">Voir le détail des partenaires &amp; sources →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CTA FINAL
+     ============================================================ -->
+<section class="section">
+  <div class="section-inner">
+    <div class="cta-final">
+      <h2>Prends 4 minutes. <em>Tu verras.</em></h2>
+      <p>
+        Crée ton compte gratuit, déclare tes pathologies, et reçois ta première météo respiratoire personnalisée demain matin.
+      </p>
+      <div class="hero-cta center">
+        <a class="btn light" href="https://www.respi.info">Créer mon compte</a>
+        <a class="btn outline-light" href="partenaires-sources.html">Sources &amp; partenaires</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer class="site-footer">
+  <div class="site-footer-inner">
+    <div>
+      <a href="index.html" class="brand" style="margin-bottom: 16px;">
+        <img src="assets/logo.png" alt="Respi.info" style="filter: brightness(0) invert(1);" />
+        <span class="brand-txt" style="color: #fff;">Respi.info<small style="color: rgba(255,255,255,0.6);">Respirer mieux, vivre plus</small></span>
+      </a>
+      <p class="baseline">
+        Application gratuite pour les personnes vivant avec une maladie respiratoire chronique,
+        une allergie, un asthme ou exposées à la pollution.
+        Édité par <strong>JOOY</strong>, association loi 1901.
+      </p>
+    </div>
+    <div>
+      <h4>Le projet</h4>
+      <a href="#parcours">Le parcours</a>
+      <a href="#engagements">Engagements</a>
+      <a href="partenaires-sources.html">Partenaires &amp; sources</a>
+      <a href="https://about.respi.info" rel="noopener">Site institutionnel</a>
+    </div>
+    <div>
+      <h4>L'app</h4>
+      <a href="https://www.respi.info">Ouvrir l'app web</a>
+      <a href="#stores">Télécharger</a>
+      <a href="https://www.respi.info/onboarding">Créer un compte</a>
+    </div>
+    <div>
+      <h4>Informations légales</h4>
+      <a href="https://www.respi.info/legal/mentions" target="_blank" rel="noopener">Mentions légales</a>
+      <a href="https://www.respi.info/legal/cgu" target="_blank" rel="noopener">CGU</a>
+      <a href="https://www.respi.info/legal/privacy" target="_blank" rel="noopener">Confidentialité</a>
+      <a href="https://www.respi.info/legal/cookies" target="_blank" rel="noopener">Cookies</a>
+      <a href="https://www.respi.info/legal/droits" target="_blank" rel="noopener">Mes droits RGPD</a>
+    </div>
+  </div>
+  <div class="site-footer-bottom">
+    <span>© 2026 JOOY — Respi.info.</span>
+    <span>Respi.info n'est pas un dispositif médical. Ne remplace pas l'avis d'un professionnel de santé. En cas d'urgence : <strong style="color:#fff;">15 (SAMU)</strong> ou <strong style="color:#fff;">112</strong>.</span>
+  </div>
+</footer>
+
+</body>
+</html>
