@@ -6,20 +6,17 @@
   <title>Partenaires &amp; sources — Respi.info</title>
   <meta name="description" content="Sources publiques (Atmo France, RNSA, Copernicus CAMS, Météo France) et référentiels médicaux (HAS, GINA, GOLD, FFAAIR, SPLF, EM-Consulte) utilisés par l'application Respi.info." />
   <meta property="og:title" content="Partenaires &amp; sources — Respi.info" />
-  <meta property="og:description" content="Toutes les données et tous les contenus médicaux affichés dans Respi.info citent leur source. Voici lesquelles." />
+  <meta property="og:description" content="Toutes les données et tous les contenus médicaux affichés dans Respi.info citent leur source." />
   <meta property="og:type" content="article" />
   <meta property="og:url" content="https://fr.respi.info/partenaires-sources.html" />
   <meta property="og:image" content="assets/logo-512.png" />
   <meta name="theme-color" content="#0D1B2A" />
-
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png" />
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
-
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet" />
-
   <link rel="stylesheet" href="assets/styles.css" />
 </head>
 <body>
@@ -30,14 +27,13 @@
       <img src="assets/logo.png" alt="Respi.info" />
       <span class="brand-txt">Respi.info<small>Respirer mieux, vivre plus</small></span>
     </a>
-    <button class="nav-toggle" aria-label="Menu" onclick="document.getElementById('nav').classList.toggle('is-open')">☰</button>
-    <nav class="site-nav" id="nav">
-      <a href="index.html#parcours">Le parcours</a>
-      <a href="index.html#stores">Télécharger</a>
-      <a href="index.html#engagements">Engagements</a>
-      <a href="partenaires-sources.html" class="is-active">Partenaires &amp; sources</a>
-      <a href="https://www.respi.info" class="cta">Ouvrir l'app</a>
-    </nav>
+    <div class="head-actions">
+      <button type="button" class="menu-button" data-open-drawer aria-label="Ouvrir le menu">
+        <span class="menu-bars" aria-hidden="true"><span></span><span></span></span>
+        <span class="menu-label">Menu</span>
+      </button>
+      <a class="cta-pill" href="https://www.respi.info">Ouvrir l'app</a>
+    </div>
   </div>
 </header>
 
@@ -50,13 +46,17 @@
       Tout ce que tu vois dans l'app vient de référentiels publics, scientifiques ou associatifs.
       Voici les principaux.
     </p>
+    <div class="page-anchors">
+      <a href="#donnees">1. Données environnementales</a>
+      <a href="#medical">2. Référentiels médicaux</a>
+      <a href="#environnement">3. Environnement de vie</a>
+      <a href="#partenaires">4. Partenaires &amp; soutiens</a>
+      <a href="#infra">5. Infrastructure</a>
+    </div>
   </div>
 </section>
 
-<!-- ============================================================
-     1. DONNÉES ENVIRONNEMENTALES (temps réel)
-     ============================================================ -->
-<section class="section">
+<section class="section" id="donnees">
   <div class="section-inner">
     <span class="eyebrow">1. Données environnementales en temps réel</span>
     <h2 class="h-serif">L'air, les pollens, <em>la météo.</em></h2>
@@ -64,7 +64,6 @@
       Pour calculer ta météo respiratoire, Respi.info croise quatre sources publiques officielles,
       mises à jour plusieurs fois par jour.
     </p>
-
     <div class="sources-grid">
       <article class="source-tile">
         <h4>Atmo France</h4>
@@ -90,10 +89,7 @@
   </div>
 </section>
 
-<!-- ============================================================
-     2. RÉFÉRENTIELS MÉDICAUX
-     ============================================================ -->
-<section class="section section--cream">
+<section class="section section--cream" id="medical">
   <div class="section-inner">
     <span class="eyebrow eyebrow--ambre">2. Référentiels médicaux</span>
     <h2 class="h-serif">Recommandations <em>de bonne pratique.</em></h2>
@@ -101,7 +97,6 @@
       Le contenu thérapeutique (188 pratiques d'éducation, plan d'action, seuils d'alerte)
       s'appuie sur des sociétés savantes et des autorités de santé.
     </p>
-
     <div class="sources-grid">
       <article class="source-tile">
         <h4>HAS — Haute Autorité de Santé</h4>
@@ -137,10 +132,7 @@
   </div>
 </section>
 
-<!-- ============================================================
-     3. SOURCES ENVIRONNEMENT INTÉRIEUR & SOCIO
-     ============================================================ -->
-<section class="section">
+<section class="section" id="environnement">
   <div class="section-inner">
     <span class="eyebrow eyebrow--sauge">3. Environnement de vie &amp; santé publique</span>
     <h2 class="h-serif">Logement, expositions, <em>déterminants sociaux.</em></h2>
@@ -148,7 +140,6 @@
       Le module « Environnement de vie » s'appuie sur des études et référentiels publics français
       qui documentent l'impact du logement, du quartier et des habitudes sur la santé respiratoire.
     </p>
-
     <div class="sources-grid">
       <article class="source-tile">
         <h4>OQAI</h4>
@@ -174,10 +165,7 @@
   </div>
 </section>
 
-<!-- ============================================================
-     4. PARTENAIRES INSTITUTIONNELS & ASSOCIATIFS
-     ============================================================ -->
-<section class="section section--soft">
+<section class="section section--soft" id="partenaires">
   <div class="section-inner">
     <span class="eyebrow">4. Partenaires &amp; soutiens</span>
     <h2 class="h-serif">Ceux grâce à qui <em>le projet existe.</em></h2>
@@ -186,7 +174,6 @@
       est de tisser des liens avec des associations de patients, des centres de référence
       et des sociétés savantes, dont les travaux ont directement inspiré le projet.
     </p>
-
     <div class="sources-grid">
       <article class="source-tile">
         <h4>JOOY</h4>
@@ -209,21 +196,17 @@
         <span class="muted small">Réseau national maladies pulmonaires rares</span>
       </article>
     </div>
-
     <div class="callout">
       <p>
         <strong>Tu représentes une association, un CHU, une mutuelle, une fondation ?</strong>
         Respi.info est conçu comme un commun numérique gratuit. La coopération éditoriale est ouverte.
-        Écris-nous via <a href="https://about.respi.info/contact.html">about.respi.info</a>.
+        <a href="contact.html">Écris-nous</a>.
       </p>
     </div>
   </div>
 </section>
 
-<!-- ============================================================
-     5. INFRASTRUCTURE TECHNIQUE
-     ============================================================ -->
-<section class="section">
+<section class="section" id="infra">
   <div class="section-inner">
     <span class="eyebrow">5. Infrastructure &amp; conformité</span>
     <h2 class="h-serif">Hébergement <em>en Union européenne.</em></h2>
@@ -231,7 +214,6 @@
       Toutes les données utilisateur sont hébergées en UE. Les contrats de sous-traitance (DPA)
       sont signés. Migration HDS (Hébergement de Données de Santé) prévue dès la V1 médicale.
     </p>
-
     <div class="sources-grid">
       <article class="source-tile">
         <h4>Vercel (UE)</h4>
@@ -252,28 +234,19 @@
   </div>
 </section>
 
-<!-- ============================================================
-     CTA FINAL
-     ============================================================ -->
 <section class="section">
   <div class="section-inner">
     <div class="cta-final">
-      <h2>Plus de questions ? <em>Une remarque ?</em></h2>
-      <p>
-        Le site institutionnel <a href="https://about.respi.info" style="color:#fff; text-decoration: underline;">about.respi.info</a>
-        regroupe le détail du fonctionnement, les fiches presse, les onepagers et le formulaire de contact.
-      </p>
+      <h2>Une question, une remarque ? <em>Écris-nous.</em></h2>
+      <p>L'équipe Respi.info est petite et accessible. Réponse sous 48 h ouvrées.</p>
       <div class="hero-cta center">
-        <a class="btn light" href="https://about.respi.info">about.respi.info</a>
+        <a class="btn light" href="contact.html">Nous écrire</a>
         <a class="btn outline-light" href="https://www.respi.info">Ouvrir l'app</a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ============================================================
-     FOOTER
-     ============================================================ -->
 <footer class="site-footer">
   <div class="site-footer-inner">
     <div>
@@ -281,24 +254,21 @@
         <img src="assets/logo.png" alt="Respi.info" style="filter: brightness(0) invert(1);" />
         <span class="brand-txt" style="color: #fff;">Respi.info<small style="color: rgba(255,255,255,0.6);">Respirer mieux, vivre plus</small></span>
       </a>
-      <p class="baseline">
-        Application gratuite pour les personnes vivant avec une maladie respiratoire chronique,
-        une allergie, un asthme ou exposées à la pollution.
-        Édité par <strong>JOOY</strong>, association loi 1901.
-      </p>
+      <p class="baseline">Application gratuite pour les personnes vivant avec une maladie respiratoire chronique, une allergie, un asthme ou exposées à la pollution. Édité par <strong>JOOY</strong>, association loi 1901.</p>
     </div>
     <div>
       <h4>Le projet</h4>
-      <a href="index.html#parcours">Le parcours</a>
-      <a href="index.html#engagements">Engagements</a>
+      <a href="fonctionnement.html">Le parcours</a>
+      <a href="pour-qui.html">Pour qui</a>
+      <a href="faq.html">FAQ</a>
       <a href="partenaires-sources.html">Partenaires &amp; sources</a>
-      <a href="https://about.respi.info" rel="noopener">Site institutionnel</a>
     </div>
     <div>
-      <h4>L'app</h4>
-      <a href="https://www.respi.info">Ouvrir l'app web</a>
-      <a href="index.html#stores">Télécharger</a>
-      <a href="https://www.respi.info/onboarding">Créer un compte</a>
+      <h4>Ressources</h4>
+      <a href="presse.html">Espace presse</a>
+      <a href="telechargements.html">Téléchargements</a>
+      <a href="contact.html">Nous écrire</a>
+      <a href="https://www.respi.info">Ouvrir l'app</a>
     </div>
     <div>
       <h4>Informations légales</h4>
@@ -311,9 +281,10 @@
   </div>
   <div class="site-footer-bottom">
     <span>© 2026 JOOY — Respi.info.</span>
-    <span>Respi.info n'est pas un dispositif médical. Ne remplace pas l'avis d'un professionnel de santé. En cas d'urgence : <strong style="color:#fff;">15 (SAMU)</strong> ou <strong style="color:#fff;">112</strong>.</span>
+    <span>Respi.info n'est pas un dispositif médical. Ne remplace pas l'avis d'un professionnel de santé. En cas d'urgence : <strong>15 (SAMU)</strong> ou <strong>112</strong>.</span>
   </div>
 </footer>
 
+<script src="assets/nav.js"></script>
 </body>
 </html>

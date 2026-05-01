@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact — Respi.info</title>
+  <meta name="description" content="Contacter l'équipe Respi.info : presse, partenariats, associations, professionnels de santé, patients." />
+  <meta property="og:title" content="Contact — Respi.info" />
+  <meta property="og:description" content="L'équipe Respi.info répond sous 48 h ouvrées." />
+  <meta property="og:url" content="https://fr.respi.info/contact.html" />
+  <meta property="og:image" content="assets/logo-512.png" />
+  <meta name="theme-color" content="#0D1B2A" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="site-header-inner">
+    <a href="index.html" class="brand">
+      <img src="assets/logo.png" alt="Respi.info" />
+      <span class="brand-txt">Respi.info<small>Respirer mieux, vivre plus</small></span>
+    </a>
+    <div class="head-actions">
+      <button type="button" class="menu-button" data-open-drawer aria-label="Ouvrir le menu">
+        <span class="menu-bars" aria-hidden="true"><span></span><span></span></span>
+        <span class="menu-label">Menu</span>
+      </button>
+      <a class="cta-pill" href="https://www.respi.info">Ouvrir l'app</a>
+    </div>
+  </div>
+</header>
+
+<section class="page-head">
+  <div class="page-head-inner">
+    <span class="eyebrow">Contact</span>
+    <h1>Une question, <em>une idée, un projet ?</em></h1>
+    <p>
+      L'équipe Respi.info est petite et accessible. Choisis ton motif, écris-nous via le formulaire ci-dessous :
+      nous répondons sous 48 h ouvrées.
+    </p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-inner section-inner--narrow">
+    <div class="form-card">
+      <form id="contact-form"
+            action="https://formspree.io/f/mbdqwvka"
+            method="POST"
+            class="contact-form"
+            novalidate>
+
+        <p class="muted small mb-12">Tous les champs marqués d'une étoile sont obligatoires. Ton message arrive directement chez l'équipe Respi.info, qui te répond depuis sa propre adresse.</p>
+
+        <div class="form-row">
+          <label for="motif">Motif de contact <span class="req">*</span></label>
+          <select id="motif" name="motif" required>
+            <option value="">— Choisis un motif —</option>
+            <option value="patient">Retour de patient ou proche aidant</option>
+            <option value="pro-sante">Professionnel de santé</option>
+            <option value="institution">Association ou institution</option>
+            <option value="entreprise">Entreprise / B2B (mutuelle, labo, employeur)</option>
+            <option value="presse">Presse &amp; médias</option>
+            <option value="autre">Autre</option>
+          </select>
+        </div>
+
+        <div class="form-grid">
+          <div class="form-row">
+            <label for="prenom">Prénom <span class="req">*</span></label>
+            <input id="prenom" name="prenom" type="text" required autocomplete="given-name" />
+          </div>
+          <div class="form-row">
+            <label for="nom">Nom <span class="req">*</span></label>
+            <input id="nom" name="nom" type="text" required autocomplete="family-name" />
+          </div>
+        </div>
+
+        <div class="form-grid">
+          <div class="form-row">
+            <label for="email">Adresse email <span class="req">*</span></label>
+            <input id="email" name="email" type="email" required autocomplete="email" placeholder="pour qu'on puisse te répondre" />
+          </div>
+          <div class="form-row">
+            <label for="organisation">Organisation <span class="muted small">(facultatif)</span></label>
+            <input id="organisation" name="organisation" type="text" autocomplete="organization" />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <label for="sujet">Sujet <span class="req">*</span></label>
+          <input id="sujet" name="sujet" type="text" required placeholder="Une phrase courte pour résumer" />
+        </div>
+
+        <div class="form-row">
+          <label for="message">Message <span class="req">*</span></label>
+          <textarea id="message" name="message" rows="6" required placeholder="Dis-nous tout. Plus c'est précis, mieux on répond."></textarea>
+        </div>
+
+        <div class="form-row">
+          <label class="form-check">
+            <input type="checkbox" name="consentement" required />
+            <span>J'accepte que mes informations servent uniquement à traiter ma demande. Aucun usage marketing, aucune revente. <a href="https://www.respi.info/legal/privacy" target="_blank" rel="noopener">Politique de confidentialité</a>. <span class="req">*</span></span>
+          </label>
+        </div>
+
+        <div style="position:absolute;left:-9999px" aria-hidden="true">
+          <label>Ne pas remplir : <input type="text" name="_gotcha" tabindex="-1" autocomplete="off"></label>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="btn primary">Envoyer mon message</button>
+          <span id="form-status" class="form-status muted small" role="status" aria-live="polite"></span>
+        </div>
+      </form>
+    </div>
+
+    <div class="callout callout--bleu mt-32">
+      <p><strong>Pourquoi un formulaire et pas une adresse email ?</strong> Pour limiter le spam et garantir que ta demande arrive à la bonne personne, sans diffuser publiquement de boîte mail. Tu peux écrire en toute confiance.</p>
+    </div>
+  </div>
+</section>
+
+<script>
+  // Pré-sélection du motif via ?motif=presse|partenariat|patient|pro-sante|institution|entreprise
+  (function () {
+    var params = new URLSearchParams(window.location.search);
+    var motif = params.get('motif') || (window.location.hash || '').replace('#', '');
+    if (motif) {
+      var sel = document.getElementById('motif');
+      if (sel) {
+        for (var i = 0; i < sel.options.length; i++) {
+          if (sel.options[i].value === motif) { sel.selectedIndex = i; break; }
+        }
+      }
+    }
+  })();
+
+  // Soumission AJAX vers Formspree (pas de redirection plein écran)
+  (function () {
+    var form = document.getElementById('contact-form');
+    var status = document.getElementById('form-status');
+    if (!form) return;
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      status.textContent = "Envoi en cours…";
+      var data = new FormData(form);
+      fetch(form.action, {
+        method: 'POST',
+        body: data,
+        headers: { 'Accept': 'application/json' }
+      }).then(function (r) {
+        if (r.ok) {
+          form.reset();
+          status.textContent = "Message envoyé. On revient vers toi sous 48 h ouvrées.";
+        } else {
+          status.textContent = "Une erreur est survenue. Réessaie dans un instant.";
+        }
+      }).catch(function () {
+        status.textContent = "Connexion impossible. Vérifie ta connexion et réessaie.";
+      });
+    });
+  })();
+</script>
+
+<footer class="site-footer">
+  <div class="site-footer-inner">
+    <div>
+      <a href="index.html" class="brand" style="margin-bottom: 16px;">
+        <img src="assets/logo.png" alt="Respi.info" style="filter: brightness(0) invert(1);" />
+        <span class="brand-txt" style="color: #fff;">Respi.info<small style="color: rgba(255,255,255,0.6);">Respirer mieux, vivre plus</small></span>
+      </a>
+      <p class="baseline">Application gratuite pour les personnes vivant avec une maladie respiratoire chronique, une allergie, un asthme ou exposées à la pollution. Édité par <strong>JOOY</strong>, association loi 1901.</p>
+    </div>
+    <div>
+      <h4>Le projet</h4>
+      <a href="fonctionnement.html">Le parcours</a>
+      <a href="pour-qui.html">Pour qui</a>
+      <a href="faq.html">FAQ</a>
+      <a href="partenaires-sources.html">Partenaires &amp; sources</a>
+    </div>
+    <div>
+      <h4>Ressources</h4>
+      <a href="presse.html">Espace presse</a>
+      <a href="telechargements.html">Téléchargements</a>
+      <a href="contact.html">Nous écrire</a>
+      <a href="https://www.respi.info">Ouvrir l'app</a>
+    </div>
+    <div>
+      <h4>Informations légales</h4>
+      <a href="https://www.respi.info/legal/mentions" target="_blank" rel="noopener">Mentions légales</a>
+      <a href="https://www.respi.info/legal/cgu" target="_blank" rel="noopener">CGU</a>
+      <a href="https://www.respi.info/legal/privacy" target="_blank" rel="noopener">Confidentialité</a>
+      <a href="https://www.respi.info/legal/cookies" target="_blank" rel="noopener">Cookies</a>
+      <a href="https://www.respi.info/legal/droits" target="_blank" rel="noopener">Mes droits RGPD</a>
+    </div>
+  </div>
+  <div class="site-footer-bottom">
+    <span>© 2026 JOOY — Respi.info.</span>
+    <span>Respi.info n'est pas un dispositif médical. Ne remplace pas l'avis d'un professionnel de santé. En cas d'urgence : <strong>15 (SAMU)</strong> ou <strong>112</strong>.</span>
+  </div>
+</footer>
+
+<script src="assets/nav.js"></script>
+</body>
+</html>
