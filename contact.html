@@ -25,13 +25,18 @@
       <img src="assets/logo.png" alt="Respi.info" />
       <span class="brand-txt">Respi.info<small>Respirer mieux, vivre plus</small></span>
     </a>
-    <div class="head-actions">
-      <button type="button" class="r-menu-btn" data-open-r-panel aria-label="Ouvrir le menu">
-        <span class="r-menu-bars" aria-hidden="true"><span></span><span></span></span>
-        <span class="r-menu-label">Menu</span>
-      </button>
-      <a class="cta-pill" href="https://www.respi.info">Ouvrir l'app</a>
-    </div>
+    <nav class="r-nav" aria-label="Navigation principale">
+      <a href="fonctionnement.html">Le parcours</a>
+      <a href="pour-qui.html">Pour qui</a>
+      <a href="faq.html">FAQ</a>
+      <a href="partenaires-sources.html">Sources</a>
+      <a href="presse.html">Presse</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <a class="r-cta-pill" href="https://www.respi.info">Ouvrir l'app</a>
+    <button type="button" class="r-nav-toggle" aria-label="Ouvrir le menu" aria-controls="main-nav">
+      <span></span><span></span><span></span>
+    </button>
   </div>
 </header>
 
@@ -48,16 +53,16 @@
 
 <section class="section">
   <div class="section-inner section-inner--narrow">
-    <div class="form-card">
-      <form id="contact-form"
+    <div class="r-form-card">
+      <form id="r-contact-form"
             action="https://formspree.io/f/mbdqwvka"
             method="POST"
-            class="contact-form"
+            class="r-contact-form"
             novalidate>
 
         <p class="muted small mb-12">Tous les champs marqués d'une étoile sont obligatoires. Ton message arrive directement chez l'équipe Respi.info, qui te répond depuis sa propre adresse.</p>
 
-        <div class="form-row">
+        <div class="r-form-row">
           <label for="motif">Motif de contact <span class="req">*</span></label>
           <select id="motif" name="motif" required>
             <option value="">— Choisis un motif —</option>
@@ -70,40 +75,40 @@
           </select>
         </div>
 
-        <div class="form-grid">
-          <div class="form-row">
+        <div class="r-form-grid">
+          <div class="r-form-row">
             <label for="prenom">Prénom <span class="req">*</span></label>
             <input id="prenom" name="prenom" type="text" required autocomplete="given-name" />
           </div>
-          <div class="form-row">
+          <div class="r-form-row">
             <label for="nom">Nom <span class="req">*</span></label>
             <input id="nom" name="nom" type="text" required autocomplete="family-name" />
           </div>
         </div>
 
-        <div class="form-grid">
-          <div class="form-row">
+        <div class="r-form-grid">
+          <div class="r-form-row">
             <label for="email">Adresse email <span class="req">*</span></label>
             <input id="email" name="email" type="email" required autocomplete="email" placeholder="pour qu'on puisse te répondre" />
           </div>
-          <div class="form-row">
+          <div class="r-form-row">
             <label for="organisation">Organisation <span class="muted small">(facultatif)</span></label>
             <input id="organisation" name="organisation" type="text" autocomplete="organization" />
           </div>
         </div>
 
-        <div class="form-row">
+        <div class="r-form-row">
           <label for="sujet">Sujet <span class="req">*</span></label>
           <input id="sujet" name="sujet" type="text" required placeholder="Une phrase courte pour résumer" />
         </div>
 
-        <div class="form-row">
+        <div class="r-form-row">
           <label for="message">Message <span class="req">*</span></label>
           <textarea id="message" name="message" rows="6" required placeholder="Dis-nous tout. Plus c'est précis, mieux on répond."></textarea>
         </div>
 
-        <div class="form-row">
-          <label class="form-check">
+        <div class="r-form-row">
+          <label class="r-form-check">
             <input type="checkbox" name="consentement" required />
             <span>J'accepte que mes informations servent uniquement à traiter ma demande. Aucun usage marketing, aucune revente. <a href="https://www.respi.info/legal/privacy" target="_blank" rel="noopener">Politique de confidentialité</a>. <span class="req">*</span></span>
           </label>
@@ -113,9 +118,9 @@
           <label>Ne pas remplir : <input type="text" name="_gotcha" tabindex="-1" autocomplete="off"></label>
         </div>
 
-        <div class="form-actions">
+        <div class="r-form-actions">
           <button type="submit" class="btn primary">Envoyer mon message</button>
-          <span id="form-status" class="form-status muted small" role="status" aria-live="polite"></span>
+          <span id="r-form-status" class="r-form-status muted small" role="status" aria-live="polite"></span>
         </div>
       </form>
     </div>
@@ -143,8 +148,8 @@
 
   // Soumission AJAX vers Formspree (pas de redirection plein écran)
   (function () {
-    var form = document.getElementById('contact-form');
-    var status = document.getElementById('form-status');
+    var form = document.getElementById('r-contact-form');
+    var status = document.getElementById('r-form-status');
     if (!form) return;
     form.addEventListener('submit', function (e) {
       e.preventDefault();
