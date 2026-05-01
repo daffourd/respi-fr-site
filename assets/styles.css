@@ -230,31 +230,110 @@ img { max-width: 100%; height: auto; display: block; }
 /* ============================================================
    iPhone frame — wrapper pour capture .png réelle
    ============================================================ */
+/* Mockup iPhone — frame réaliste avec Dynamic Island, finition titane,
+   reflets latéraux, ombre profonde. */
 .r-iphone-frame {
   display: inline-block;
   position: relative;
   width: 290px;
-  border-radius: 44px;
-  overflow: hidden;
-  background: #0D1B2A;
+  padding: 12px;
+  background:
+    linear-gradient(155deg,
+      #3a3a3a 0%,
+      #1a1a1a 18%,
+      #0a0a0a 50%,
+      #1f1f1f 82%,
+      #2a2a2a 100%);
+  border-radius: 52px;
   box-shadow:
-    0 30px 60px rgba(13, 27, 42, 0.32),
-    0 10px 20px rgba(13, 27, 42, 0.16),
-    inset 0 0 0 1.5px rgba(255,255,255,0.07);
+    0 40px 80px -20px rgba(13, 27, 42, 0.45),
+    0 20px 40px -12px rgba(13, 27, 42, 0.25),
+    0 4px 8px rgba(0, 0, 0, 0.12),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.06),
+    inset 0 0 0 2.5px #050505,
+    inset 0 1px 0 rgba(255, 255, 255, 0.18);
+  isolation: isolate;
 }
+
+/* Dynamic Island — pastille noire centrée en haut */
+.r-iphone-frame::before {
+  content: "";
+  position: absolute;
+  top: 22px; left: 50%;
+  transform: translateX(-50%);
+  width: 95px; height: 27px;
+  background: #000;
+  border-radius: 999px;
+  z-index: 5;
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 255, 255, 0.04),
+    inset 0 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+/* Bouton power côté droit */
+.r-iphone-frame::after {
+  content: "";
+  position: absolute;
+  right: -2px; top: 22%;
+  width: 3px; height: 70px;
+  background: linear-gradient(180deg, #2c2c2c 0%, #1a1a1a 100%);
+  border-radius: 0 2px 2px 0;
+  box-shadow: inset 1px 0 0 rgba(255,255,255,0.06);
+}
+
+/* Image (capture iPhone) à l'intérieur de la frame */
 .r-iphone-frame img {
   display: block;
   width: 100%;
   height: auto;
+  border-radius: 40px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Variante petite */
+.r-iphone-frame--small {
+  width: 230px;
+  padding: 10px;
   border-radius: 44px;
 }
-.r-iphone-frame--small { width: 230px; border-radius: 36px; }
-.r-iphone-frame--small img { border-radius: 36px; }
+.r-iphone-frame--small::before {
+  top: 18px;
+  width: 78px; height: 22px;
+}
+.r-iphone-frame--small::after {
+  width: 2.5px; height: 56px;
+}
+.r-iphone-frame--small img {
+  border-radius: 34px;
+}
+
+/* Boutons volume gauche : ajoutés via 2 pseudos sur un wrapper enfant */
+.r-iphone-frame .r-iphone-buttons {
+  position: absolute;
+  left: -2px; top: 18%;
+  width: 3px; height: 130px;
+  z-index: 0;
+}
+.r-iphone-frame .r-iphone-buttons::before,
+.r-iphone-frame .r-iphone-buttons::after {
+  content: "";
+  position: absolute;
+  left: 0; width: 3px;
+  background: linear-gradient(180deg, #2c2c2c 0%, #1a1a1a 100%);
+  border-radius: 2px 0 0 2px;
+  box-shadow: inset -1px 0 0 rgba(255,255,255,0.06);
+}
+.r-iphone-frame .r-iphone-buttons::before { top: 0; height: 32px; }
+.r-iphone-frame .r-iphone-buttons::after  { top: 50px; height: 60px; }
+
 @media (max-width: 880px) {
-  .r-iphone-frame { width: 240px; border-radius: 38px; }
-  .r-iphone-frame img { border-radius: 38px; }
-  .r-iphone-frame--small { width: 220px; border-radius: 34px; }
-  .r-iphone-frame--small img { border-radius: 34px; }
+  .r-iphone-frame { width: 240px; padding: 10px; border-radius: 46px; }
+  .r-iphone-frame::before { width: 78px; height: 22px; top: 18px; }
+  .r-iphone-frame img { border-radius: 36px; }
+  .r-iphone-frame--small { width: 210px; padding: 9px; border-radius: 40px; }
+  .r-iphone-frame--small::before { width: 70px; height: 20px; top: 16px; }
+  .r-iphone-frame--small img { border-radius: 31px; }
 }
 
 .eyebrow {
