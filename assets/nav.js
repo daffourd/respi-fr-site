@@ -5,19 +5,19 @@
    ============================================================ */
 (function () {
   var drawerHTML = [
-    '<aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-labelledby="drawer-title" hidden>',
-    '  <div class="drawer-inner">',
-    '    <div class="drawer-top">',
-    '      <a href="index.html" class="drawer-brand">',
+    '<aside class="r-panel" id="r-panel" role="dialog" aria-modal="true" aria-labelledby="r-panel-title" hidden>',
+    '  <div class="r-panel-inner">',
+    '    <div class="r-panel-top">',
+    '      <a href="index.html" class="r-panel-brand">',
     '        <img src="assets/logo.png" alt="" />',
     '        <span>Respi.info</span>',
     '      </a>',
-    '      <button class="drawer-close" type="button" aria-label="Fermer le menu">Fermer</button>',
+    '      <button class="r-panel-close" type="button" aria-label="Fermer le menu">Fermer</button>',
     '    </div>',
-    '    <div class="drawer-grid">',
+    '    <div class="r-panel-grid">',
     '      <div>',
-    '        <div class="drawer-eyebrow" id="drawer-title">Le projet, chapitre par chapitre</div>',
-    '        <ul class="drawer-chapters">',
+    '        <div class="r-panel-eyebrow" id="r-panel-title">Le projet, chapitre par chapitre</div>',
+    '        <ul class="r-panel-chapters">',
     '          <li><a href="index.html"><strong>Le projet, <em>en un coup d\'œil</em></strong><span class="arrow">→</span></a></li>',
     '          <li><a href="fonctionnement.html"><strong>Le parcours <em>quotidien</em></strong><span class="arrow">→</span></a></li>',
     '          <li><a href="pour-qui.html"><strong>Pour qui, <em>concrètement</em></strong><span class="arrow">→</span></a></li>',
@@ -27,8 +27,8 @@
     '          <li><a href="telechargements.html"><strong>Affiches, fiches, <em>onepagers</em></strong><span class="arrow">→</span></a></li>',
     '        </ul>',
     '      </div>',
-    '      <div class="drawer-side">',
-    '        <div class="drawer-side-block">',
+    '      <div class="r-panel-side">',
+    '        <div class="r-panel-side-block">',
     '          <h4>Aller plus vite</h4>',
     '          <ul>',
     '            <li><a href="https://www.respi.info">Ouvrir l\'application</a></li>',
@@ -36,7 +36,7 @@
     '            <li><a href="https://jooy.info" target="_blank" rel="noopener">JOOY (asso loi 1901)</a></li>',
     '          </ul>',
     '        </div>',
-    '        <div class="drawer-side-block">',
+    '        <div class="r-panel-side-block">',
     '          <h4>Légal</h4>',
     '          <ul>',
     '            <li><a href="https://www.respi.info/legal/mentions" target="_blank" rel="noopener">Mentions légales</a></li>',
@@ -45,7 +45,7 @@
     '            <li><a href="https://www.respi.info/legal/cookies" target="_blank" rel="noopener">Cookies</a></li>',
     '          </ul>',
     '        </div>',
-    '        <div class="drawer-cta">',
+    '        <div class="r-panel-cta">',
     '          <p><strong>Tu veux essayer&nbsp;?</strong><br>Création de compte en 30 secondes. Aucune carte bancaire.</p>',
     '          <a class="btn light" href="https://www.respi.info">Ouvrir l\'app →</a>',
     '        </div>',
@@ -58,9 +58,9 @@
   // Inject after the body opens (avant le contenu pour pouvoir scroller derrière)
   document.body.insertAdjacentHTML('afterbegin', drawerHTML);
 
-  var drawer = document.getElementById('drawer');
-  var openers = document.querySelectorAll('[data-open-drawer]');
-  var closer = drawer.querySelector('.drawer-close');
+  var drawer = document.getElementById('r-panel');
+  var openers = document.querySelectorAll('[data-open-r-panel]');
+  var closer = drawer.querySelector('.r-panel-close');
 
   function openDrawer() {
     drawer.hidden = false;
