@@ -10,12 +10,89 @@
   <meta property="og:url" content="https://fr.respi.info/faq.html" />
   <meta property="og:image" content="assets/logo-512.png" />
   <meta name="theme-color" content="#0D1B2A" />
+  <link rel="canonical" href="https://fr.respi.info/faq" />
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png" />
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/styles.css" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Respi.info, c'est quoi ?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Une application gratuite éditée par JOOY (loi 1901) pour les personnes vivant avec une pathologie respiratoire chronique, une allergie, un asthme, ou exposées à la pollution. Météo respiratoire quotidienne, coach IA, Plan d'Action HAS, journal et boussole pour les aidants." }
+    },
+    {
+      "@type": "Question",
+      "name": "C'est vraiment gratuit ?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Oui, sans pub, sans revente de données. Modèle économique : partenariats institutionnels (industriels, mutuelles, ARS) et dons volontaires de particuliers et d'entreprises." }
+    },
+    {
+      "@type": "Question",
+      "name": "Mes données sont-elles protégées ?",
+      "acceptedAnswer": { "@type": "Answer", "text": "RGPD strict : AIPD réalisée, DPO désigné, hébergement Union européenne, migration HDS prévue à la V1 médicale. Export et effacement à tout moment (articles 17 et 20 RGPD)." }
+    },
+    {
+      "@type": "Question",
+      "name": "Quelles pathologies respiratoires sont couvertes ?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Plus de 11 : asthme, BPCO, fibrose pulmonaire, HTAP, cancer broncho-pulmonaire, apnées du sommeil, bronchectasies, hypersensibilités, allergies respiratoires, PID, autres maladies rares." }
+    },
+    {
+      "@type": "Question",
+      "name": "Comment est calculé le score de la Météo Respiratoire ?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Score 0–100 recalculé chaque jour en croisant qualité de l'air (Atmo France), pollens (RNSA), prévisions à 4 jours (Copernicus CAMS et Météo France) avec ton profil santé (pathologies, traitements, expositions, oxygénothérapie)." }
+    },
+    {
+      "@type": "Question",
+      "name": "Mon pneumologue peut-il s'en servir ?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Oui. Le Plan d'Action HAS s'édite avec lui, s'imprime A4, et sert de support de consultation. Prérempli grâce à l'historique dans l'app." }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://fr.respi.info/#organization",
+      "name": "JOOY — Respi.info",
+      "alternateName": "Respi.info",
+      "url": "https://fr.respi.info/",
+      "logo": "https://fr.respi.info/assets/logo-512.png",
+      "description": "Association loi 1901, éditrice de l'application gratuite Respi.info pour les personnes vivant avec une maladie respiratoire chronique, une allergie, un asthme ou exposées à la pollution.",
+      "foundingDate": "2011",
+      "areaServed": { "@type": "Country", "name": "France" },
+      "sameAs": ["https://jooy.info"]
+    },
+    {
+      "@type": "MobileApplication",
+      "@id": "https://www.respi.info/#app",
+      "name": "Respi.info",
+      "url": "https://www.respi.info/",
+      "applicationCategory": "HealthApplication",
+      "applicationSubCategory": "Respiratory health",
+      "operatingSystem": "Web (PWA), iOS (à venir), Android (à venir)",
+      "description": "Météo respiratoire personnelle, coach IA adapté à la pathologie, Plan d'Action HAS, journal quotidien, partage léger avec les proches aidants.",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock"
+      },
+      "publisher": { "@id": "https://fr.respi.info/#organization" },
+      "inLanguage": "fr-FR",
+      "isAccessibleForFree": true
+    }
+  ]
+}
+</script>
 </head>
 <body>
 

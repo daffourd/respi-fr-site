@@ -1205,6 +1205,8 @@ details.faq strong { color: var(--bleu-encre); }
   margin-top: 8px;
 }
 .r-form-status { font-size: 14px; color: var(--texte-doux); }
+.r-form-status.is-success { color: var(--sauge-deep); font-weight: 700; font-size: 15.5px; }
+.r-form-status.is-error { color: var(--corail); font-weight: 600; }
 
 /* ============================================================
    KPI grid
