@@ -3,14 +3,14 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Asthme : application gratuite Respi.info — météo respiratoire et plan d'action</title>
-  <meta name="description" content="Application gratuite pour vivre avec un asthme : score qualité de l'air et pollens chaque matin, plan d'action HAS éditable avec ton pneumologue, coach respiratoire, journal des crises. Sans pub." />
-  <meta property="og:title" content="Asthme : application gratuite Respi.info" />
-  <meta property="og:description" content="Météo respiratoire personnelle, plan d'action HAS, coach IA adapté à l'asthme. Gratuit, sans pub, sans revente de données." />
-  <meta property="og:url" content="https://fr.respi.info/asthme" />
+  <title>Bronchectasies / DDB : application gratuite Respi.info — drainage et exacerbations</title>
+  <meta name="description" content="Application gratuite pour vivre avec une bronchectasie ou une dilatation des bronches (DDB) : suivi du drainage, alerte précoce d'exacerbation, coach respiratoire encourageant, partage avec ton pneumologue." />
+  <meta property="og:title" content="Bronchectasies / DDB : application gratuite Respi.info" />
+  <meta property="og:description" content="Suivi du drainage, repérage des exacerbations, coach kiné respi. Pour les patients DDB / bronchectasies." />
+  <meta property="og:url" content="https://fr.respi.info/bronchectasies" />
   <meta property="og:image" content="assets/logo-512.png" />
   <meta name="theme-color" content="#0D1B2A" />
-  <link rel="canonical" href="https://fr.respi.info/asthme" />
+  <link rel="canonical" href="https://fr.respi.info/bronchectasies" />
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png" />
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -23,9 +23,9 @@
   "@graph": [
     {
       "@type": "MedicalCondition",
-      "name": "Asthme",
-      "alternateName": "Asthme bronchique",
-      "code": { "@type": "MedicalCode", "code": "J45", "codingSystem": "ICD-10" }
+      "name": "Bronchectasies",
+      "alternateName": ["Dilatation des bronches", "DDB"],
+      "code": { "@type": "MedicalCode", "code": "J47", "codingSystem": "ICD-10" }
     },
     {
       "@type": "MobileApplication",
@@ -36,7 +36,7 @@
       "operatingSystem": "Web (PWA)",
       "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
       "isAccessibleForFree": true,
-      "audience": { "@type": "PeopleAudience", "healthCondition": { "@type": "MedicalCondition", "name": "Asthme" } }
+      "audience": { "@type": "PeopleAudience", "healthCondition": { "@type": "MedicalCondition", "name": "Bronchectasies" } }
     }
   ]
 }
@@ -80,11 +80,12 @@
 <section class="page-head">
   <div class="page-head-inner">
     <span class="eyebrow">Pathologie</span>
-    <h1>Asthme : <em>respirer mieux au quotidien.</em></h1>
+    <h1>Bronchectasies / DDB : <em>drainer, anticiper l'exacerbation.</em></h1>
     <p>
-      Respi.info est une <strong>application gratuite</strong> pensée pour les personnes vivant avec un asthme.
-      Chaque matin, un score 0–100 te dit si l'air et les pollens du jour sont favorables ou pas, et le coach te
-      propose un geste concret en moins de 4 minutes — sans publicité, sans revente de données.
+      Respi.info est une <strong>application gratuite</strong> pensée pour les personnes vivant avec
+      des <strong>bronchectasies</strong> (dilatation des bronches, DDB). Suivi quotidien du drainage,
+      repérage précoce des signes d'exacerbation, coach respiratoire au ton encourageant, partage léger avec
+      ton pneumologue — sans pub, sans revente de données.
     </p>
     <div class="hero-cta" style="margin-top: 22px;">
       <a class="btn primary" href="https://www.respi.info">Ouvrir l'application</a>
@@ -96,20 +97,20 @@
 <section class="section">
   <div class="section-inner section-inner--narrow">
     <span class="eyebrow">Comprendre</span>
-    <h2 class="h-serif">L'asthme, <em>en bref.</em></h2>
+    <h2 class="h-serif">Les bronchectasies, <em>en bref.</em></h2>
     <p class="lead" style="margin-top: 14px;">
-      L'asthme est une maladie respiratoire chronique caractérisée par une inflammation des bronches,
-      qui se contractent et se rétractent en présence de déclencheurs (allergènes, pollution, effort,
-      stress, virus respiratoires). En France, environ <strong>4 millions de personnes</strong>
-      vivent avec un asthme — soit 7 % de la population adulte et 10 % des enfants
-      (source <a href="https://www.santepubliquefrance.fr" target="_blank" rel="noopener">Santé publique France</a>).
+      Les bronchectasies (ou dilatation des bronches, DDB) sont une dilatation anormale et permanente
+      des bronches, souvent secondaire à des infections répétées, à une mucoviscidose, à un déficit
+      immunitaire ou à des séquelles de tuberculose. En France, la prévalence est estimée à
+      <strong>environ 50 000 à 100 000 patients</strong>, suivis par les pneumologues de ville et les
+      centres hospitaliers (registre national <strong>RIFE</strong>, CHU Bordeaux).
     </p>
     <p>
-      Les recommandations internationales (<strong>GINA 2024</strong>) et françaises
-      (<strong>HAS</strong>, programme PAP-A) insistent sur trois piliers :
-      la maîtrise des facteurs environnementaux, l'observance du traitement de fond, et
-      la possession d'un <strong>Plan d'Action Personnalisé écrit</strong>
-      pour savoir quoi faire si les symptômes s'aggravent.
+      Le quotidien combine : <strong>kinésithérapie respiratoire de drainage</strong>, parfois sérum salé
+      hypertonique en nébulisation, antibioprophylaxie (azithromycine au long cours selon les recos
+      <strong>ERS 2017</strong>), et antibiotiques inhalés (Tobi, colistine) en cas de colonisation à
+      <em>Pseudomonas aeruginosa</em>. La crainte permanente : l'<strong>exacerbation</strong>
+      (augmentation des expectorations, modification de couleur, fièvre, essoufflement).
     </p>
   </div>
 </section>
@@ -117,27 +118,27 @@
 <section class="section section--cream">
   <div class="section-inner">
     <span class="eyebrow eyebrow--ambre">Comment Respi.info aide</span>
-    <h2 class="h-serif">Quatre outils, <em>quatre minutes par jour.</em></h2>
+    <h2 class="h-serif">Quatre outils, <em>pour reprendre la main.</em></h2>
     <div class="r-cards-grid">
       <article class="r-card">
         <div class="r-card-eyebrow">1. Météo respiratoire</div>
-        <h3>Score 0–100 chaque matin</h3>
-        <p>Croise qualité de l'air (Atmo France), pollens (RNSA), météo (Copernicus CAMS, Météo France) et tes déclencheurs personnels. Phrase d'orientation en une ligne.</p>
+        <h3>Adaptée aux DDB</h3>
+        <p>Le score prend en compte ton encombrement habituel, ton antibioprophylaxie, ta colonisation éventuelle. Air sec et particules sont pondérés (encombrement aggravé en environnement sec ou pollué).</p>
       </article>
       <article class="r-card">
-        <div class="r-card-eyebrow card-eyebrow--sauge">2. Coach IA adapté</div>
-        <h3>Ton serein, jamais alarmiste</h3>
-        <p>Propose un geste de respiration ou de mouvement adapté à ton score du jour. Garde-fous médicaux : pas de modification de traitement, redirection 15 / SAMU sur signaux sévères.</p>
+        <div class="r-card-eyebrow card-eyebrow--sauge">2. Coach drainage</div>
+        <h3>Rythme et techniques</h3>
+        <p>Rappels personnalisés des séances de drainage (autogène, ELTGOL, drainage postural). Cohérence cardiaque (4 min) en complément. Garde-fous : redirection médecin si signes d'exacerbation (couleur, volume, fièvre).</p>
       </article>
       <article class="r-card">
-        <div class="r-card-eyebrow card-eyebrow--ambre">3. Plan d'Action HAS</div>
-        <h3>4 zones colorées, prérempli</h3>
-        <p>Modèle <strong>PAP-A 2019 + GINA 2024</strong>. Zones verte / jaune / orange / rouge avec les signaux à reconnaître et les actions. Édité avec ton pneumologue, imprimable A4.</p>
+        <div class="r-card-eyebrow card-eyebrow--ambre">3. Repérage exacerbation</div>
+        <h3>Volume × couleur × fièvre</h3>
+        <p>Note ton volume d'expectorations, leur couleur (échelle Murray validée), ta température. L'app détecte les variations significatives et te suggère de contacter ton pneumologue avant l'aggravation.</p>
       </article>
       <article class="r-card">
-        <div class="r-card-eyebrow card-eyebrow--corail">4. Journal &amp; pairs</div>
-        <h3>Suivi simple, comparaison anonymisée</h3>
-        <p>Note tes crises, ton observance, ton ressenti. Compare ton parcours avec d'autres patients asthmatiques de la même tranche d'âge — sans réidentification.</p>
+        <div class="r-card-eyebrow card-eyebrow--corail">4. Partage pneumologue</div>
+        <h3>Tendances mensuelles</h3>
+        <p>Ton journal sur 1, 3, 6 mois est exportable en PDF A4 : nombre d'exacerbations, antibiothérapies, hospitalisations. Idéal pour les consultations de suivi et les RCP DDB.</p>
       </article>
     </div>
   </div>
@@ -148,13 +149,13 @@
     <span class="eyebrow">Sources</span>
     <h2 class="h-serif">Tout est <em>tracé.</em></h2>
     <p>
-      Le contenu thérapeutique sur l'asthme dans Respi.info s'appuie sur :
-      <strong><a href="https://www.has-sante.fr" target="_blank" rel="noopener">HAS</a></strong> (Plan d'Action Personnalisé Asthme),
-      <strong><a href="https://ginasthma.org" target="_blank" rel="noopener">GINA 2024</a></strong> (recommandations internationales),
-      <strong><a href="https://splf.fr" target="_blank" rel="noopener">SPLF</a></strong> (Société de Pneumologie de Langue Française),
-      et <strong><a href="https://www.ffaair.org" target="_blank" rel="noopener">FFAAIR</a></strong> (associations de patients respiratoires).
-      Toutes les données environnementales viennent de sources publiques officielles. Voir
-      <a href="partenaires-sources.html">la page Sources</a>.
+      Le contenu DDB dans Respi.info s'appuie sur les recommandations
+      <strong><a href="https://erj.ersjournals.com/content/50/3/1700629" target="_blank" rel="noopener">ERS 2017 (Polverino et al.)</a></strong>
+      pour la prise en charge des bronchectasies de l'adulte, sur la
+      <strong><a href="https://splf.fr" target="_blank" rel="noopener">SPLF</a></strong>,
+      sur la <strong><a href="https://www.has-sante.fr" target="_blank" rel="noopener">HAS</a></strong>,
+      et sur les contenus pédagogiques de la <strong><a href="https://www.ffaair.org" target="_blank" rel="noopener">FFAAIR</a></strong>.
+      Voir <a href="partenaires-sources.html">la page Sources</a>.
     </p>
   </div>
 </section>
@@ -163,7 +164,7 @@
   <div class="section-inner">
     <div class="r-cta-final">
       <h2>Prends 4 minutes. <em>Tu verras.</em></h2>
-      <p>Inscription en 30 secondes, gratuite. Tu déclares ton asthme, tes traitements, tes déclencheurs — et tu reçois ta première météo respiratoire personnalisée demain matin.</p>
+      <p>Crée ton compte gratuit, déclare ta DDB et ton éventuelle colonisation, et reçois ta première météo respiratoire personnalisée demain matin.</p>
       <div class="hero-cta center">
         <a class="btn light" href="https://www.respi.info">Ouvrir l'application</a>
         <a class="btn outline-light" href="faq.html">Voir la FAQ</a>

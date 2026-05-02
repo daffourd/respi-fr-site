@@ -25,7 +25,6 @@
     }
   ],
   "redirects": [
-    { "source": "/partenaires", "destination": "/partenaires-sources", "permanent": true },
-    { "source": "/sources", "destination": "/partenaires-sources", "permanent": true }
+    { "source": "/partenaires-sources", "destination": "/sources", "permanent": true }
   ]
 }

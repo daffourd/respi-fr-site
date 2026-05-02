@@ -65,11 +65,22 @@
       <span class="brand-txt">Respi.info<small>Respirer mieux, vivre plus</small></span>
     </a>
     <nav class="r-nav" aria-label="Navigation principale">
-      <a href="fonctionnement.html">Le parcours</a>
-      <a href="pour-qui.html">Pour qui</a>
-      <a href="faq.html">FAQ</a>
-      <a href="partenaires-sources.html">Sources</a>
-      <a href="telechargements.html">Téléchargements</a>
+      <div class="r-nav-group">
+        <button type="button" class="r-nav-trigger" aria-haspopup="true" aria-expanded="false" aria-controls="r-menu-app">L'application</button>
+        <div class="r-nav-dropdown" id="r-menu-app" role="menu">
+          <a href="fonctionnement.html" role="menuitem">Le parcours</a>
+          <a href="pour-qui.html" role="menuitem">Pour qui</a>
+          <a href="faq.html" role="menuitem">FAQ</a>
+        </div>
+      </div>
+      <div class="r-nav-group">
+        <button type="button" class="r-nav-trigger" aria-haspopup="true" aria-expanded="false" aria-controls="r-menu-ressources">Ressources</button>
+        <div class="r-nav-dropdown" id="r-menu-ressources" role="menu">
+          <a href="sources.html" role="menuitem">Sources</a>
+          <a href="telechargements.html" role="menuitem">Téléchargements</a>
+          <a href="partenaires.html" role="menuitem">Partenaires</a>
+        </div>
+      </div>
       <a href="presse.html">Presse</a>
       <a href="contact.html">Contact</a>
     </nav>
@@ -230,6 +241,56 @@
   </div>
 </section>
 
+<section class="section section--cream">
+  <div class="section-inner">
+    <span class="eyebrow eyebrow--ambre">Par pathologie</span>
+    <h2 class="h-serif">Quelle est <em>ta maladie respiratoire ?</em></h2>
+    <p class="lead" style="margin-top: 14px; max-width: 760px;">
+      Respi.info adapte son score de météo respiratoire, ses conseils de coach et son plan d'action
+      à ta pathologie. Découvre la page dédiée à la tienne — chacune détaille ce que l'app fait
+      concrètement pour toi, en s'appuyant sur les recommandations de référence (HAS, GINA, GOLD,
+      ERS, ATS, ECFS).
+    </p>
+    <div class="r-cards-grid" style="margin-top: 28px;">
+      <a class="r-card" href="asthme.html" style="text-decoration: none; color: inherit;">
+        <div class="r-card-eyebrow">Asthme</div>
+        <h3>Allergique, à l'effort, sévère</h3>
+        <p>Plan d'Action GINA, météo pollens et pollution, suivi des crises et du traitement de fond.</p>
+      </a>
+      <a class="r-card" href="bpco.html" style="text-decoration: none; color: inherit;">
+        <div class="r-card-eyebrow card-eyebrow--sauge">BPCO</div>
+        <h3>Bronchopneumopathie chronique</h3>
+        <p>Plan d'Action HAS, repérage de Réhabilitation Respiratoire, coach IA rassurant.</p>
+      </a>
+      <a class="r-card" href="fibrose.html" style="text-decoration: none; color: inherit;">
+        <div class="r-card-eyebrow card-eyebrow--ambre">Fibrose pulmonaire</div>
+        <h3>FPI, PID, sarcoïdose</h3>
+        <p>Score adapté à l'oxygénothérapie, suivi du test 6 minutes, partage centre de référence.</p>
+      </a>
+      <a class="r-card" href="htap.html" style="text-decoration: none; color: inherit;">
+        <div class="r-card-eyebrow card-eyebrow--corail">HTAP</div>
+        <h3>Hypertension artérielle pulmonaire</h3>
+        <p>Suivi de la dyspnée NYHA, conseils de doses d'effort, partage centre de compétence.</p>
+      </a>
+      <a class="r-card" href="bronchectasies.html" style="text-decoration: none; color: inherit;">
+        <div class="r-card-eyebrow">Bronchectasies / DDB</div>
+        <h3>Dilatation des bronches</h3>
+        <p>Suivi du drainage, repérage des exacerbations (volume × couleur × fièvre), partage pneumologue.</p>
+      </a>
+      <a class="r-card" href="pneumopathie-hypersensibilite.html" style="text-decoration: none; color: inherit;">
+        <div class="r-card-eyebrow card-eyebrow--sauge">Pneumopathie d'hypersensibilité</div>
+        <h3>Poumon de fermier, d'éleveur</h3>
+        <p>Coach éviction antigénique, suivi évolution fibrosante, partage centre OrphaLung.</p>
+      </a>
+      <a class="r-card" href="mucoviscidose.html" style="text-decoration: none; color: inherit;">
+        <div class="r-card-eyebrow card-eyebrow--ambre">Mucoviscidose</div>
+        <h3>Adultes muco</h3>
+        <p>Compagnon entre les bilans CRCM, drainage, repérage exacerbations, préparation des bilans.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
 <section class="section section--soft">
   <div class="section-inner">
     <div class="r-cta-final">
@@ -252,29 +313,29 @@
       </a>
       <p class="baseline">Application gratuite pour les personnes vivant avec une maladie respiratoire chronique, une allergie, un asthme ou exposées à la pollution. Édité par <strong>JOOY</strong>, association loi 1901.</p>
     </div>
+        <div>
+      <h4>Pathologies</h4>
+      <a href="asthme.html">Asthme</a>
+      <a href="bpco.html">BPCO</a>
+      <a href="fibrose.html">Fibrose pulmonaire</a>
+      <a href="htap.html">HTAP</a>
+      <a href="bronchectasies.html">Bronchectasies / DDB</a>
+      <a href="pneumopathie-hypersensibilite.html">Pneumopathie d'hypersensibilité</a>
+      <a href="mucoviscidose.html">Mucoviscidose</a>
+    </div>
     <div>
       <h4>Le projet</h4>
       <a href="fonctionnement.html">Le parcours</a>
-      <a href="pour-qui.html">Pour qui</a>
       <a href="faq.html">FAQ</a>
-      <a href="partenaires-sources.html">Partenaires &amp; sources</a>
-    </div>
-    <div>
-      <h4>Ressources</h4>
-      <a href="presse.html">Espace presse</a>
-      <a href="telechargements.html">Téléchargements</a>
+      <a href="sources.html">Sources</a>
+      <a href="partenaires.html">Partenaires</a>
       <a href="contact.html">Nous écrire</a>
-      <a href="https://www.respi.info">Ouvrir l'app</a>
     </div>
     <div>
-      <h4>Informations légales</h4>
+      <h4>Légal</h4>
       <a href="https://www.respi.info/legal/mentions" target="_blank" rel="noopener">Mentions légales</a>
-      <a href="https://www.respi.info/legal/cgu" target="_blank" rel="noopener">CGU</a>
       <a href="https://www.respi.info/legal/privacy" target="_blank" rel="noopener">Confidentialité</a>
-      <a href="https://www.respi.info/legal/cookies" target="_blank" rel="noopener">Cookies</a>
-      <a href="https://www.respi.info/legal/droits" target="_blank" rel="noopener">Mes droits RGPD</a>
-    </div>
-  </div>
+    </div></div>
   <div class="site-footer-bottom">
     <span>© 2026 JOOY — Respi.info.</span>
     <span>Respi.info n'est pas un dispositif médical. Ne remplace pas l'avis d'un professionnel de santé. En cas d'urgence : <strong>15 (SAMU)</strong> ou <strong>112</strong>.</span>
