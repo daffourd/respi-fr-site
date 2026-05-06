@@ -16,7 +16,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/styles.css?v=20260502b" />
+  <link rel="stylesheet" href="assets/styles.css?v=20260506a" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -174,6 +174,240 @@
       <p><strong>« Le numérique au service de la respiration. »</strong></p>
       <p>Au-delà des patients chroniques, Respi.info est utile à tous les Français exposés à la pollution de l'air ou aux allergies saisonnières. Une porte d'entrée grand public sur l'écologie respiratoire.</p>
     </div>
+  </div>
+</section>
+
+<section class="section section--cream">
+  <div class="section-inner section-inner--narrow">
+    <span class="eyebrow eyebrow--ambre">Interview exclusive</span>
+    <h2 class="h-serif">Vincent Daffourd, <em>fondateur de Respi.info.</em></h2>
+    <p class="lead">À l'occasion du lancement de Respi.info, le 5 mai 2026, Journée mondiale de l'asthme. Reproduction libre dans le cadre d'un article de presse, avec citation de la source <strong>Respi.info</strong>.</p>
+
+    <div class="r-interview-intro">
+      <img class="r-interview-avatar" src="assets/photo-vincent.jpg" alt="Vincent Daffourd, fondateur de Respi.info" loading="lazy" width="240" height="240" />
+      <div>
+        <h3>Vincent Daffourd</h3>
+        <p>Fondateur de Respi.info, président de l'association JOOY (loi 1901). Patient expert sous oxygénothérapie longue durée, en bilan pré-greffe. Vice-président de Santé Respiratoire France de 2018 à 2025.</p>
+      </div>
+    </div>
+
+    <div class="callout callout--bleu mt-32">
+      <p><strong>Préambule.</strong> Respi.info est une application web progressive (PWA) gratuite, sans publicité, sans données vendues, RGPD-native, mise en ligne le 5 mai 2026 par l'association JOOY (loi 1901). Elle est destinée aux ~10 millions de Français qui vivent avec une pathologie respiratoire chronique — BPCO, asthme, fibrose pulmonaire, mucoviscidose, hypersensibilités, apnées du sommeil — et à leurs proches aidants.</p>
+      <p>Le cœur de l'application est un <strong>indice respiratoire personnel</strong> recalculé chaque matin à partir de la qualité de l'air, des pollens, des prévisions météorologiques et du profil pathologique du patient.</p>
+    </div>
+
+    <nav class="r-interview-toc" aria-label="Sommaire de l'interview">
+      <p class="r-interview-toc-title">Sommaire de l'interview</p>
+      <ol>
+        <li><a href="#q1">Comment est née Respi.info ?</a></li>
+        <li><a href="#q2">Vous avez codé l'application vous-même ?</a></li>
+        <li><a href="#q3">Comment avez-vous eu cette idée ?</a></li>
+        <li><a href="#q4">JOOY — quinze ans, 150 000 personnes sensibilisées. Quelle est sa mission ?</a></li>
+        <li><a href="#q5">Avant Respi.info, comment un patient pouvait-il avoir ces informations ?</a></li>
+        <li><a href="#q6">Comment fonctionne votre algorithme ? Quelles données croise-t-il ?</a></li>
+        <li><a href="#q7">Et ce n'est pas qu'une boîte noire, vos sources sont visibles ?</a></li>
+        <li><a href="#q8">Pourquoi un module dédié aux proches aidants ?</a></li>
+        <li><a href="#q9">Vous avez intégré le Plan d'Action Personnalisé (PAP). De quoi s'agit-il ?</a></li>
+        <li><a href="#q10">Vous avez aussi pensé à la consultation chez le pneumologue ?</a></li>
+        <li><a href="#q11">Pourquoi tout faire gratuit, sans publicité, sans données vendues ?</a></li>
+        <li><a href="#q12">JOOY édite Respi.info. Comment ça fonctionne ?</a></li>
+        <li><a href="#q13">Pour qui exactement avez-vous créé Respi.info ?</a></li>
+        <li><a href="#q14">Le 5 mai, Journée mondiale de l'asthme : pourquoi cette date ?</a></li>
+        <li><a href="#q15">Et après ? Quelle est la suite pour Respi.info ?</a></li>
+        <li><a href="#q16">Un dernier mot ?</a></li>
+      </ol>
+    </nav>
+
+    <div class="r-interview-list">
+
+      <article class="r-interview-block" id="q1">
+        <div class="r-interview-num">01</div>
+        <div>
+          <h3 class="r-interview-q">Comment est née Respi.info ?</h3>
+          <p class="r-interview-a">Très concrètement : en HAD, depuis mon lit médicalisé. Comme tout patient respiratoire chronique sévère en crise, j'étais immobilisé, sous oxygène en continu, avec une toux et une fatigue extrême. Pour quelqu'un comme moi, hyperactif par nature, la situation d'immobilisme forcé et l'incapacité de parler sans tousser est très éprouvante mentalement, en tout cas pour moi.</p>
+          <p class="r-interview-a">Occuper l'esprit, c'est devenu une priorité, une nécessité. C'est dans ce contexte, et dans ce lit, que Respi.info est née.</p>
+        </div>
+      </article>
+
+      <article class="r-interview-block" id="q2">
+        <div class="r-interview-num">02</div>
+        <div>
+          <h3 class="r-interview-q">Vous avez codé l'application vous-même ?</h3>
+          <p class="r-interview-a">Oui, j'ai réalisé cette application moi-même, avec un compagnon de route inattendu : l'intelligence artificielle, utilisée comme un binôme de développement. Je conceptualisais, j'écrivais l'algorithme et rassemblais mes sources, je dictais, je testais ; Claude structurait le code, débuggait, m'aidait à choisir les bons outils. C'est ce qui m'a permis, depuis un lit d'hôpital, de produire quelque chose qui, il y a cinq ans, aurait nécessité une équipe d'une bonne dizaine de développeurs pendant six mois.</p>
+          <p class="r-interview-a">Un ami, Thibault, m'a aussi accompagné. Il m'a donné des conseils précieux à des moments-clés. Mais en dehors de cela, tout a été conçu, codé, testé et déployé seul.</p>
+        </div>
+      </article>
+
+      <article class="r-interview-block" id="q3">
+        <div class="r-interview-num">03</div>
+        <div>
+          <h3 class="r-interview-q">Comment avez-vous eu cette idée ?</h3>
+          <p class="r-interview-a">J'ai tout simplement développé l'application dont j'avais vraiment besoin, tous les jours.</p>
+          <p class="r-interview-a">Frédéric Le Guillou, le président de l'association Santé Respiratoire France (devenu depuis mon pneumologue et un bon ami), m'a tout de suite soutenu et encouragé. Il m'a fait des retours extrêmement pertinents qui ont enrichi l'application au fur et à mesure. Nous continuons dans cette même dynamique ensemble.</p>
+          <p class="r-interview-a">Je suis d'ailleurs très heureux de retrouver l'équipe de SRF que j'ai bien connue, puisque j'ai été vice-président bénévole de Santé Respiratoire France de 2018 à 2025. C'est une école inestimable pour comprendre la réalité nationale de la santé respiratoire en France, notamment ses angles morts, mais aussi les besoins de terrain — côté patients, proches aidants comme professionnels de santé.</p>
+          <p class="r-interview-a">Cela me réjouit que <a href="https://www.respi.info" target="_blank" rel="noopener">respi.info</a> soit un projet partagé entre SRF et JOOY, la modeste association (éditrice de l'application) que j'ai fondée en 2011 et qui célèbre donc ses quinze ans cette année.</p>
+        </div>
+      </article>
+
+      <article class="r-interview-block" id="q4">
+        <div class="r-interview-num">04</div>
+        <div>
+          <h3 class="r-interview-q">JOOY — quinze ans, 150 000 personnes sensibilisées. Quelle est sa mission ?</h3>
+          <p class="r-interview-a">JOOY a été créée pour sensibiliser le grand public à l'impact de l'environnement sur la santé, notamment de la qualité de l'air. En quinze ans, l'association a sensibilisé plus de 150 000 personnes. Et au fil des années, une question est revenue sans cesse, comme un refrain : <em>« Mais comment savoir si l'air que je respire à l'instant T peut me nuire ou pas ? »</em></p>
+          <p class="r-interview-a">Cette question est fondamentale. L'air est invisible. L'air est indispensable. Personne ne peut se dire <em>« tiens, j'arrête de respirer pendant deux heures, le temps que le nuage de pollution passe »</em>. Chacun est obligé de subir. En bonne santé respiratoire ou en mauvaise santé, le sort est le même pour tout le monde.</p>
+          <p class="r-interview-a">La conclusion logique : nul ne peut réparer l'air en temps réel. Mais il est possible de créer des outils pour en prévenir les effets, et c'est exactement ce qu'est Respi.info.</p>
+        </div>
+      </article>
+
+      <article class="r-interview-block" id="q5">
+        <div class="r-interview-num">05</div>
+        <div>
+          <h3 class="r-interview-q">Avant Respi.info, comment un patient pouvait-il avoir ces informations ?</h3>
+          <p class="r-interview-a">Aujourd'hui, pour obtenir une vraie vue d'ensemble de la qualité de l'air et de son impact potentiel, il fallait visiter au moins neuf sites internet différents : pour la température, la vitesse et l'orientation du vent, l'altitude de l'air et l'hygrométrie, l'indice UV, les particules fines (PM10, PM2.5) et ultra-fines, un pour les nuages de pollution, un pour les pluies acides, pour les allergènes, les pollens…</p>
+          <p class="r-interview-a">Et après ? Il fallait croiser ces données avec sa propre pathologie, ses traitements, ses comorbidités, sa forme du jour, ses symptômes… Pour la majorité des patients, c'est un casse-tête tout simplement infaisable. Donc personne ne le fait. Et tout le monde subit.</p>
+        </div>
+      </article>
+
+      <article class="r-interview-block" id="q6">
+        <div class="r-interview-num">06</div>
+        <div>
+          <h3 class="r-interview-q">Comment fonctionne votre algorithme ? Quelles données croise-t-il ?</h3>
+          <p class="r-interview-a">J'ai construit un algorithme qui fait ce travail en un clin d'œil. Concrètement, chaque matin, l'application géolocalise le patient (précision de l'ordre de 10 m) et interroge en temps réel quatre sources publiques scientifiquement validées :</p>
+          <ul>
+            <li><strong>Atmo France</strong> (fédération des Associations Agréées de Surveillance de la Qualité de l'Air) pour la qualité de l'air locale, les particules PM10 et PM2.5, NO₂, O₃ ;</li>
+            <li><strong>RNSA</strong> (Réseau National de Surveillance Aérobiologique) pour les pollens et leur risque allergique ;</li>
+            <li><strong>Copernicus CAMS</strong> (Copernicus Atmosphere Monitoring Service, programme européen) pour les prévisions de qualité de l'air et le transport longue distance ;</li>
+            <li><strong>Météo-France</strong> pour la température, l'humidité, la pression, les vents.</li>
+          </ul>
+          <p class="r-interview-a">L'algorithme croise ces quatre flux avec le profil pathologique du patient (BPCO, asthme, fibrose, mucoviscidose, allergies, apnées), ses allergènes spécifiques, ses traitements, ses symptômes en cours. Le tout est passé au filtre des recommandations cliniques en vigueur : GOLD 2025 pour la BPCO, GINA 2025 pour l'asthme, les guidelines HAS et SPLF, ainsi que les standards internationaux ERS-ATS.</p>
+          <p class="r-interview-a">Le résultat : un <strong>indice respiratoire personnel sur 100</strong>, recalculé toutes les quinze minutes, qui dit en un coup d'œil si la journée s'annonce facile, à gérer avec soin, ou potentiellement à risque. Suivi d'une routine adaptée de 4 minutes — respiration, échauffement, hydratation, conseil vestimentaire.</p>
+        </div>
+      </article>
+
+      <article class="r-interview-block" id="q7">
+        <div class="r-interview-num">07</div>
+        <div>
+          <h3 class="r-interview-q">Et ce n'est pas qu'une boîte noire, vos sources sont visibles par l'utilisateur ?</h3>
+          <p class="r-interview-a">C'est un point sur lequel je n'ai accepté aucun compromis. Le coach conversationnel intégré à l'application, qui répond aux questions du patient en langage naturel, cite systématiquement ses sources à chaque réponse. Quand le coach dit <em>« évitez l'effort intense aujourd'hui »</em>, il indique pourquoi (par exemple : qualité de l'air dégradée, présence de pollens, votre pathologie spécifique) et sur quel référentiel il s'appuie (GOLD chapitre X, HAS recommandation Y).</p>
+          <p class="r-interview-a">C'est l'inverse exact de la boîte noire. Et c'est ce qui distingue Respi.info des assistants généralistes : Respi.info ne demande pas au patient de faire confiance, l'application lui montre la chaîne de raisonnement.</p>
+        </div>
+      </article>
+
+      <article class="r-interview-block" id="q8">
+        <div class="r-interview-num">08</div>
+        <div>
+          <h3 class="r-interview-q">Vous avez intégré un module pour les proches aidants. Pourquoi ce choix ?</h3>
+          <p class="r-interview-a">Parce que les aidants font partie intégrante de la vie d'un patient respiratoire chronique. Ce sont eux qui voient la fatigue, qui anticipent les crises, qui appellent le 15 quand la situation bascule. Leur charge mentale est énorme et largement invisible.</p>
+          <p class="r-interview-a">Dans Respi.info, le patient peut partager une <strong>« boussole »</strong> avec ses aidants — quatre écrans synthétiques qui indiquent en temps réel son état de santé du moment, sa forme, son humeur, la présence ou non de symptômes. C'est une signalisation simple, qui rassure quand tout va bien et qui permet à l'aidant de mieux comprendre le moment où il doit intervenir.</p>
+          <p class="r-interview-a">C'est aussi un moyen de désactiver la culpabilité réciproque : le patient n'a plus à dire <em>« je vais bien »</em> mille fois pour rassurer ; l'aidant n'a plus à demander mille fois <em>« comment vas-tu »</em> pour s'inquiéter à juste titre. La donnée fait le pont, et libère la relation.</p>
+        </div>
+      </article>
+
+      <article class="r-interview-block" id="q9">
+        <div class="r-interview-num">09</div>
+        <div>
+          <h3 class="r-interview-q">Vous avez aussi intégré le Plan d'Action Personnalisé (PAP). De quoi s'agit-il ?</h3>
+          <p class="r-interview-a">Le PAP est une recommandation officielle de la Haute Autorité de Santé. C'est un document, normalement co-construit avec son pneumologue, qui formalise les seuils personnels d'alerte (saturation en oxygène, fréquence cardiaque, débit expiratoire de pointe) et les conduites à tenir en cas de zone verte / orange / rouge.</p>
+          <p class="r-interview-a">Dans la réalité, ce document existe rarement, ou il est dans un tiroir, illisible, rarement relu en situation de crise. Dans Respi.info, le patient peut éditer son PAP avec son pneumologue, le signer, le partager avec son aidant à toute heure et sur 90 jours. Tout est conforme à la lettre des préconisations HAS et SPLF — c'était l'une de mes obsessions : pas un seul écart par rapport au référentiel.</p>
+        </div>
+      </article>
+
+      <article class="r-interview-block" id="q10">
+        <div class="r-interview-num">10</div>
+        <div>
+          <h3 class="r-interview-q">Vous avez aussi pensé à la consultation chez le pneumologue ?</h3>
+          <p class="r-interview-a">Oui. L'application permet au patient de préparer sa consultation pneumologique directement : une fiche A4 est auto-incrémentée par les informations qu'il a saisies au quotidien (observance des traitements, symptômes ressentis, journal de toux, dyspnée, saturation, débit de pointe).</p>
+          <p class="r-interview-a">Le patient peut envoyer cette fiche à son médecin par email, via un lien sécurisé valable 7 jours (signé HMAC). Le médecin arrive en consultation avec une vue synthétique du dernier mois ; le patient n'a plus à faire l'effort de tout reconstituer de mémoire dans les 15 minutes du rendez-vous. Le temps de consultation est utilisé pour la décision médicale, pas pour la collecte de données.</p>
+          <p class="r-interview-a">Là encore, tout suit la lettre des préconisations HAS et SPLF.</p>
+        </div>
+      </article>
+
+      <article class="r-interview-block" id="q11">
+        <div class="r-interview-num">11</div>
+        <div>
+          <h3 class="r-interview-q">Pourquoi avoir choisi de tout faire gratuit, sans publicité, sans données vendues ?</h3>
+          <p class="r-interview-a">Parce que ce serait contradictoire de proposer un outil de santé pour aider les gens et de financer le projet en monétisant leur attention ou leurs données. S'agissant de patients chroniques, beaucoup déjà fragilisés économiquement par leur invalidité, c'était hors de question.</p>
+          <p class="r-interview-a">La gratuité à vie est inscrite dans les statuts de l'association JOOY, qui édite Respi.info. L'application est portée par une association loi 1901, RGPD-native, hébergée en Europe, conforme aux standards de santé. Et elle le restera, peu importe qui passe.</p>
+        </div>
+      </article>
+
+      <article class="r-interview-block" id="q12">
+        <div class="r-interview-num">12</div>
+        <div>
+          <h3 class="r-interview-q">JOOY est l'association qui édite Respi.info. Vous, vous êtes son fondateur. Comment ça fonctionne ?</h3>
+          <p class="r-interview-a">JOOY est l'éditeur public de Respi.info, comme une rédaction est l'éditeur d'un journal. C'est elle qui prend les engagements vis-à-vis des utilisateurs, qui signe les partenariats, qui assure la continuité du service. Moi, je suis un contributeur. Nous sommes une équipe de bénévoles : patients, soignants, développeurs, designers. Personne n'est rémunéré d'aucune manière à ce jour, mais nous devrons recruter une petite équipe dédiée au support et à la maintenance si l'application continue d'être massivement adoptée. Ce sont les partenariats avec des entreprises mécènes qui le permettront, ainsi que les subventions françaises et européennes que nous espérons obtenir.</p>
+        </div>
+      </article>
+
+      <article class="r-interview-block" id="q13">
+        <div class="r-interview-num">13</div>
+        <div>
+          <h3 class="r-interview-q">Pour qui exactement avez-vous créé Respi.info ?</h3>
+          <p class="r-interview-a">Pour les ~10 millions de Français concernés, leurs proches, et les soignants qui les suivent. Concrètement :</p>
+          <ul>
+            <li><strong>3,5 millions</strong> de patients BPCO (broncho-pneumopathie chronique obstructive)</li>
+            <li><strong>5 millions</strong> d'asthmatiques (dont environ 1 million d'asthme sévère)</li>
+            <li>Patients <strong>fibrose pulmonaire idiopathique, mucoviscidose, hypertension artérielle pulmonaire, apnées du sommeil</strong></li>
+            <li>Personnes <strong>hypersensibles</strong> aux allergènes ou à la pollution sans pathologie diagnostiquée</li>
+            <li>Leurs <strong>aidants</strong> (souvent un conjoint, un enfant adulte, un parent)</li>
+            <li>Les <strong>soignants</strong> qui peuvent recommander l'outil sans engagement réglementaire (pas de dispositif médical, pas de prescription)</li>
+          </ul>
+          <p class="r-interview-a">L'application fonctionne sur ordinateur, smartphone, tablette, sans installation depuis l'App Store ou Google Play. L'utilisateur ouvre <a href="https://www.respi.info" target="_blank" rel="noopener">respi.info</a> et s'inscrit.</p>
+        </div>
+      </article>
+
+      <article class="r-interview-block" id="q14">
+        <div class="r-interview-num">14</div>
+        <div>
+          <h3 class="r-interview-q">Le 5 mai, c'est la Journée mondiale de l'asthme. Pourquoi avoir choisi cette date ?</h3>
+          <p class="r-interview-a">Parce que l'asthme est l'une des pathologies respiratoires les plus courantes, et parce que la qualité de l'air est sa cause environnementale majeure. C'est cohérent. C'est aussi une journée où la presse et les institutions parlent santé respiratoire — un moment où nos messages peuvent toucher.</p>
+          <p class="r-interview-a">Mais Respi.info n'est pas qu'une appli pour asthmatiques. C'est une appli pour tous les patients respiratoires chroniques. Le 5 mai, c'est une porte d'entrée — pas un public cible.</p>
+        </div>
+      </article>
+
+      <article class="r-interview-block" id="q15">
+        <div class="r-interview-num">15</div>
+        <div>
+          <h3 class="r-interview-q">Et après ? Quelle est la suite pour Respi.info ?</h3>
+          <p class="r-interview-a"><strong>À court terme :</strong> faire connaître l'outil. Trouver les patients qui en ont besoin et leurs aidants. C'est notre seule métrique de succès. L'association Santé Respiratoire France nous apporte son soutien actif en ce sens.</p>
+          <p class="r-interview-a"><strong>À moyen terme,</strong> deux pistes que JOOY explore : un module dédié aux <strong>expositions professionnelles</strong> et un <strong>volet européen</strong> pour étendre l'algorithme aux régions frontalières où les données Atmo ne suffisent plus.</p>
+          <p class="r-interview-a"><strong>À long terme,</strong> je voudrais que Respi.info soit recommandée dans le parcours patient en pneumologie et en réadaptation respiratoire, comme un outil légitime, gratuit, sans conflit d'intérêts. Pour cela, il faut continuer à faire les choses bien : référentiels respectés, sources citées, gratuité sanctuarisée.</p>
+        </div>
+      </article>
+
+      <article class="r-interview-block" id="q16">
+        <div class="r-interview-num">16</div>
+        <div>
+          <h3 class="r-interview-q">Un dernier mot ?</h3>
+          <p class="r-interview-a">Si quelqu'un autour de vous vit avec une maladie respiratoire chronique, parlez-lui de Respi.info. L'application est entièrement gratuite, et a été conçue par quelqu'un qui sait, de l'intérieur, ce que respirer mal veut dire.</p>
+          <p class="r-interview-a">Et si vous ne connaissez personne, parlez-en quand même. Statistiquement, vous connaissez quelqu'un — c'est sûr — même s'il ne le dit pas forcément. Les maladies respiratoires sont invisibles, comme l'air.</p>
+        </div>
+      </article>
+
+    </div>
+
+    <div class="callout callout--sauge mt-48">
+      <p><strong>Coordonnées presse.</strong> Vincent Daffourd — fondateur de Respi.info, président de JOOY.info (asso loi 1901), patient expert, ancien vice-président de Santé Respiratoire France (2018-2025).</p>
+      <p>Email : <a href="mailto:daffourd@gmail.com">daffourd@gmail.com</a> · Application : <a href="https://www.respi.info" target="_blank" rel="noopener">www.respi.info</a> · Site informatif : <a href="https://fr.respi.info">fr.respi.info</a> · Communiqué de presse FR/EN : <a href="https://jooy.info/CP_Respi-info_Lancement_2026.pdf" target="_blank" rel="noopener">jooy.info/CP_Respi-info_Lancement_2026.pdf</a></p>
+      <p>Pour une mise en relation médicale : <strong>Dr Frédéric Le Guillou</strong>, président de Santé Respiratoire France, pneumologue de ville (sur demande).</p>
+    </div>
+
+    <div class="r-interview-sources">
+      <p class="r-interview-sources-title">Sources et référentiels cités dans Respi.info</p>
+      <ul>
+        <li><strong>GOLD 2025</strong> — Global Initiative for Chronic Obstructive Lung Disease</li>
+        <li><strong>GINA 2025</strong> — Global Initiative for Asthma</li>
+        <li><strong>HAS</strong> — Haute Autorité de Santé (Plan d'Action Personnalisé)</li>
+        <li><strong>SPLF</strong> — Société de Pneumologie de Langue Française</li>
+        <li><strong>ERS-ATS</strong> — European Respiratory Society / American Thoracic Society</li>
+        <li><strong>Atmo France</strong> — Surveillance de la Qualité de l'Air</li>
+        <li><strong>RNSA</strong> — Réseau National de Surveillance Aérobiologique</li>
+        <li><strong>Copernicus CAMS</strong> — Atmosphere Monitoring Service (UE)</li>
+        <li><strong>Météo-France</strong> — service météorologique national</li>
+      </ul>
+    </div>
+
+    <p class="r-interview-footnote">Interview : reproduction libre dans le cadre d'un article de presse, avec citation de la source <strong>Respi.info</strong>.</p>
   </div>
 </section>
 
