@@ -1479,12 +1479,63 @@ details.faq strong { color: var(--bleu-encre); }
 .r-interview-intro p { margin: 0; font-size: 14.5px; color: var(--texte-doux); line-height: 1.5; }
 
 .r-interview-toc {
-  margin-top: 32px;
   background: var(--fond-creme);
   border: 1px solid rgba(46, 108, 182, 0.08);
   border-radius: 18px;
   padding: 22px 26px;
+  transition: border-color .2s var(--ease), box-shadow .2s var(--ease);
 }
+.r-interview-details {
+  margin-top: 32px;
+}
+.r-interview-details > summary {
+  list-style: none;
+  cursor: pointer;
+  display: block;
+  border-radius: 18px;
+}
+.r-interview-details > summary::-webkit-details-marker { display: none; }
+.r-interview-details > summary::marker { display: none; }
+.r-interview-details > summary:hover .r-interview-toc,
+.r-interview-details > summary:focus-visible .r-interview-toc {
+  border-color: rgba(46, 108, 182, 0.20);
+  box-shadow: 0 8px 24px rgba(46, 108, 182, 0.10);
+}
+.r-interview-details > summary:focus-visible { outline: none; }
+.r-interview-details > summary:focus-visible .r-interview-toc {
+  outline: 2px solid var(--bleu-deep);
+  outline-offset: 3px;
+}
+
+.r-interview-toc-cta {
+  margin-top: 18px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(46, 108, 182, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 14.5px;
+  font-weight: 600;
+  color: var(--bleu-deep);
+  letter-spacing: 0.01em;
+}
+.r-interview-toc-cta-arrow {
+  display: inline-block;
+  width: 18px; height: 18px;
+  border-radius: 50%;
+  background: var(--bleu-deep);
+  color: var(--blanc);
+  font-size: 11px; line-height: 18px;
+  text-align: center;
+  transition: transform .3s var(--ease);
+}
+.r-interview-details[open] .r-interview-toc-cta-arrow {
+  transform: rotate(180deg);
+}
+.r-interview-toc-cta-open { display: none; }
+.r-interview-details[open] .r-interview-toc-cta-closed { display: none; }
+.r-interview-details[open] .r-interview-toc-cta-open { display: inline-flex; align-items: center; gap: 8px; }
 .r-interview-toc-title {
   font-family: var(--serif); font-weight: 600;
   font-size: 18px; color: var(--bleu-encre);

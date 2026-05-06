@@ -16,7 +16,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/styles.css?v=20260506a" />
+  <link rel="stylesheet" href="assets/styles.css?v=20260506b" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -196,29 +196,36 @@
       <p>Le cœur de l'application est un <strong>indice respiratoire personnel</strong> recalculé chaque matin à partir de la qualité de l'air, des pollens, des prévisions météorologiques et du profil pathologique du patient.</p>
     </div>
 
-    <nav class="r-interview-toc" aria-label="Sommaire de l'interview">
-      <p class="r-interview-toc-title">Sommaire de l'interview</p>
-      <ol>
-        <li><a href="#q1">Comment est née Respi.info ?</a></li>
-        <li><a href="#q2">Vous avez codé l'application vous-même ?</a></li>
-        <li><a href="#q3">Comment avez-vous eu cette idée ?</a></li>
-        <li><a href="#q4">JOOY — quinze ans, 150 000 personnes sensibilisées. Quelle est sa mission ?</a></li>
-        <li><a href="#q5">Avant Respi.info, comment un patient pouvait-il avoir ces informations ?</a></li>
-        <li><a href="#q6">Comment fonctionne votre algorithme ? Quelles données croise-t-il ?</a></li>
-        <li><a href="#q7">Et ce n'est pas qu'une boîte noire, vos sources sont visibles ?</a></li>
-        <li><a href="#q8">Pourquoi un module dédié aux proches aidants ?</a></li>
-        <li><a href="#q9">Vous avez intégré le Plan d'Action Personnalisé (PAP). De quoi s'agit-il ?</a></li>
-        <li><a href="#q10">Vous avez aussi pensé à la consultation chez le pneumologue ?</a></li>
-        <li><a href="#q11">Pourquoi tout faire gratuit, sans publicité, sans données vendues ?</a></li>
-        <li><a href="#q12">JOOY édite Respi.info. Comment ça fonctionne ?</a></li>
-        <li><a href="#q13">Pour qui exactement avez-vous créé Respi.info ?</a></li>
-        <li><a href="#q14">Le 5 mai, Journée mondiale de l'asthme : pourquoi cette date ?</a></li>
-        <li><a href="#q15">Et après ? Quelle est la suite pour Respi.info ?</a></li>
-        <li><a href="#q16">Un dernier mot ?</a></li>
-      </ol>
-    </nav>
+    <details class="r-interview-details" id="interview-details">
+      <summary class="r-interview-summary" aria-label="Cliquer pour déplier ou replier l'interview complète">
+        <nav class="r-interview-toc" aria-label="Sommaire de l'interview">
+          <p class="r-interview-toc-title">Sommaire de l'interview</p>
+          <ol>
+            <li><a href="#q1">Comment est née Respi.info ?</a></li>
+            <li><a href="#q2">Vous avez codé l'application vous-même ?</a></li>
+            <li><a href="#q3">Comment avez-vous eu cette idée ?</a></li>
+            <li><a href="#q4">JOOY — quinze ans, 150 000 personnes sensibilisées. Quelle est sa mission ?</a></li>
+            <li><a href="#q5">Avant Respi.info, comment un patient pouvait-il avoir ces informations ?</a></li>
+            <li><a href="#q6">Comment fonctionne votre algorithme ? Quelles données croise-t-il ?</a></li>
+            <li><a href="#q7">Et ce n'est pas qu'une boîte noire, vos sources sont visibles ?</a></li>
+            <li><a href="#q8">Pourquoi un module dédié aux proches aidants ?</a></li>
+            <li><a href="#q9">Vous avez intégré le Plan d'Action Personnalisé (PAP). De quoi s'agit-il ?</a></li>
+            <li><a href="#q10">Vous avez aussi pensé à la consultation chez le pneumologue ?</a></li>
+            <li><a href="#q11">Pourquoi tout faire gratuit, sans publicité, sans données vendues ?</a></li>
+            <li><a href="#q12">JOOY édite Respi.info. Comment ça fonctionne ?</a></li>
+            <li><a href="#q13">Pour qui exactement avez-vous créé Respi.info ?</a></li>
+            <li><a href="#q14">Le 5 mai, Journée mondiale de l'asthme : pourquoi cette date ?</a></li>
+            <li><a href="#q15">Et après ? Quelle est la suite pour Respi.info ?</a></li>
+            <li><a href="#q16">Un dernier mot ?</a></li>
+          </ol>
+          <div class="r-interview-toc-cta">
+            <span class="r-interview-toc-cta-closed">Lire l'interview complète <span class="r-interview-toc-cta-arrow" aria-hidden="true">▾</span></span>
+            <span class="r-interview-toc-cta-open">Replier l'interview <span class="r-interview-toc-cta-arrow" aria-hidden="true">▾</span></span>
+          </div>
+        </nav>
+      </summary>
 
-    <div class="r-interview-list">
+      <div class="r-interview-list">
 
       <article class="r-interview-block" id="q1">
         <div class="r-interview-num">01</div>
@@ -408,6 +415,7 @@
     </div>
 
     <p class="r-interview-footnote">Interview : reproduction libre dans le cadre d'un article de presse, avec citation de la source <strong>Respi.info</strong>.</p>
+    </details>
   </div>
 </section>
 
@@ -513,5 +521,30 @@
 </footer>
 
 <script src="assets/nav.js?v=20260502b"></script>
+<script>
+  (function () {
+    var det = document.getElementById('interview-details');
+    if (!det) return;
+    // Cliquer sur une ancre du sommaire ne doit PAS replier le bloc, juste l'ouvrir et naviguer
+    det.querySelectorAll('summary a[href^="#q"]').forEach(function (a) {
+      a.addEventListener('click', function (e) {
+        e.stopPropagation();
+        if (!det.open) det.open = true;
+      });
+    });
+    // Si on arrive avec un permalien #q5, déplier automatiquement
+    function openIfHashMatches() {
+      if (/^#q\d+$/.test(location.hash)) {
+        if (!det.open) det.open = true;
+        setTimeout(function () {
+          var t = document.querySelector(location.hash);
+          if (t) t.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }, 80);
+      }
+    }
+    openIfHashMatches();
+    window.addEventListener('hashchange', openIfHashMatches);
+  })();
+</script>
 </body>
 </html>
