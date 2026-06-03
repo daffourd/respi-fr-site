@@ -102,7 +102,7 @@ Reprend exactement la palette de l'app et de l'affiche A4 :
 | `--bleu-deep` | `#2E6CB6` | CTA, accents serif italique |
 | `--bleu-nuit` | `#0D1B2A` | Fond mockup iPhone, bandeau stores |
 | `--sauge-deep` | `#5B8B75` | Pilier Coach, callouts positifs |
-| `--ambre` | `#E8A83F` | Score météo, badges "Bientôt" |
+| `--ambre` | `#E8A83F` | Score météo, accent secondaire |
 | `--corail` | `#E07856` | Accent secondaire |
 
 Typo :
