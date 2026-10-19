@@ -635,6 +635,8 @@ if (!erreurs.length) {
       description: `Articles de fond et conseils pratiques Respi.info sur la thématique ${THEMATIQUES[t]}, rédigés à partir de sources officielles et sans conseil médical individuel.`.slice(0, 160),
     });
   }
+  // Copie de sécurité : /actualites est servi par actualites.html (cleanUrls) ou, à défaut, par le dossier actualites/
+  sorties.set("actualites/index.html", sorties.get("actualites.html"));
   sorties.set("rss.xml", rss(publies));
   const derniere = publies[0] ? isoParis(publies[0].mis_a_jour && publies[0].mis_a_jour > publies[0].date ? publies[0].mis_a_jour : publies[0].date, publies[0].heure) : null;
   sorties.set("actualites/index.json", JSON.stringify({
