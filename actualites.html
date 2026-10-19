@@ -50,7 +50,18 @@
       },
       "mainEntity": {
         "@type": "ItemList",
-        "itemListElement": []
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "url": "https://fr.respi.info/actualites/2026-10-19-aerer-logement-automne-qualite-air"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "url": "https://fr.respi.info/actualites/2026-10-19-vaccination-grippe-covid-2026-2027"
+          }
+        ]
       }
     },
     {
@@ -127,13 +138,27 @@
     <nav class="r-filtres" aria-label="Filtrer les articles">
       <p class="r-filtres-titre">Type d'article</p>
       <ul class="r-tags"><li><a href="/actualites" aria-current="page">Tous les articles</a></li><li><a href="/actualites/type/fond">Articles de fond</a></li><li><a href="/actualites/type/pratique">Conseils pratiques</a></li></ul>
-      
+      <p class="r-filtres-titre">Thématiques</p>
+      <ul class="r-tags"><li><a href="/actualites/theme/bpco">BPCO</a></li><li><a href="/actualites/theme/asthme">Asthme</a></li><li><a href="/actualites/theme/qualite-air">Qualité de l'air</a></li><li><a href="/actualites/theme/traitements">Traitements</a></li><li><a href="/actualites/theme/vie-quotidienne">Vie quotidienne</a></li></ul>
     </nav>
   </div>
 </section>
 <section class="section">
   <div class="section-inner">
-    <div class="r-vide"><p><strong>Les premiers articles arrivent très bientôt.</strong></p><p>Chaque jour, un article de fond le matin et un conseil pratique l'après-midi.</p></div>
+    <div class="r-cards-grid r-actu-grid">
+    <article class="r-card r-actu-card">
+      <span class="r-badge r-badge--pratique">Conseil pratique</span>
+      <h2><a href="/actualites/2026-10-19-aerer-logement-automne-qualite-air">Aérer son logement en automne selon la qualité de l'air</a></h2>
+      <p>Avec le retour du chauffage, l'air intérieur se charge vite. Combien de temps aérer, à quel moment de la journée, et comment tenir compte de la pollution.</p>
+      <p class="r-meta"><time datetime="2026-10-19">19 octobre 2026</time><span>2 min de lecture</span><span>Qualité de l'air, Vie quotidienne</span></p>
+    </article>
+    <article class="r-card r-actu-card">
+      <span class="r-badge">Article de fond</span>
+      <h2><a href="/actualites/2026-10-19-vaccination-grippe-covid-2026-2027">Grippe et Covid : la vaccination 2026-2027 expliquée</a></h2>
+      <p>La campagne de vaccination contre la grippe et le Covid-19 a démarré le 13 octobre 2026. Qui est concerné, où se faire vacciner, et pourquoi ne pas attendre.</p>
+      <p class="r-meta"><time datetime="2026-10-19">19 octobre 2026</time><span>5 min de lecture</span><span>BPCO, Asthme, Traitements</span></p>
+    </article>
+    </div>
     <p class="r-charte-ligne">Ces articles informent et ne remplacent pas l'avis de ton médecin ou de ton équipe soignante. En cas d'aggravation brutale de ta respiration, appelle le <strong>15</strong>.</p>
   </div>
 </section>
@@ -144,7 +169,7 @@
   <div class="site-footer-inner">
     <div>
       <a href="/" class="brand" style="margin-bottom: 16px;">
-        <img src="/assets/logo-76.png" alt="" width="38" height="38" style="filter: brightness(0) invert(1);" />
+        <img src="/assets/logo-76.png" alt="" width="38" height="38" />
         <span class="brand-txt" style="color: #fff;">Respi.info<small style="color: rgba(255,255,255,0.75);">Respirer mieux, vivre plus</small></span>
       </a>
       <p class="baseline">

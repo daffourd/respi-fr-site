@@ -1,0 +1,25 @@
+{
+  "article": "2026-10-19-aerer-logement-automne-qualite-air",
+  "verdict": "PUBLIER",
+  "sha256": "adeabe4419ba6e28054d5bbcfab9504adcbfe62adc706259edfa4285043933af",
+  "relu_le": "2026-10-19T07:00:00+02:00",
+  "relecteur": "Vérification lors de la création de la rubrique (articles d amorçage) : chaque source ouverte le 19 octobre 2026 et confrontée au texte.",
+  "sources_verifiees": [
+    {
+      "url": "https://sante.fr/comment-aerer-son-logement-pour-ameliorer-lair-interieur",
+      "ok": true,
+      "constat": "5 à 10 minutes tous les jours en ouvrant grand ; après la douche, ménage, cuisine, bricolage ; en épisode de pollution aérer tôt le matin ou tard le soir ; baisser les radiateurs sous les fenêtres."
+    },
+    {
+      "url": "https://www.santepubliquefrance.fr/air-et-environnements-interieurs/comment-peut-reduire-les-polluants-de-lair-interieur",
+      "ok": true,
+      "constat": "Aérer au moins 10 minutes par jour hiver comme été ; ne pas boucher les entrées d air ; limiter produits ménagers, désodorisants, encens, bougies ; sécher le linge dehors ; ne pas fumer ; entretien annuel du chauffage."
+    },
+    {
+      "url": "https://www.atmo-france.org/article/lindice-atmo",
+      "ok": true,
+      "constat": "Six classes de bon à extrêmement mauvais ; calcul par commune ou intercommunalité ; prévision du jour et du lendemain publiée chaque jour à 14 h."
+    }
+  ],
+  "corrections": []
+}

@@ -37,3 +37,7 @@
 .r-charte ul { padding-left: 1.3em; }
 .r-charte li { margin: 0.35em 0; }
 @media (max-width: 640px) { .r-article { font-size: 17px; } }
+.r-article a.btn { text-decoration: none; }
+.r-article a.btn.primary, .r-article a.btn.primary:hover { color: var(--blanc); }
+.r-article a.btn.secondary { color: var(--bleu-encre); }
+#lies-titre { font-size: clamp(28px, 4vw, 40px); margin-bottom: 8px; }

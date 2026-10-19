@@ -1,0 +1,598 @@
+{
+  "version": 1,
+  "maj": "2026-10-19",
+  "usage": "Calendrier lu par les robots de la rubrique Actualités. Voir scripts/REDACTION-ACTUALITES.md, section Calendrier éditorial. Seuls les événements au statut confirme réservent un créneau ; un événement a_confirmer doit être vérifié sur sa source avant toute mention de date.",
+  "evenements": [
+    {
+      "id": "vaccination-grippe-covid-2026-2027",
+      "nom": "Campagne de vaccination contre la grippe et le Covid-19 2026-2027",
+      "date_debut": "2026-10-13",
+      "date_fin": "2027-01-31",
+      "statut": "a_confirmer",
+      "a_verifier": "Date de début confirmée (13 octobre 2026) ; date de fin non publiée : vérifier sur ameli.fr ou santepubliquefrance.fr avant toute mention.",
+      "source_url": "https://www.pour-les-personnes-agees.gouv.fr/actualites/lancement-de-la-campagne-de-vaccination-2026-contre-la-grippe-et-le-covid-19",
+      "angle": "Campagne ouverte depuis le 13 octobre 2026 : rappeler la vaccination des personnes atteintes de maladie respiratoire chronique au fil des bulletins épidémiques de l'hiver.",
+      "thematiques": [
+        "bpco",
+        "asthme",
+        "traitements"
+      ],
+      "sequence": {
+        "j_moins_7": null,
+        "jour_j_fond": null,
+        "jour_j_pratique": null,
+        "suite_pratiques": []
+      }
+    },
+    {
+      "id": "mois-sans-tabac-2026",
+      "nom": "Mois sans tabac 2026 (11e édition)",
+      "date_debut": "2026-11-01",
+      "date_fin": "2026-11-30",
+      "statut": "confirme",
+      "source_url": "https://www.santepubliquefrance.fr/sites/default/files/2026-10/cp_mois-sans-tabac_20261001.pdf",
+      "angle": "Le tabac, première cause de BPCO : ce que l'arrêt change pour le souffle, et des gestes concrets chaque lundi de novembre.",
+      "thematiques": [
+        "bpco",
+        "vie-quotidienne",
+        "activite-physique"
+      ],
+      "messages_cles": [
+        "Rappeler dans chaque article de la séquence le 39 89 (Tabac info service, service gratuit) et le site https://www.tabac-info-service.fr"
+      ],
+      "sequence": {
+        "j_moins_7": {
+          "type": "pratique",
+          "sujet": "Mois sans tabac dans une semaine : préparer son arrêt et savoir où trouver de l'aide"
+        },
+        "jour_j_fond": {
+          "sujet": "Ce que l'arrêt du tabac change pour les poumons, semaine après semaine"
+        },
+        "jour_j_pratique": null,
+        "suite_pratiques": [
+          {
+            "date": "2026-11-02",
+            "sujet": "Envies de fumer : des gestes simples pour passer le cap"
+          },
+          {
+            "date": "2026-11-09",
+            "sujet": "Arrêt du tabac et sommeil : retrouver des nuits plus calmes"
+          },
+          {
+            "date": "2026-11-16",
+            "sujet": "Bouger un peu chaque jour pour soutenir son arrêt du tabac"
+          },
+          {
+            "date": "2026-11-23",
+            "sujet": "Essoufflement après l'arrêt du tabac : ce qui est normal et ce qui doit alerter"
+          },
+          {
+            "date": "2026-11-30",
+            "sujet": "Après le Mois sans tabac : tenir dans la durée et demander de l'aide"
+          }
+        ]
+      }
+    },
+    {
+      "id": "journee-mondiale-bpco-2026",
+      "nom": "Journée mondiale de la BPCO 2026 (25e édition)",
+      "date": "2026-11-18",
+      "statut": "confirme",
+      "source_url": "https://goldcopd.org/world-copd-day-2026/",
+      "angle": "Thème GOLD 2026 « Early Diagnosis and Management for a Better Life » (diagnostic et prise en charge précoces pour une vie meilleure) ; le même jour, relais en ligne Big Baton Pass de 24 heures.",
+      "thematiques": [
+        "bpco"
+      ],
+      "sequence": {
+        "j_moins_7": {
+          "type": "pratique",
+          "sujet": "Journée mondiale de la BPCO dans une semaine : les questions à poser sur son souffle"
+        },
+        "jour_j_fond": {
+          "sujet": "BPCO : repérer les signes tôt"
+        },
+        "jour_j_pratique": {
+          "sujet": "Préparer sa consultation avec un journal de symptômes"
+        },
+        "suite_pratiques": []
+      }
+    },
+    {
+      "id": "rencontres-bpco-splf-2026",
+      "nom": "3es Rencontres annuelles de la BPCO (SPLF), Pessac",
+      "date": "2026-12-04",
+      "statut": "confirme",
+      "source_url": "https://splf.fr/produit/caution-pour-linscription-aux-rencontres-annuelles-de-la-bpco-2026/",
+      "angle": "Événement pour les professionnels : pas d'article dédié, mention possible dans un article de fond si des recommandations nouvelles sont publiées.",
+      "thematiques": [
+        "bpco",
+        "recherche"
+      ],
+      "sequence": {
+        "j_moins_7": null,
+        "jour_j_fond": null,
+        "jour_j_pratique": null,
+        "suite_pratiques": []
+      }
+    },
+    {
+      "id": "cplf-2027",
+      "nom": "Congrès de pneumologie de langue française 2027 (SPLF)",
+      "date": "2027-01-28",
+      "statut": "a_confirmer",
+      "a_verifier": "Date non publiée au 19 octobre 2026 (fin janvier d'habitude) : vérifier sur splf.fr.",
+      "source_url": "https://splf.fr/",
+      "angle": "Retour sur les annonces du congrès utiles aux patients, seulement si une source officielle les publie.",
+      "thematiques": [
+        "recherche"
+      ],
+      "sequence": {
+        "j_moins_7": null,
+        "jour_j_fond": {
+          "sujet": "Congrès français de pneumologie : ce qui peut changer pour les patients"
+        },
+        "jour_j_pratique": null,
+        "suite_pratiques": []
+      }
+    },
+    {
+      "id": "saison-pollens-2027",
+      "nom": "Début des saisons polliniques 2027 (cyprès dans le Sud, puis aulne, bouleau, graminées)",
+      "date_debut": "2027-01-15",
+      "date_fin": "2027-04-30",
+      "statut": "a_confirmer",
+      "a_verifier": "Dates à caler sur les premiers bulletins des associations agréées (le RNSA a été liquidé, surveillance confiée aux AASQA).",
+      "source_url": "https://www.atmo-france.org/article/indice-pollen",
+      "angle": "Saison des pollens : lire l'indice pollen des associations agréées et adapter ses sorties et l'aération du logement.",
+      "thematiques": [
+        "pollens",
+        "allergies",
+        "asthme"
+      ],
+      "sequence": {
+        "j_moins_7": null,
+        "jour_j_fond": {
+          "sujet": "Saison des pollens 2027 : comment fonctionne l'indice pollen"
+        },
+        "jour_j_pratique": {
+          "sujet": "Pollens de cyprès : les gestes de la saison dans le Sud"
+        },
+        "suite_pratiques": []
+      }
+    },
+    {
+      "id": "maladies-rares-2027",
+      "nom": "Journée internationale des maladies rares",
+      "date": "2027-02-28",
+      "statut": "confirme",
+      "source_url": "https://www.rarediseaseday.org/",
+      "angle": "Fibrose pulmonaire, HTAP, mucoviscidose : vivre avec une maladie pulmonaire rare.",
+      "thematiques": [
+        "fibrose",
+        "htap",
+        "mucoviscidose"
+      ],
+      "sequence": {
+        "j_moins_7": null,
+        "jour_j_fond": {
+          "sujet": "Maladies pulmonaires rares : comment fonctionnent les centres de référence en France"
+        },
+        "jour_j_pratique": {
+          "sujet": "Maladie pulmonaire rare : préparer ses rendez-vous au centre de référence"
+        },
+        "suite_pratiques": []
+      }
+    },
+    {
+      "id": "journee-sommeil-2027",
+      "nom": "Journée mondiale du sommeil 2027",
+      "date": "2027-03-19",
+      "statut": "a_confirmer",
+      "a_verifier": "Vendredi précédant l'équinoxe de printemps : date 2027 à vérifier sur worldsleepday.org en janvier 2027.",
+      "source_url": "https://worldsleepday.org/",
+      "angle": "Sommeil et maladies respiratoires : apnées, toux nocturne, routine du soir.",
+      "thematiques": [
+        "vie-quotidienne"
+      ],
+      "sequence": {
+        "j_moins_7": null,
+        "jour_j_fond": null,
+        "jour_j_pratique": {
+          "sujet": "Mieux dormir avec une maladie respiratoire : la routine du soir"
+        },
+        "suite_pratiques": []
+      }
+    },
+    {
+      "id": "journee-tuberculose-2027",
+      "nom": "Journée mondiale de la tuberculose",
+      "date": "2027-03-24",
+      "statut": "confirme",
+      "source_url": "https://www.who.int/campaigns/world-tb-day",
+      "angle": "Angle secondaire : santé respiratoire mondiale et accès aux soins.",
+      "thematiques": [
+        "recherche"
+      ],
+      "sequence": {
+        "j_moins_7": null,
+        "jour_j_fond": {
+          "sujet": "Tuberculose : où en est la maladie dans le monde et en France"
+        },
+        "jour_j_pratique": null,
+        "suite_pratiques": []
+      }
+    },
+    {
+      "id": "journee-sante-2027",
+      "nom": "Journée mondiale de la santé (OMS)",
+      "date": "2027-04-07",
+      "statut": "confirme",
+      "source_url": "https://www.who.int/campaigns/world-health-day",
+      "angle": "Selon le thème 2027 de l'OMS, publié en début d'année : le relier à la santé respiratoire.",
+      "thematiques": [
+        "recherche"
+      ],
+      "sequence": {
+        "j_moins_7": null,
+        "jour_j_fond": {
+          "sujet": "Journée mondiale de la santé 2027 : ce que le thème de l'OMS change pour les patients respiratoires"
+        },
+        "jour_j_pratique": null,
+        "suite_pratiques": []
+      }
+    },
+    {
+      "id": "journee-asthme-2027",
+      "nom": "Journée mondiale de l'asthme 2027 (GINA)",
+      "date": "2027-05-04",
+      "statut": "confirme",
+      "source_url": "https://ginasthma.org/",
+      "angle": "Asthme et pollens : plan d'action écrit, repérage des signes de perte de contrôle.",
+      "thematiques": [
+        "asthme",
+        "pollens"
+      ],
+      "sequence": {
+        "j_moins_7": {
+          "type": "pratique",
+          "sujet": "Saison des pollens et asthme : vérifier que son plan d'action est à jour"
+        },
+        "jour_j_fond": {
+          "sujet": "Journée mondiale de l'asthme : le thème 2027 et ce qu'il change au quotidien"
+        },
+        "jour_j_pratique": {
+          "sujet": "Inhalateur : les erreurs fréquentes à faire vérifier par son pharmacien ou son médecin"
+        },
+        "suite_pratiques": []
+      }
+    },
+    {
+      "id": "journee-htap-2027",
+      "nom": "Journée mondiale de l'HTAP et premier anniversaire de Respi.info",
+      "date": "2027-05-05",
+      "statut": "confirme",
+      "source_url": "https://worldphday.org/",
+      "angle": "HTAP et maladies rares ; un an après le lancement de l'application (5 mai 2026).",
+      "thematiques": [
+        "htap"
+      ],
+      "sequence": {
+        "j_moins_7": null,
+        "jour_j_fond": {
+          "sujet": "HTAP : reconnaître l'essoufflement qui doit faire consulter"
+        },
+        "jour_j_pratique": {
+          "sujet": "Fatigue et HTAP : organiser ses journées pour garder de l'énergie"
+        },
+        "suite_pratiques": []
+      }
+    },
+    {
+      "id": "journee-sans-tabac-2027",
+      "nom": "Journée mondiale sans tabac (OMS)",
+      "date": "2027-05-31",
+      "statut": "confirme",
+      "source_url": "https://www.who.int/campaigns/world-no-tobacco-day",
+      "angle": "Arrêter le tabac, c'est protéger son souffle ; rappeler le 39 89.",
+      "thematiques": [
+        "bpco",
+        "vie-quotidienne"
+      ],
+      "messages_cles": [
+        "Rappeler le 39 89 (Tabac info service, service gratuit)"
+      ],
+      "sequence": {
+        "j_moins_7": null,
+        "jour_j_fond": {
+          "sujet": "Tabac et poumons : ce que montrent les données les plus récentes"
+        },
+        "jour_j_pratique": {
+          "sujet": "Aider un proche à arrêter de fumer sans le culpabiliser"
+        },
+        "suite_pratiques": []
+      }
+    },
+    {
+      "id": "ozone-ete-2027",
+      "nom": "Épisodes d'ozone et de chaleur de l'été 2027",
+      "date_debut": "2027-06-01",
+      "date_fin": "2027-08-31",
+      "statut": "a_confirmer",
+      "a_verifier": "Publier seulement le jour d'une alerte réelle, vérifiée sur le site de l'association agréée de la région.",
+      "source_url": "https://www.atmo-france.org/actualite/qualite-de-lair-en-france-en-2025-les-chiffres-cles-du-bilan-ministeriel",
+      "angle": "Pic d'ozone : gestes du jour adaptés aux personnes respiratoires, en réaction aux alertes des associations agréées.",
+      "thematiques": [
+        "qualite-air",
+        "bpco",
+        "asthme"
+      ],
+      "sequence": {
+        "j_moins_7": null,
+        "jour_j_fond": null,
+        "jour_j_pratique": {
+          "sujet": "Pic d'ozone : adapter ses sorties et son activité"
+        },
+        "suite_pratiques": []
+      }
+    },
+    {
+      "id": "journee-environnement-2027",
+      "nom": "Journée mondiale de l'environnement (ONU)",
+      "date": "2027-06-05",
+      "statut": "confirme",
+      "source_url": "https://www.worldenvironmentday.global/",
+      "angle": "Pollution de l'air et santé respiratoire.",
+      "thematiques": [
+        "qualite-air"
+      ],
+      "sequence": {
+        "j_moins_7": null,
+        "jour_j_fond": {
+          "sujet": "Pollution de l'air et santé respiratoire : les chiffres clés en France"
+        },
+        "jour_j_pratique": {
+          "sujet": "Réduire la pollution de l'air intérieur chez soi, pièce par pièce"
+        },
+        "suite_pratiques": []
+      }
+    },
+    {
+      "id": "journees-ambroisies-2027",
+      "nom": "Journées de lutte contre les ambroisies",
+      "date_debut": "2027-06-15",
+      "date_fin": "2027-06-30",
+      "statut": "confirme",
+      "source_url": "https://ambroisie-risque.info/",
+      "angle": "Avant la saison de l'ambroisie (fin d'été) : reconnaître la plante et se préparer.",
+      "thematiques": [
+        "pollens",
+        "allergies"
+      ],
+      "sequence": {
+        "j_moins_7": null,
+        "jour_j_fond": {
+          "sujet": "Ambroisie : pourquoi son pollen est si allergisant"
+        },
+        "jour_j_pratique": {
+          "sujet": "Reconnaître l'ambroisie et signaler un plant"
+        },
+        "suite_pratiques": []
+      }
+    },
+    {
+      "id": "journee-air-pur-2027",
+      "nom": "Journée internationale de l'air pur pour des ciels bleus (ONU)",
+      "date": "2027-09-07",
+      "statut": "confirme",
+      "source_url": "https://www.eeas.europa.eu/eeas/nous-sommes-ce-que-nous-respirons-la-toute-premi%C3%A8re-journ%C3%A9e-internationale-de-lair-pur-pour_fr",
+      "angle": "Rendre la donnée de qualité de l'air utile au quotidien des personnes fragiles.",
+      "thematiques": [
+        "qualite-air"
+      ],
+      "sequence": {
+        "j_moins_7": null,
+        "jour_j_fond": {
+          "sujet": "Qualité de l'air : comprendre l'indice ATMO de sa commune"
+        },
+        "jour_j_pratique": {
+          "sujet": "Consulter la qualité de l'air avant de sortir : le bon réflexe du matin"
+        },
+        "suite_pratiques": []
+      }
+    },
+    {
+      "id": "congres-ers-2027",
+      "nom": "Congrès de la Société européenne de pneumologie (ERS), Milan",
+      "date_debut": "2027-09-11",
+      "date_fin": "2027-09-14",
+      "statut": "confirme",
+      "source_url": "https://www.ersnet.org/congress-and-events/congress/",
+      "angle": "Événement pour les professionnels : article de fond possible après le congrès si une source officielle publie des résultats utiles aux patients.",
+      "thematiques": [
+        "recherche"
+      ],
+      "sequence": {
+        "j_moins_7": null,
+        "jour_j_fond": null,
+        "jour_j_pratique": null,
+        "suite_pratiques": []
+      }
+    },
+    {
+      "id": "journee-qualite-air-2027",
+      "nom": "Journée nationale de la qualité de l'air",
+      "date": "2027-09-15",
+      "statut": "a_confirmer",
+      "a_verifier": "En général en septembre : date 2027 à vérifier en juin 2027.",
+      "source_url": "https://www.ecologie.gouv.fr/rendez-vous/jnqa",
+      "angle": "Qualité de l'air : un outil gratuit pour les personnes fragiles.",
+      "thematiques": [
+        "qualite-air"
+      ],
+      "sequence": {
+        "j_moins_7": null,
+        "jour_j_fond": null,
+        "jour_j_pratique": {
+          "sujet": "Aérer son logement selon la qualité de l'air extérieur"
+        },
+        "suite_pratiques": []
+      }
+    },
+    {
+      "id": "semaine-fpi-2027",
+      "nom": "Semaine mondiale de sensibilisation à la fibrose pulmonaire idiopathique",
+      "date": "2027-09-20",
+      "statut": "a_confirmer",
+      "a_verifier": "Site officiel inaccessible le 19 octobre 2026 : vérifier la date.",
+      "source_url": "https://www.eu-pff.org/",
+      "angle": "Fibrose pulmonaire : suivi quotidien et soutien des aidants.",
+      "thematiques": [
+        "fibrose",
+        "aidants"
+      ],
+      "sequence": {
+        "j_moins_7": null,
+        "jour_j_fond": {
+          "sujet": "Fibrose pulmonaire idiopathique : les repères pour les patients et leurs proches"
+        },
+        "jour_j_pratique": null,
+        "suite_pratiques": []
+      }
+    },
+    {
+      "id": "virades-2027",
+      "nom": "Virades de l'espoir (Vaincre la Mucoviscidose)",
+      "date": "2027-09-25",
+      "statut": "a_confirmer",
+      "a_verifier": "Dernier week-end de septembre en général : vérifier la date 2027 en juin 2027.",
+      "source_url": "https://www.vaincrelamuco.org/agir-ensemble/evenement/les-virades-de-lespoir",
+      "angle": "Mucoviscidose : suivi quotidien et place des aidants.",
+      "thematiques": [
+        "mucoviscidose",
+        "aidants"
+      ],
+      "sequence": {
+        "j_moins_7": null,
+        "jour_j_fond": null,
+        "jour_j_pratique": {
+          "sujet": "Mucoviscidose : organiser la kinésithérapie respiratoire au quotidien"
+        },
+        "suite_pratiques": []
+      }
+    },
+    {
+      "id": "journee-poumon-2027",
+      "nom": "Journée mondiale du poumon (FIRS)",
+      "date": "2027-09-25",
+      "statut": "confirme",
+      "source_url": "https://www.ersnet.org/news-and-features/news/firs-marks-world-lung-day-with-global-lung-health-campaigns-and-practical-tips-for-everyone/",
+      "angle": "Gestes simples pour protéger ses poumons chaque jour.",
+      "thematiques": [
+        "vie-quotidienne",
+        "activite-physique"
+      ],
+      "sequence": {
+        "j_moins_7": null,
+        "jour_j_fond": {
+          "sujet": "Journée mondiale du poumon : protéger ses poumons à tout âge"
+        },
+        "jour_j_pratique": {
+          "sujet": "Quatre minutes de respiration par jour : une routine simple"
+        },
+        "suite_pratiques": []
+      }
+    },
+    {
+      "id": "journee-aidants-2027",
+      "nom": "Journée nationale des aidants",
+      "date": "2027-10-06",
+      "statut": "confirme",
+      "source_url": "https://www.pour-les-personnes-agees.gouv.fr/actualites/6-octobre-2026-journee-nationale-des-aidants",
+      "angle": "Proches aidants de patients respiratoires : reconnaître l'épuisement, trouver du relais.",
+      "thematiques": [
+        "aidants"
+      ],
+      "sequence": {
+        "j_moins_7": null,
+        "jour_j_fond": {
+          "sujet": "Aidants de patients respiratoires : reconnaître l'épuisement et trouver du relais"
+        },
+        "jour_j_pratique": {
+          "sujet": "Partager des nouvelles de son souffle avec ses proches sans s'épuiser"
+        },
+        "suite_pratiques": []
+      }
+    },
+    {
+      "id": "vaccination-grippe-covid-2027-2028",
+      "nom": "Lancement de la campagne de vaccination grippe et Covid-19 2027-2028",
+      "date": "2027-10-12",
+      "statut": "a_confirmer",
+      "a_verifier": "2026 : 13 octobre. Vérifier la date 2027 en septembre 2027 sur ameli.fr ou sante.gouv.fr.",
+      "source_url": "https://www.ameli.fr/assure/sante/themes/grippe/vaccination-grippe",
+      "angle": "Se préparer à l'hiver avec une BPCO ou un asthme.",
+      "thematiques": [
+        "bpco",
+        "asthme",
+        "traitements"
+      ],
+      "sequence": {
+        "j_moins_7": null,
+        "jour_j_fond": {
+          "sujet": "Vaccination grippe et Covid 2027-2028 : ce qui change pour les patients respiratoires"
+        },
+        "jour_j_pratique": {
+          "sujet": "Vaccination de l'automne : préparer son rendez-vous en pharmacie ou chez son médecin"
+        },
+        "suite_pratiques": []
+      }
+    },
+    {
+      "id": "mois-sans-tabac-2027",
+      "nom": "Mois sans tabac 2027",
+      "date_debut": "2027-11-01",
+      "date_fin": "2027-11-30",
+      "statut": "a_confirmer",
+      "a_verifier": "Confirmer au communiqué de Santé publique France d'octobre 2027.",
+      "source_url": "https://www.santepubliquefrance.fr/",
+      "angle": "Arrêt du tabac et souffle retrouvé ; reprendre la séquence de 2026 en la renouvelant.",
+      "thematiques": [
+        "bpco",
+        "vie-quotidienne"
+      ],
+      "messages_cles": [
+        "Rappeler le 39 89 (Tabac info service, service gratuit)"
+      ],
+      "sequence": {
+        "j_moins_7": null,
+        "jour_j_fond": {
+          "sujet": "Mois sans tabac 2027 : pourquoi il n'est jamais trop tard pour les poumons"
+        },
+        "jour_j_pratique": null,
+        "suite_pratiques": []
+      }
+    },
+    {
+      "id": "journee-mondiale-bpco-2027",
+      "nom": "Journée mondiale de la BPCO 2027",
+      "date": "2027-11-17",
+      "statut": "a_confirmer",
+      "a_verifier": "3e mercredi de novembre en général : confirmer sur goldcopd.org à l'automne 2027.",
+      "source_url": "https://goldcopd.org/world-copd-day/",
+      "angle": "Thème GOLD 2027, à publier par GOLD.",
+      "thematiques": [
+        "bpco"
+      ],
+      "sequence": {
+        "j_moins_7": null,
+        "jour_j_fond": {
+          "sujet": "Journée mondiale de la BPCO 2027 : le thème de l'année expliqué"
+        },
+        "jour_j_pratique": {
+          "sujet": "BPCO : faire le point sur son plan d'action avant l'hiver"
+        },
+        "suite_pratiques": []
+      }
+    }
+  ]
+}

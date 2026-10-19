@@ -1,0 +1,30 @@
+{
+  "article": "2026-10-19-vaccination-grippe-covid-2026-2027",
+  "verdict": "PUBLIER",
+  "sha256": "599e9edff70c59f5f1c1e7cca60ed1e1cd5e28f32d3ecc2d52bd7f0c88ad5ff4",
+  "relu_le": "2026-10-19T07:00:00+02:00",
+  "relecteur": "Vérification lors de la création de la rubrique (articles d amorçage) : chaque source ouverte le 19 octobre 2026 et confrontée au texte.",
+  "sources_verifiees": [
+    {
+      "url": "https://www.ameli.fr/assure/sante/themes/grippe/vaccination-grippe",
+      "ok": true,
+      "constat": "Campagne grippe à partir du 13 octobre 2026 en métropole ; maladies respiratoires chroniques (asthme, BPCO, mucoviscidose) dans les publics recommandés ; bon de prise en charge ; vaccinateurs ; deux vaccins en une même séance, pas de délai minimal sinon ; report en cas de fièvre."
+    },
+    {
+      "url": "https://vaccination-info-service.fr/Les-maladies-et-leurs-vaccins/Covid-19",
+      "ok": true,
+      "constat": "65 ans et plus et personnes à risque (pathologies pulmonaires citées) ; délai minimum de 6 mois, 3 mois pour 80 ans et plus, immunodéprimés et très haut risque ; co-administration possible ; page mise à jour le 16/10/2026."
+    },
+    {
+      "url": "https://www.pour-les-personnes-agees.gouv.fr/actualites/lancement-de-la-campagne-de-vaccination-2026-contre-la-grippe-et-le-covid-19",
+      "ok": true,
+      "constat": "Campagne ouverte à partir du 13 octobre 2026 ; gratuité de la vaccination Covid-19 pour toute personne ; médecins, infirmiers, pharmaciens et sages-femmes peuvent vacciner ; mise à jour du 08/10/2026."
+    },
+    {
+      "url": "https://www.sante.fr/node/1240224",
+      "ok": true,
+      "constat": "Vaccination essentielle pour les personnes à risque de forme grave ; une seule injection ; protection atteinte dans les deux semaines ; efficacité variable d une année à l autre."
+    }
+  ],
+  "corrections": []
+}
