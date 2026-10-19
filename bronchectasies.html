@@ -3,28 +3,49 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Bronchectasies / DDB : application gratuite Respi.info — drainage et exacerbations</title>
-  <meta name="description" content="Application gratuite pour vivre avec une bronchectasie ou une dilatation des bronches (DDB) : suivi du drainage, alerte précoce d'exacerbation, coach respiratoire encourageant, partage avec ton pneumologue." />
+  <title>Bronchectasies (DDB) : application gratuite | Respi.info</title>
+  <meta name="description" content="Bronchectasies (DDB) : rappels de drainage, journal des expectorations et repérage des exacerbations à signaler. Application gratuite, sans pub." />
   <meta property="og:title" content="Bronchectasies / DDB : application gratuite Respi.info" />
   <meta property="og:description" content="Suivi du drainage, repérage des exacerbations, coach kiné respi. Pour les patients DDB / bronchectasies." />
   <meta property="og:url" content="https://fr.respi.info/bronchectasies" />
-  <meta property="og:image" content="assets/logo-512.png" />
+  <meta property="og:image" content="https://fr.respi.info/assets/og/site.png" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Bronchectasies / DDB : application gratuite Respi.info" />
   <meta name="twitter:description" content="Suivi du drainage, repérage des exacerbations, coach kiné respi. Pour les patients DDB / bronchectasies." />
-  <meta name="twitter:image" content="https://fr.respi.info/assets/logo-512.png" />
+  <meta name="twitter:image" content="https://fr.respi.info/assets/og/site.png" />
   <meta name="theme-color" content="#0D1B2A" />
   <link rel="canonical" href="https://fr.respi.info/bronchectasies" />
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png" />
-  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png" />
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/styles.css?v=20260502b" />
+  <link rel="stylesheet" href="/assets/styles.css?v=20261019" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
+    {
+      "@type": "MedicalWebPage",
+      "@id": "https://fr.respi.info/bronchectasies#page",
+      "url": "https://fr.respi.info/bronchectasies",
+      "name": "Bronchectasies (DDB) : application gratuite | Respi.info",
+      "description": "Bronchectasies (DDB) : rappels de drainage, journal des expectorations et repérage des exacerbations à signaler. Application gratuite, sans pub.",
+      "inLanguage": "fr-FR",
+      "lastReviewed": "2026-10-19",
+      "dateModified": "2026-10-19",
+      "about": {
+        "@type": "MedicalCondition",
+        "name": "Bronchectasies"
+      },
+      "publisher": {
+        "@id": "https://fr.respi.info/#organization"
+      },
+      "audience": {
+        "@type": "PeopleAudience",
+        "audienceType": "Patients et aidants"
+      }
+    },
     {
       "@type": "MedicalCondition",
       "name": "Bronchectasies",
@@ -37,7 +58,7 @@
       "name": "Respi.info",
       "url": "https://www.respi.info/",
       "applicationCategory": "HealthApplication",
-      "operatingSystem": "Web (PWA)",
+      "operatingSystem": "Web (PWA), iOS, Android",
       "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
       "isAccessibleForFree": true,
       "audience": { "@type": "PeopleAudience", "healthCondition": { "@type": "MedicalCondition", "name": "Bronchectasies" } }
@@ -48,40 +69,45 @@
 </head>
 <body>
 
+<!-- entete:debut -->
+<a class="skip-link" href="#contenu">Aller au contenu</a>
 <header class="site-header">
   <div class="site-header-inner">
-    <a href="index.html" class="brand">
-      <img src="assets/logo.png" alt="Respi.info" />
+    <a href="/" class="brand">
+      <img src="/assets/logo-76.png" alt="" width="38" height="38" />
       <span class="brand-txt">Respi.info<small>Respirer mieux, vivre plus</small></span>
     </a>
-    <nav class="r-nav" aria-label="Navigation principale">
+    <nav class="r-nav" id="main-nav" aria-label="Navigation principale">
       <div class="r-nav-group">
-        <button type="button" class="r-nav-trigger" aria-haspopup="true" aria-expanded="false" aria-controls="r-menu-app">L'application</button>
-        <div class="r-nav-dropdown" id="r-menu-app" role="menu">
-          <a href="fonctionnement.html" role="menuitem">Le parcours</a>
-          <a href="pour-qui.html" role="menuitem">Pour qui</a>
-          <a href="faq.html" role="menuitem">FAQ</a>
-          <a href="soutenir.html" role="menuitem">Nous soutenir</a>
+        <button type="button" class="r-nav-trigger" aria-expanded="false" aria-controls="r-menu-app">L'application</button>
+        <div class="r-nav-dropdown" id="r-menu-app">
+          <a href="/fonctionnement">Le parcours</a>
+          <a href="/pour-qui">Pour qui</a>
+          <a href="/faq">FAQ</a>
+          <a href="/soutenir">Nous soutenir</a>
         </div>
       </div>
       <div class="r-nav-group">
-        <button type="button" class="r-nav-trigger" aria-haspopup="true" aria-expanded="false" aria-controls="r-menu-ressources">Ressources</button>
-        <div class="r-nav-dropdown" id="r-menu-ressources" role="menu">
-          <a href="sources.html" role="menuitem">Sources</a>
-          <a href="telechargements.html" role="menuitem">Téléchargements</a>
-          <a href="partenaires.html" role="menuitem">Partenaires</a>
-          <a href="soutenir.html" role="menuitem">Nous soutenir</a>
+        <button type="button" class="r-nav-trigger" aria-expanded="false" aria-controls="r-menu-ressources">Ressources</button>
+        <div class="r-nav-dropdown" id="r-menu-ressources">
+          <a href="/sources">Sources</a>
+          <a href="/telechargements">Téléchargements</a>
+          <a href="/partenaires">Partenaires</a>
+          <a href="/charte-editoriale">Charte éditoriale</a>
         </div>
       </div>
-      <a href="presse.html">Presse</a>
-      <a href="contact.html">Contact</a>
+      <a href="/actualites">Actualités</a>
+      <a href="/presse">Presse</a>
+      <a href="/contact">Contact</a>
     </nav>
     <a class="r-cta-pill" href="https://www.respi.info">Ouvrir l'app</a>
-    <button type="button" class="r-nav-toggle" aria-label="Ouvrir le menu" aria-controls="main-nav">
+    <button type="button" class="r-nav-toggle" aria-label="Ouvrir le menu" aria-controls="main-nav" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
   </div>
 </header>
+<!-- entete:fin -->
+<main id="contenu" tabindex="-1">
 
 <section class="page-head">
   <div class="page-head-inner">
@@ -91,11 +117,12 @@
       Respi.info est une <strong>application gratuite</strong> pensée pour les personnes vivant avec
       des <strong>bronchectasies</strong> (dilatation des bronches, DDB). Suivi quotidien du drainage,
       repérage précoce des signes d'exacerbation, coach respiratoire au ton encourageant, partage léger avec
-      ton pneumologue — sans pub, sans revente de données.
+      ton pneumologue, sans pub, sans revente de données.
     </p>
+    <p class="r-maj">Mis à jour le <time datetime="2026-10-19">19 octobre 2026</time></p>
     <div class="hero-cta" style="margin-top: 22px;">
       <a class="btn primary" href="https://www.respi.info">Ouvrir l'application</a>
-      <a class="btn secondary" href="downloads/Respi.info_OnePager_Patients.pdf" target="_blank" rel="noopener">Télécharger la fiche A4</a>
+      <a class="btn secondary" href="/downloads/Respi.info_OnePager_Patients.pdf" target="_blank" rel="noopener">Télécharger la fiche A4</a>
     </div>
   </div>
 </section>
@@ -107,14 +134,12 @@
     <p class="lead" style="margin-top: 14px;">
       Les bronchectasies (ou dilatation des bronches, DDB) sont une dilatation anormale et permanente
       des bronches, souvent secondaire à des infections répétées, à une mucoviscidose, à un déficit
-      immunitaire ou à des séquelles de tuberculose. En France, la prévalence est estimée à
-      <strong>environ 50 000 à 100 000 patients</strong>, suivis par les pneumologues de ville et les
-      centres hospitaliers (registre national <strong>RIFE</strong>, CHU Bordeaux).
+      immunitaire ou à des séquelles de tuberculose. En France, leur fréquence reste <strong>mal connue</strong> : la maladie est souvent sous-diagnostiquée. Les patients sont suivis par les pneumologues de ville et les centres hospitaliers.
     </p>
     <p>
       Le quotidien combine : <strong>kinésithérapie respiratoire de drainage</strong>, parfois sérum salé
       hypertonique en nébulisation, antibioprophylaxie (azithromycine au long cours selon les recos
-      <strong>ERS 2017</strong>), et antibiotiques inhalés (Tobi, colistine) en cas de colonisation à
+      <strong>ERS 2017</strong>), et antibiotiques inhalés (tobramycine, colistine) en cas de colonisation à
       <em>Pseudomonas aeruginosa</em>. La crainte permanente : l'<strong>exacerbation</strong>
       (augmentation des expectorations, modification de couleur, fièvre, essoufflement).
     </p>
@@ -161,8 +186,19 @@
       <strong><a href="https://splf.fr" target="_blank" rel="noopener">SPLF</a></strong>,
       sur la <strong><a href="https://www.has-sante.fr" target="_blank" rel="noopener">HAS</a></strong>,
       et sur les contenus pédagogiques de la <strong><a href="https://www.ffaair.org" target="_blank" rel="noopener">FFAAIR</a></strong>.
-      Voir <a href="partenaires-sources.html">la page Sources</a>.
+      Voir <a href="/sources">la page Sources</a>.
     </p>
+  </div>
+</section>
+
+<section class="section" style="padding-top: 0;">
+  <div class="section-inner section-inner--narrow">
+    <aside class="r-avertissement" aria-label="Avertissement santé">
+      <p><strong>Cette page ne remplace pas un avis médical.</strong> Respi.info est un outil d'information et d'auto-suivi, pas un dispositif médical. Parle de toute question sur ta maladie ou ton traitement avec ton médecin ou ton équipe soignante. En cas de gêne respiratoire inhabituelle ou sévère, appelle le <strong>15</strong> ou le <strong>112</strong>.</p>
+    </aside>
+    <div class="r-asso">
+      <p><strong>Associations de patients.</strong> Pour trouver du soutien et échanger avec d'autres patients : <a href="https://sante-respiratoire.com" target="_blank" rel="noopener">Santé Respiratoire France</a> et la <a href="https://www.ffaair.org" target="_blank" rel="noopener">FFAAIR</a>.</p>
+    </div>
   </div>
 </section>
 
@@ -173,51 +209,64 @@
       <p>Crée ton compte gratuit, déclare ta DDB et ton éventuelle colonisation, et reçois ta première météo respiratoire personnalisée demain matin.</p>
       <div class="hero-cta center">
         <a class="btn light" href="https://www.respi.info">Ouvrir l'application</a>
-        <a class="btn outline-light" href="faq.html">Voir la FAQ</a>
+        <a class="btn outline-light" href="/faq">Voir la FAQ</a>
       </div>
     </div>
   </div>
 </section>
+</main>
 
+<!-- pied:debut -->
 <footer class="site-footer">
   <div class="site-footer-inner">
     <div>
-      <a href="index.html" class="brand" style="margin-bottom: 16px;">
-        <img src="assets/logo.png" alt="Respi.info" style="filter: brightness(0) invert(1);" />
-        <span class="brand-txt" style="color: #fff;">Respi.info<small style="color: rgba(255,255,255,0.6);">Respirer mieux, vivre plus</small></span>
+      <a href="/" class="brand" style="margin-bottom: 16px;">
+        <img src="/assets/logo-76.png" alt="" width="38" height="38" style="filter: brightness(0) invert(1);" />
+        <span class="brand-txt" style="color: #fff;">Respi.info<small style="color: rgba(255,255,255,0.75);">Respirer mieux, vivre plus</small></span>
       </a>
-      <p class="baseline">Application gratuite. Édité par <strong>JOOY</strong>, association loi 1901. Respi.info n'est pas un dispositif médical.</p>
-    </div>
-        <div>
-      <h4>Pathologies</h4>
-      <a href="asthme.html">Asthme</a>
-      <a href="bpco.html">BPCO</a>
-      <a href="fibrose.html">Fibrose pulmonaire</a>
-      <a href="htap.html">HTAP</a>
-      <a href="bronchectasies.html">Bronchectasies / DDB</a>
-      <a href="pneumopathie-hypersensibilite.html">Pneumopathie d'hypersensibilité</a>
-      <a href="mucoviscidose.html">Mucoviscidose</a>
+      <p class="baseline">
+        Application gratuite pour les personnes vivant avec une maladie respiratoire chronique,
+        une allergie, un asthme ou exposées à la pollution.
+        Éditée par <strong>JOOY</strong>, association loi 1901, sans publicité ni revente de données.
+      </p>
     </div>
     <div>
-      <h4>Le projet</h4>
-      <a href="fonctionnement.html">Le parcours</a>
-      <a href="faq.html">FAQ</a>
-      <a href="sources.html">Sources</a>
-      <a href="partenaires.html">Partenaires</a>
-      <a href="soutenir.html">Nous soutenir</a>
-      <a href="contact.html">Nous écrire</a>
+      <p class="site-footer-title">Pathologies</p>
+      <a href="/asthme">Asthme</a>
+      <a href="/bpco">BPCO</a>
+      <a href="/fibrose">Fibrose pulmonaire</a>
+      <a href="/htap">HTAP</a>
+      <a href="/bronchectasies">Bronchectasies (DDB)</a>
+      <a href="/pneumopathie-hypersensibilite">Pneumopathie d'hypersensibilité</a>
+      <a href="/mucoviscidose">Mucoviscidose</a>
     </div>
     <div>
-      <h4>Légal</h4>
+      <p class="site-footer-title">Le projet</p>
+      <a href="/fonctionnement">Le parcours</a>
+      <a href="/actualites">Actualités</a>
+      <a href="/faq">FAQ</a>
+      <a href="/sources">Sources</a>
+      <a href="/partenaires">Partenaires</a>
+      <a href="/charte-editoriale">Charte éditoriale</a>
+      <a href="/soutenir">Nous soutenir</a>
+      <a href="/contact">Nous écrire</a>
+    </div>
+    <div>
+      <p class="site-footer-title">Informations</p>
+      <a href="/presse">Espace presse</a>
+      <a href="/telechargements">Téléchargements</a>
+      <a href="/rss.xml">Flux RSS des actualités</a>
       <a href="https://www.respi.info/legal/mentions" target="_blank" rel="noopener">Mentions légales</a>
       <a href="https://www.respi.info/legal/privacy" target="_blank" rel="noopener">Confidentialité</a>
-    </div></div>
+    </div>
+  </div>
   <div class="site-footer-bottom">
-    <span>© 2026 JOOY — Respi.info.</span>
-    <span>En cas d'urgence : <strong>15 (SAMU)</strong> ou <strong>112</strong>.</span>
+    <span>© 2026 JOOY, Respi.info.</span>
+    <span>Respi.info n'est pas un dispositif médical et ne remplace pas l'avis d'un professionnel de santé. En cas d'urgence : <strong>15 (SAMU)</strong> ou <strong>112</strong>.</span>
   </div>
 </footer>
+<!-- pied:fin -->
 
-<script src="assets/nav.js?v=20260502b"></script>
+<script src="/assets/nav.js?v=20261019"></script>
 </body>
 </html>

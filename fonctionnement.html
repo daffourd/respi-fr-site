@@ -3,24 +3,24 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Le parcours quotidien — Respi.info</title>
-  <meta name="description" content="Comment fonctionne Respi.info : météo respiratoire personnelle, coach IA, plan d'action HAS, boussole pour proches aidants. 4 minutes par jour." />
-  <meta property="og:title" content="Le parcours quotidien — Respi.info" />
+  <title>Le parcours quotidien | Respi.info</title>
+  <meta name="description" content="Comment fonctionne Respi.info : météo respiratoire personnelle, coach respiratoire, plan d'action sur le modèle de la HAS, boussole pour proches aidants. 4 minutes par jour." />
+  <meta property="og:title" content="Le parcours quotidien | Respi.info" />
   <meta property="og:description" content="4 minutes par jour, pas plus. Le détail du parcours Respi.info en 6 pas." />
   <meta property="og:url" content="https://fr.respi.info/fonctionnement.html" />
-  <meta property="og:image" content="assets/logo-512.png" />
+  <meta property="og:image" content="https://fr.respi.info/assets/og/site.png" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Le parcours quotidien — Respi.info" />
+  <meta name="twitter:title" content="Le parcours quotidien | Respi.info" />
   <meta name="twitter:description" content="4 minutes par jour, pas plus. Le détail du parcours Respi.info en 6 pas." />
-  <meta name="twitter:image" content="https://fr.respi.info/assets/logo-512.png" />
+  <meta name="twitter:image" content="https://fr.respi.info/assets/og/site.png" />
   <meta name="theme-color" content="#0D1B2A" />
   <link rel="canonical" href="https://fr.respi.info/fonctionnement" />
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png" />
-  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png" />
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/styles.css?v=20260502b" />
+  <link rel="stylesheet" href="/assets/styles.css?v=20261019" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -28,7 +28,7 @@
     {
       "@type": "Organization",
       "@id": "https://fr.respi.info/#organization",
-      "name": "JOOY — Respi.info",
+      "name": "JOOY, Respi.info",
       "alternateName": "Respi.info",
       "url": "https://fr.respi.info/",
       "logo": "https://fr.respi.info/assets/logo-512.png",
@@ -47,7 +47,7 @@
       "operatingSystem": "Web (PWA), iOS, Android",
       "downloadUrl": "https://apps.apple.com/fr/app/respi-info/id6766412784",
       "installUrl": "https://play.google.com/store/apps/details?id=fr.respi.info.twa",
-      "description": "Météo respiratoire personnelle, coach IA adapté à la pathologie, Plan d'Action HAS, journal quotidien, partage léger avec les proches aidants.",
+      "description": "Météo respiratoire personnelle, coach respiratoire adapté à la pathologie, plan d'action personnalisé sur le modèle de la HAS, journal quotidien, partage léger avec les proches aidants.",
       "offers": {
         "@type": "Offer",
         "price": "0",
@@ -64,40 +64,45 @@
 </head>
 <body>
 
+<!-- entete:debut -->
+<a class="skip-link" href="#contenu">Aller au contenu</a>
 <header class="site-header">
   <div class="site-header-inner">
-    <a href="index.html" class="brand">
-      <img src="assets/logo.png" alt="Respi.info" />
+    <a href="/" class="brand">
+      <img src="/assets/logo-76.png" alt="" width="38" height="38" />
       <span class="brand-txt">Respi.info<small>Respirer mieux, vivre plus</small></span>
     </a>
-    <nav class="r-nav" aria-label="Navigation principale">
+    <nav class="r-nav" id="main-nav" aria-label="Navigation principale">
       <div class="r-nav-group">
-        <button type="button" class="r-nav-trigger" aria-haspopup="true" aria-expanded="false" aria-controls="r-menu-app">L'application</button>
-        <div class="r-nav-dropdown" id="r-menu-app" role="menu">
-          <a href="fonctionnement.html" role="menuitem">Le parcours</a>
-          <a href="pour-qui.html" role="menuitem">Pour qui</a>
-          <a href="faq.html" role="menuitem">FAQ</a>
-          <a href="soutenir.html" role="menuitem">Nous soutenir</a>
+        <button type="button" class="r-nav-trigger" aria-expanded="false" aria-controls="r-menu-app">L'application</button>
+        <div class="r-nav-dropdown" id="r-menu-app">
+          <a href="/fonctionnement">Le parcours</a>
+          <a href="/pour-qui">Pour qui</a>
+          <a href="/faq">FAQ</a>
+          <a href="/soutenir">Nous soutenir</a>
         </div>
       </div>
       <div class="r-nav-group">
-        <button type="button" class="r-nav-trigger" aria-haspopup="true" aria-expanded="false" aria-controls="r-menu-ressources">Ressources</button>
-        <div class="r-nav-dropdown" id="r-menu-ressources" role="menu">
-          <a href="sources.html" role="menuitem">Sources</a>
-          <a href="telechargements.html" role="menuitem">Téléchargements</a>
-          <a href="partenaires.html" role="menuitem">Partenaires</a>
-          <a href="soutenir.html" role="menuitem">Nous soutenir</a>
+        <button type="button" class="r-nav-trigger" aria-expanded="false" aria-controls="r-menu-ressources">Ressources</button>
+        <div class="r-nav-dropdown" id="r-menu-ressources">
+          <a href="/sources">Sources</a>
+          <a href="/telechargements">Téléchargements</a>
+          <a href="/partenaires">Partenaires</a>
+          <a href="/charte-editoriale">Charte éditoriale</a>
         </div>
       </div>
-      <a href="presse.html">Presse</a>
-      <a href="contact.html">Contact</a>
+      <a href="/actualites">Actualités</a>
+      <a href="/presse">Presse</a>
+      <a href="/contact">Contact</a>
     </nav>
     <a class="r-cta-pill" href="https://www.respi.info">Ouvrir l'app</a>
-    <button type="button" class="r-nav-toggle" aria-label="Ouvrir le menu" aria-controls="main-nav">
+    <button type="button" class="r-nav-toggle" aria-label="Ouvrir le menu" aria-controls="main-nav" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
   </div>
 </header>
+<!-- entete:fin -->
+<main id="contenu" tabindex="-1">
 
 <section class="page-head">
   <div class="page-head-inner">
@@ -143,7 +148,7 @@
       <div class="step" id="pap">
         <div>
           <h3>Plan d'Action Personnalisé (PAP)</h3>
-          <p>Au format HAS — 4 zones colorées (verte, jaune, orange, rouge) avec les signaux à reconnaître et les actions à faire. <strong>Prérempli grâce à ton historique dans l'app</strong> (pathologies, traitements, seuils, déclencheurs déjà repérés), tu gardes la main pour le compléter et le modifier. Partageable avec ton pneumologue, partageable 90 jours avec tes aidants, imprimable A4.</p>
+          <p>Au format HAS, 4 zones colorées (verte, jaune, orange, rouge) avec les signaux à reconnaître et les actions à faire. <strong>Prérempli grâce à ton historique dans l'app</strong> (pathologies, traitements, seuils, déclencheurs déjà repérés), tu gardes la main pour le compléter et le modifier. Partageable avec ton pneumologue, partageable 90 jours avec tes aidants, imprimable A4.</p>
         </div>
       </div>
       <div class="step" id="boussole">
@@ -174,7 +179,7 @@
       <article class="r-card">
         <div class="r-card-eyebrow card-eyebrow--sauge">ETP</div>
         <h3>Éducation thérapeutique</h3>
-        <p>Modules courts validés HAS, GINA, GOLD, FFAAIR. À ton rythme. 188 pratiques sourcées.</p>
+        <p>Modules courts fondés sur les recommandations HAS, GINA, GOLD et les ressources de la FFAAIR. À ton rythme. 188 pratiques sourcées.</p>
       </article>
       <article class="r-card">
         <div class="r-card-eyebrow card-eyebrow--ambre">Mes pairs</h3>
@@ -192,9 +197,9 @@
         <p>4 indicateurs traduits (souffle, énergie, moral, environnement) à tes proches opt-in. Lien révocable.</p>
       </article>
       <article class="r-card">
-        <div class="r-card-eyebrow">Plan d'Action HAS</div>
+        <div class="r-card-eyebrow">Plan d'action (modèle HAS)</div>
         <h3>Asthme &amp; BPCO</h3>
-        <p>Asthme : PAP-A 2019 + GINA 2024. BPCO : HAS 2024 + GOLD 2024. Imprimable A4.</p>
+        <p>Asthme : PAP-A 2019 + GINA. BPCO : HAS + GOLD 2026. Imprimable A4.</p>
       </article>
     </div>
   </div>
@@ -203,7 +208,7 @@
 <section class="section">
   <div class="section-inner">
     <span class="eyebrow">Garde-fous</span>
-    <h2 class="h-serif">Ce que Respi.info <em>ne fait pas — et ne fera jamais.</em></h2>
+    <h2 class="h-serif">Ce que Respi.info <em>ne fait pas, et ne fera jamais.</em></h2>
     <div class="callout">
       <p><strong>Pas de diagnostic.</strong> Respi.info ne pose pas de diagnostic. C'est ton médecin et lui seul.</p>
       <p><strong>Pas de modification de traitement.</strong> Aucune suggestion d'arrêt, de remplacement ou de modification. Si tu te poses une question sur tes médicaments, on te renvoie vers ton équipe soignante.</p>
@@ -218,7 +223,7 @@
     <span class="eyebrow">Avant de te lancer</span>
     <h2 class="h-serif">Quelques questions <em>fréquentes.</em></h2>
     <p class="lead">C'est gratuit ? Mes données sont protégées ? Mon pneumologue peut-il s'en servir ?</p>
-    <p style="margin-top: 16px;"><a class="btn primary" href="faq.html">Voir toutes les questions fréquentes →</a></p>
+    <p style="margin-top: 16px;"><a class="btn primary" href="/faq">Voir toutes les questions fréquentes →</a></p>
   </div>
 </section>
 
@@ -229,51 +234,64 @@
       <p>Création de compte en 30 secondes. Aucune carte bancaire. Aucune obligation.</p>
       <div class="hero-cta center">
         <a class="btn light" href="https://www.respi.info">Ouvrir l'application</a>
-        <a class="btn outline-light" href="pour-qui.html">Voir si c'est pour moi</a>
+        <a class="btn outline-light" href="/pour-qui">Voir si c'est pour moi</a>
       </div>
     </div>
   </div>
 </section>
+</main>
 
+<!-- pied:debut -->
 <footer class="site-footer">
   <div class="site-footer-inner">
     <div>
-      <a href="index.html" class="brand" style="margin-bottom: 16px;">
-        <img src="assets/logo.png" alt="Respi.info" style="filter: brightness(0) invert(1);" />
-        <span class="brand-txt" style="color: #fff;">Respi.info<small style="color: rgba(255,255,255,0.6);">Respirer mieux, vivre plus</small></span>
+      <a href="/" class="brand" style="margin-bottom: 16px;">
+        <img src="/assets/logo-76.png" alt="" width="38" height="38" style="filter: brightness(0) invert(1);" />
+        <span class="brand-txt" style="color: #fff;">Respi.info<small style="color: rgba(255,255,255,0.75);">Respirer mieux, vivre plus</small></span>
       </a>
-      <p class="baseline">Application gratuite pour les personnes vivant avec une maladie respiratoire chronique, une allergie, un asthme ou exposées à la pollution. Édité par <strong>JOOY</strong>, association loi 1901.</p>
-    </div>
-        <div>
-      <h4>Pathologies</h4>
-      <a href="asthme.html">Asthme</a>
-      <a href="bpco.html">BPCO</a>
-      <a href="fibrose.html">Fibrose pulmonaire</a>
-      <a href="htap.html">HTAP</a>
-      <a href="bronchectasies.html">Bronchectasies / DDB</a>
-      <a href="pneumopathie-hypersensibilite.html">Pneumopathie d'hypersensibilité</a>
-      <a href="mucoviscidose.html">Mucoviscidose</a>
+      <p class="baseline">
+        Application gratuite pour les personnes vivant avec une maladie respiratoire chronique,
+        une allergie, un asthme ou exposées à la pollution.
+        Éditée par <strong>JOOY</strong>, association loi 1901, sans publicité ni revente de données.
+      </p>
     </div>
     <div>
-      <h4>Le projet</h4>
-      <a href="fonctionnement.html">Le parcours</a>
-      <a href="faq.html">FAQ</a>
-      <a href="sources.html">Sources</a>
-      <a href="partenaires.html">Partenaires</a>
-      <a href="soutenir.html">Nous soutenir</a>
-      <a href="contact.html">Nous écrire</a>
+      <p class="site-footer-title">Pathologies</p>
+      <a href="/asthme">Asthme</a>
+      <a href="/bpco">BPCO</a>
+      <a href="/fibrose">Fibrose pulmonaire</a>
+      <a href="/htap">HTAP</a>
+      <a href="/bronchectasies">Bronchectasies (DDB)</a>
+      <a href="/pneumopathie-hypersensibilite">Pneumopathie d'hypersensibilité</a>
+      <a href="/mucoviscidose">Mucoviscidose</a>
     </div>
     <div>
-      <h4>Légal</h4>
+      <p class="site-footer-title">Le projet</p>
+      <a href="/fonctionnement">Le parcours</a>
+      <a href="/actualites">Actualités</a>
+      <a href="/faq">FAQ</a>
+      <a href="/sources">Sources</a>
+      <a href="/partenaires">Partenaires</a>
+      <a href="/charte-editoriale">Charte éditoriale</a>
+      <a href="/soutenir">Nous soutenir</a>
+      <a href="/contact">Nous écrire</a>
+    </div>
+    <div>
+      <p class="site-footer-title">Informations</p>
+      <a href="/presse">Espace presse</a>
+      <a href="/telechargements">Téléchargements</a>
+      <a href="/rss.xml">Flux RSS des actualités</a>
       <a href="https://www.respi.info/legal/mentions" target="_blank" rel="noopener">Mentions légales</a>
       <a href="https://www.respi.info/legal/privacy" target="_blank" rel="noopener">Confidentialité</a>
-    </div></div>
+    </div>
+  </div>
   <div class="site-footer-bottom">
-    <span>© 2026 JOOY — Respi.info.</span>
-    <span>Respi.info n'est pas un dispositif médical. Ne remplace pas l'avis d'un professionnel de santé. En cas d'urgence : <strong>15 (SAMU)</strong> ou <strong>112</strong>.</span>
+    <span>© 2026 JOOY, Respi.info.</span>
+    <span>Respi.info n'est pas un dispositif médical et ne remplace pas l'avis d'un professionnel de santé. En cas d'urgence : <strong>15 (SAMU)</strong> ou <strong>112</strong>.</span>
   </div>
 </footer>
+<!-- pied:fin -->
 
-<script src="assets/nav.js?v=20260502b"></script>
+<script src="/assets/nav.js?v=20261019"></script>
 </body>
 </html>
