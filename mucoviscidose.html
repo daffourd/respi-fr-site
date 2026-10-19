@@ -3,28 +3,49 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Mucoviscidose : application gratuite Respi.info — drainage, kiné, suivi CRCM</title>
-  <meta name="description" content="Application gratuite pour adultes vivant avec une mucoviscidose : suivi du drainage quotidien, repérage des exacerbations, coach respi entre les bilans CRCM, partage avec ton équipe (Trikafta, kiné, diététique)." />
+  <title>Mucoviscidose : application gratuite | Respi.info</title>
+  <meta name="description" content="Mucoviscidose : routine de kiné respiratoire, nébulisations, journal de suivi pour le CRCM et espace aidants. Application gratuite, sans publicité." />
   <meta property="og:title" content="Mucoviscidose : application gratuite Respi.info" />
   <meta property="og:description" content="Pour adultes mucoviscidose : drainage, exacerbations, partage CRCM. Compagnon entre les bilans." />
   <meta property="og:url" content="https://fr.respi.info/mucoviscidose" />
-  <meta property="og:image" content="assets/logo-512.png" />
+  <meta property="og:image" content="https://fr.respi.info/assets/og/site.png" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Mucoviscidose : application gratuite Respi.info" />
   <meta name="twitter:description" content="Pour adultes mucoviscidose : drainage, exacerbations, partage CRCM. Compagnon entre les bilans." />
-  <meta name="twitter:image" content="https://fr.respi.info/assets/logo-512.png" />
+  <meta name="twitter:image" content="https://fr.respi.info/assets/og/site.png" />
   <meta name="theme-color" content="#0D1B2A" />
   <link rel="canonical" href="https://fr.respi.info/mucoviscidose" />
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png" />
-  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png" />
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/styles.css?v=20260502b" />
+  <link rel="stylesheet" href="/assets/styles.css?v=20261019" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
+    {
+      "@type": "MedicalWebPage",
+      "@id": "https://fr.respi.info/mucoviscidose#page",
+      "url": "https://fr.respi.info/mucoviscidose",
+      "name": "Mucoviscidose : application gratuite | Respi.info",
+      "description": "Mucoviscidose : routine de kiné respiratoire, nébulisations, journal de suivi pour le CRCM et espace aidants. Application gratuite, sans publicité.",
+      "inLanguage": "fr-FR",
+      "lastReviewed": "2026-10-19",
+      "dateModified": "2026-10-19",
+      "about": {
+        "@type": "MedicalCondition",
+        "name": "Mucoviscidose"
+      },
+      "publisher": {
+        "@id": "https://fr.respi.info/#organization"
+      },
+      "audience": {
+        "@type": "PeopleAudience",
+        "audienceType": "Patients et aidants"
+      }
+    },
     {
       "@type": "MedicalCondition",
       "name": "Mucoviscidose",
@@ -37,7 +58,7 @@
       "name": "Respi.info",
       "url": "https://www.respi.info/",
       "applicationCategory": "HealthApplication",
-      "operatingSystem": "Web (PWA)",
+      "operatingSystem": "Web (PWA), iOS, Android",
       "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
       "isAccessibleForFree": true,
       "audience": { "@type": "PeopleAudience", "healthCondition": { "@type": "MedicalCondition", "name": "Mucoviscidose" } }
@@ -48,40 +69,45 @@
 </head>
 <body>
 
+<!-- entete:debut -->
+<a class="skip-link" href="#contenu">Aller au contenu</a>
 <header class="site-header">
   <div class="site-header-inner">
-    <a href="index.html" class="brand">
-      <img src="assets/logo.png" alt="Respi.info" />
+    <a href="/" class="brand">
+      <img src="/assets/logo-76.png" alt="" width="38" height="38" />
       <span class="brand-txt">Respi.info<small>Respirer mieux, vivre plus</small></span>
     </a>
-    <nav class="r-nav" aria-label="Navigation principale">
+    <nav class="r-nav" id="main-nav" aria-label="Navigation principale">
       <div class="r-nav-group">
-        <button type="button" class="r-nav-trigger" aria-haspopup="true" aria-expanded="false" aria-controls="r-menu-app">L'application</button>
-        <div class="r-nav-dropdown" id="r-menu-app" role="menu">
-          <a href="fonctionnement.html" role="menuitem">Le parcours</a>
-          <a href="pour-qui.html" role="menuitem">Pour qui</a>
-          <a href="faq.html" role="menuitem">FAQ</a>
-          <a href="soutenir.html" role="menuitem">Nous soutenir</a>
+        <button type="button" class="r-nav-trigger" aria-expanded="false" aria-controls="r-menu-app">L'application</button>
+        <div class="r-nav-dropdown" id="r-menu-app">
+          <a href="/fonctionnement">Le parcours</a>
+          <a href="/pour-qui">Pour qui</a>
+          <a href="/faq">FAQ</a>
+          <a href="/soutenir">Nous soutenir</a>
         </div>
       </div>
       <div class="r-nav-group">
-        <button type="button" class="r-nav-trigger" aria-haspopup="true" aria-expanded="false" aria-controls="r-menu-ressources">Ressources</button>
-        <div class="r-nav-dropdown" id="r-menu-ressources" role="menu">
-          <a href="sources.html" role="menuitem">Sources</a>
-          <a href="telechargements.html" role="menuitem">Téléchargements</a>
-          <a href="partenaires.html" role="menuitem">Partenaires</a>
-          <a href="soutenir.html" role="menuitem">Nous soutenir</a>
+        <button type="button" class="r-nav-trigger" aria-expanded="false" aria-controls="r-menu-ressources">Ressources</button>
+        <div class="r-nav-dropdown" id="r-menu-ressources">
+          <a href="/sources">Sources</a>
+          <a href="/telechargements">Téléchargements</a>
+          <a href="/partenaires">Partenaires</a>
+          <a href="/charte-editoriale">Charte éditoriale</a>
         </div>
       </div>
-      <a href="presse.html">Presse</a>
-      <a href="contact.html">Contact</a>
+      <a href="/actualites">Actualités</a>
+      <a href="/presse">Presse</a>
+      <a href="/contact">Contact</a>
     </nav>
     <a class="r-cta-pill" href="https://www.respi.info">Ouvrir l'app</a>
-    <button type="button" class="r-nav-toggle" aria-label="Ouvrir le menu" aria-controls="main-nav">
+    <button type="button" class="r-nav-toggle" aria-label="Ouvrir le menu" aria-controls="main-nav" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
   </div>
 </header>
+<!-- entete:fin -->
+<main id="contenu" tabindex="-1">
 
 <section class="page-head">
   <div class="page-head-inner">
@@ -91,11 +117,12 @@
       Respi.info est une <strong>application gratuite</strong> pensée pour les <strong>adultes vivant avec une
       mucoviscidose</strong>. Suivi du drainage quotidien, repérage des exacerbations, coach respiratoire
       au ton encourageant, partage léger avec ton CRCM (Centre de Ressources et de Compétences
-      Mucoviscidose) — sans pub, sans revente de données.
+      Mucoviscidose), sans pub, sans revente de données.
     </p>
+    <p class="r-maj">Mis à jour le <time datetime="2026-10-19">19 octobre 2026</time></p>
     <div class="hero-cta" style="margin-top: 22px;">
       <a class="btn primary" href="https://www.respi.info">Ouvrir l'application</a>
-      <a class="btn secondary" href="downloads/Respi.info_OnePager_Patients.pdf" target="_blank" rel="noopener">Télécharger la fiche A4</a>
+      <a class="btn secondary" href="/downloads/Respi.info_OnePager_Patients.pdf" target="_blank" rel="noopener">Télécharger la fiche A4</a>
     </div>
   </div>
 </section>
@@ -106,14 +133,13 @@
     <h2 class="h-serif">La mucoviscidose, <em>en bref.</em></h2>
     <p class="lead" style="margin-top: 14px;">
       La mucoviscidose est la maladie génétique grave la plus fréquente en Europe : un mucus épais
-      obstrue les bronches et le système digestif. En France, environ <strong>7 500 patients</strong> sont
-      suivis dans le réseau des <strong>CRCM</strong> (Centres de Ressources et de Compétences
+      obstrue les bronches et le système digestif. En France, <strong>8 008 patients</strong> étaient recensés en 2024 par le <a href="https://www.vaincrelamuco.org/registredelamuco" target="_blank" rel="noopener">Registre français de la mucoviscidose</a>, suivis dans le réseau des <strong>CRCM</strong> (Centres de Ressources et de Compétences
       Mucoviscidose), dont une majorité d'adultes depuis l'arrivée des modulateurs CFTR.
     </p>
     <p>
       Le quotidien combine : <strong>kinésithérapie respiratoire</strong> de drainage (souvent biquotidienne),
       nébulisations (sérum salé hypertonique, dornase alfa, antibiotiques inhalés), enzymes
-      pancréatiques, et désormais <strong>modulateurs CFTR</strong> (Kaftrio / Trikafta — Vertex) qui ont
+      pancréatiques, et désormais <strong>modulateurs CFTR</strong>, qui ont
       transformé la trajectoire de la maladie. Le suivi se fait en CRCM avec EFR, TM6, bilans
       microbiologiques et nutritionnels (référence française : <strong>registre Vaincre la Mucoviscidose</strong>).
     </p>
@@ -172,10 +198,21 @@
       <strong><a href="https://www.ecfs.eu" target="_blank" rel="noopener">ECFS</a></strong> (European Cystic Fibrosis Society),
       la <strong><a href="https://www.has-sante.fr" target="_blank" rel="noopener">HAS</a></strong> (PNDS mucoviscidose),
       la <strong><a href="https://splf.fr" target="_blank" rel="noopener">SPLF</a></strong>,
-      le <strong><a href="https://registre.vaincrelamuco.org" target="_blank" rel="noopener">registre français Vaincre la Mucoviscidose</a></strong>,
+      le <strong><a href="https://www.vaincrelamuco.org/registredelamuco" target="_blank" rel="noopener">registre français Vaincre la Mucoviscidose</a></strong>,
       et la <strong><a href="https://www.muco.be" target="_blank" rel="noopener">Belgian Cystic Fibrosis Registry</a></strong>.
-      Voir <a href="partenaires-sources.html">la page Sources</a>.
+      Voir <a href="/sources">la page Sources</a>.
     </p>
+  </div>
+</section>
+
+<section class="section" style="padding-top: 0;">
+  <div class="section-inner section-inner--narrow">
+    <aside class="r-avertissement" aria-label="Avertissement santé">
+      <p><strong>Cette page ne remplace pas un avis médical.</strong> Respi.info est un outil d'information et d'auto-suivi, pas un dispositif médical. Parle de toute question sur ta maladie ou ton traitement avec ton médecin ou ton équipe soignante. En cas de gêne respiratoire inhabituelle ou sévère, appelle le <strong>15</strong> ou le <strong>112</strong>.</p>
+    </aside>
+    <div class="r-asso">
+      <p><strong>Associations de patients.</strong> Pour trouver du soutien et échanger avec d'autres patients : <a href="https://sante-respiratoire.com" target="_blank" rel="noopener">Santé Respiratoire France</a> et <a href="https://www.vaincrelamuco.org" target="_blank" rel="noopener">Vaincre la Mucoviscidose</a>.</p>
+    </div>
   </div>
 </section>
 
@@ -186,51 +223,64 @@
       <p>Crée ton compte gratuit, déclare ta mucoviscidose et ton CRCM de référence, et reçois ta première météo respiratoire personnalisée demain matin.</p>
       <div class="hero-cta center">
         <a class="btn light" href="https://www.respi.info">Ouvrir l'application</a>
-        <a class="btn outline-light" href="faq.html">Voir la FAQ</a>
+        <a class="btn outline-light" href="/faq">Voir la FAQ</a>
       </div>
     </div>
   </div>
 </section>
+</main>
 
+<!-- pied:debut -->
 <footer class="site-footer">
   <div class="site-footer-inner">
     <div>
-      <a href="index.html" class="brand" style="margin-bottom: 16px;">
-        <img src="assets/logo.png" alt="Respi.info" style="filter: brightness(0) invert(1);" />
-        <span class="brand-txt" style="color: #fff;">Respi.info<small style="color: rgba(255,255,255,0.6);">Respirer mieux, vivre plus</small></span>
+      <a href="/" class="brand" style="margin-bottom: 16px;">
+        <img src="/assets/logo-76.png" alt="" width="38" height="38" />
+        <span class="brand-txt" style="color: #fff;">Respi.info<small style="color: rgba(255,255,255,0.75);">Respirer mieux, vivre plus</small></span>
       </a>
-      <p class="baseline">Application gratuite. Édité par <strong>JOOY</strong>, association loi 1901. Respi.info n'est pas un dispositif médical.</p>
-    </div>
-        <div>
-      <h4>Pathologies</h4>
-      <a href="asthme.html">Asthme</a>
-      <a href="bpco.html">BPCO</a>
-      <a href="fibrose.html">Fibrose pulmonaire</a>
-      <a href="htap.html">HTAP</a>
-      <a href="bronchectasies.html">Bronchectasies / DDB</a>
-      <a href="pneumopathie-hypersensibilite.html">Pneumopathie d'hypersensibilité</a>
-      <a href="mucoviscidose.html">Mucoviscidose</a>
+      <p class="baseline">
+        Application gratuite pour les personnes vivant avec une maladie respiratoire chronique,
+        une allergie, un asthme ou exposées à la pollution.
+        Éditée par <strong>JOOY</strong>, association loi 1901, sans publicité ni revente de données.
+      </p>
     </div>
     <div>
-      <h4>Le projet</h4>
-      <a href="fonctionnement.html">Le parcours</a>
-      <a href="faq.html">FAQ</a>
-      <a href="sources.html">Sources</a>
-      <a href="partenaires.html">Partenaires</a>
-      <a href="soutenir.html">Nous soutenir</a>
-      <a href="contact.html">Nous écrire</a>
+      <p class="site-footer-title">Pathologies</p>
+      <a href="/asthme">Asthme</a>
+      <a href="/bpco">BPCO</a>
+      <a href="/fibrose">Fibrose pulmonaire</a>
+      <a href="/htap">HTAP</a>
+      <a href="/bronchectasies">Bronchectasies (DDB)</a>
+      <a href="/pneumopathie-hypersensibilite">Pneumopathie d'hypersensibilité</a>
+      <a href="/mucoviscidose">Mucoviscidose</a>
     </div>
     <div>
-      <h4>Légal</h4>
+      <p class="site-footer-title">Le projet</p>
+      <a href="/fonctionnement">Le parcours</a>
+      <a href="/actualites">Actualités</a>
+      <a href="/faq">FAQ</a>
+      <a href="/sources">Sources</a>
+      <a href="/partenaires">Partenaires</a>
+      <a href="/charte-editoriale">Charte éditoriale</a>
+      <a href="/soutenir">Nous soutenir</a>
+      <a href="/contact">Nous écrire</a>
+    </div>
+    <div>
+      <p class="site-footer-title">Informations</p>
+      <a href="/presse">Espace presse</a>
+      <a href="/telechargements">Téléchargements</a>
+      <a href="/rss.xml">Flux RSS des actualités</a>
       <a href="https://www.respi.info/legal/mentions" target="_blank" rel="noopener">Mentions légales</a>
       <a href="https://www.respi.info/legal/privacy" target="_blank" rel="noopener">Confidentialité</a>
-    </div></div>
+    </div>
+  </div>
   <div class="site-footer-bottom">
-    <span>© 2026 JOOY — Respi.info.</span>
-    <span>En cas d'urgence : <strong>15 (SAMU)</strong> ou <strong>112</strong>.</span>
+    <span>© 2026 JOOY, Respi.info.</span>
+    <span>Respi.info n'est pas un dispositif médical et ne remplace pas l'avis d'un professionnel de santé. En cas d'urgence : <strong>15 (SAMU)</strong> ou <strong>112</strong>.</span>
   </div>
 </footer>
+<!-- pied:fin -->
 
-<script src="assets/nav.js?v=20260502b"></script>
+<script src="/assets/nav.js?v=20261019"></script>
 </body>
 </html>

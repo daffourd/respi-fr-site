@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Actualités Respi.info</title>
+    <link>https://fr.respi.info/actualites</link>
+    <atom:link href="https://fr.respi.info/rss.xml" rel="self" type="application/rss+xml" />
+    <description>Santé respiratoire : un article de fond le matin et un conseil pratique l'après-midi, sourcés.</description>
+    <language>fr-FR</language>
+    <lastBuildDate>Mon, 19 Oct 2026 12:00:00 GMT</lastBuildDate>
+    <item>
+      <title>Aérer son logement en automne selon la qualité de l'air</title>
+      <link>https://fr.respi.info/actualites/2026-10-19-aerer-logement-automne-qualite-air</link>
+      <guid isPermaLink="true">https://fr.respi.info/actualites/2026-10-19-aerer-logement-automne-qualite-air</guid>
+      <pubDate>Mon, 19 Oct 2026 12:00:00 GMT</pubDate>
+      <category>Conseil pratique</category>
+      <category>Qualité de l'air</category>
+      <category>Vie quotidienne</category>
+      <description>Avec le retour du chauffage, l'air intérieur se charge vite. Combien de temps aérer, à quel moment de la journée, et comment tenir compte de la pollution.</description>
+    </item>
+    <item>
+      <title>Grippe et Covid : la vaccination 2026-2027 expliquée</title>
+      <link>https://fr.respi.info/actualites/2026-10-19-vaccination-grippe-covid-2026-2027</link>
+      <guid isPermaLink="true">https://fr.respi.info/actualites/2026-10-19-vaccination-grippe-covid-2026-2027</guid>
+      <pubDate>Mon, 19 Oct 2026 05:00:00 GMT</pubDate>
+      <category>Article de fond</category>
+      <category>BPCO</category>
+      <category>Asthme</category>
+      <category>Traitements</category>
+      <description>La campagne de vaccination contre la grippe et le Covid-19 a démarré le 13 octobre 2026. Qui est concerné, où se faire vacciner, et pourquoi ne pas attendre.</description>
+    </item>
+  </channel>
+</rss>

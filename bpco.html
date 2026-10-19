@@ -3,28 +3,49 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>BPCO : application gratuite Respi.info — Plan d'Action HAS et coach respiratoire</title>
-  <meta name="description" content="Application gratuite pour vivre avec une BPCO : météo respiratoire personnelle, Plan d'Action HAS GOLD 2024, coach IA rassurant, repérage Réhabilitation Respiratoire, suivi de l'observance. Sans pub." />
+  <title>BPCO : application gratuite de suivi | Respi.info</title>
+  <meta name="description" content="BPCO : météo respiratoire personnelle, plan d'action sur le modèle de la HAS, coach respiratoire et suivi des signes d'alerte. Gratuit, sans publicité." />
   <meta property="og:title" content="BPCO : application gratuite Respi.info" />
-  <meta property="og:description" content="Plan d'Action HAS BPCO, coach IA rassurant, suivi des signes d'exacerbation. Application gratuite, sans pub." />
+  <meta property="og:description" content="plan d'action BPCO sur le modèle de la HAS, coach respiratoire rassurant, suivi des signes d'exacerbation. Application gratuite, sans pub." />
   <meta property="og:url" content="https://fr.respi.info/bpco" />
-  <meta property="og:image" content="assets/logo-512.png" />
+  <meta property="og:image" content="https://fr.respi.info/assets/og/site.png" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="BPCO : application gratuite Respi.info" />
-  <meta name="twitter:description" content="Plan d'Action HAS BPCO, coach IA rassurant, suivi des signes d'exacerbation. Application gratuite, sans pub." />
-  <meta name="twitter:image" content="https://fr.respi.info/assets/logo-512.png" />
+  <meta name="twitter:description" content="plan d'action BPCO sur le modèle de la HAS, coach respiratoire rassurant, suivi des signes d'exacerbation. Application gratuite, sans pub." />
+  <meta name="twitter:image" content="https://fr.respi.info/assets/og/site.png" />
   <meta name="theme-color" content="#0D1B2A" />
   <link rel="canonical" href="https://fr.respi.info/bpco" />
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png" />
-  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png" />
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/styles.css?v=20260502b" />
+  <link rel="stylesheet" href="/assets/styles.css?v=20261019" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
+    {
+      "@type": "MedicalWebPage",
+      "@id": "https://fr.respi.info/bpco#page",
+      "url": "https://fr.respi.info/bpco",
+      "name": "BPCO : application gratuite de suivi | Respi.info",
+      "description": "BPCO : météo respiratoire personnelle, plan d'action sur le modèle de la HAS, coach respiratoire et suivi des signes d'alerte. Gratuit, sans publicité.",
+      "inLanguage": "fr-FR",
+      "lastReviewed": "2026-10-19",
+      "dateModified": "2026-10-19",
+      "about": {
+        "@type": "MedicalCondition",
+        "name": "BPCO"
+      },
+      "publisher": {
+        "@id": "https://fr.respi.info/#organization"
+      },
+      "audience": {
+        "@type": "PeopleAudience",
+        "audienceType": "Patients et aidants"
+      }
+    },
     {
       "@type": "MedicalCondition",
       "name": "BPCO",
@@ -37,7 +58,7 @@
       "name": "Respi.info",
       "url": "https://www.respi.info/",
       "applicationCategory": "HealthApplication",
-      "operatingSystem": "Web (PWA)",
+      "operatingSystem": "Web (PWA), iOS, Android",
       "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
       "isAccessibleForFree": true,
       "audience": { "@type": "PeopleAudience", "healthCondition": { "@type": "MedicalCondition", "name": "BPCO" } }
@@ -48,40 +69,45 @@
 </head>
 <body>
 
+<!-- entete:debut -->
+<a class="skip-link" href="#contenu">Aller au contenu</a>
 <header class="site-header">
   <div class="site-header-inner">
-    <a href="index.html" class="brand">
-      <img src="assets/logo.png" alt="Respi.info" />
+    <a href="/" class="brand">
+      <img src="/assets/logo-76.png" alt="" width="38" height="38" />
       <span class="brand-txt">Respi.info<small>Respirer mieux, vivre plus</small></span>
     </a>
-    <nav class="r-nav" aria-label="Navigation principale">
+    <nav class="r-nav" id="main-nav" aria-label="Navigation principale">
       <div class="r-nav-group">
-        <button type="button" class="r-nav-trigger" aria-haspopup="true" aria-expanded="false" aria-controls="r-menu-app">L'application</button>
-        <div class="r-nav-dropdown" id="r-menu-app" role="menu">
-          <a href="fonctionnement.html" role="menuitem">Le parcours</a>
-          <a href="pour-qui.html" role="menuitem">Pour qui</a>
-          <a href="faq.html" role="menuitem">FAQ</a>
-          <a href="soutenir.html" role="menuitem">Nous soutenir</a>
+        <button type="button" class="r-nav-trigger" aria-expanded="false" aria-controls="r-menu-app">L'application</button>
+        <div class="r-nav-dropdown" id="r-menu-app">
+          <a href="/fonctionnement">Le parcours</a>
+          <a href="/pour-qui">Pour qui</a>
+          <a href="/faq">FAQ</a>
+          <a href="/soutenir">Nous soutenir</a>
         </div>
       </div>
       <div class="r-nav-group">
-        <button type="button" class="r-nav-trigger" aria-haspopup="true" aria-expanded="false" aria-controls="r-menu-ressources">Ressources</button>
-        <div class="r-nav-dropdown" id="r-menu-ressources" role="menu">
-          <a href="sources.html" role="menuitem">Sources</a>
-          <a href="telechargements.html" role="menuitem">Téléchargements</a>
-          <a href="partenaires.html" role="menuitem">Partenaires</a>
-          <a href="soutenir.html" role="menuitem">Nous soutenir</a>
+        <button type="button" class="r-nav-trigger" aria-expanded="false" aria-controls="r-menu-ressources">Ressources</button>
+        <div class="r-nav-dropdown" id="r-menu-ressources">
+          <a href="/sources">Sources</a>
+          <a href="/telechargements">Téléchargements</a>
+          <a href="/partenaires">Partenaires</a>
+          <a href="/charte-editoriale">Charte éditoriale</a>
         </div>
       </div>
-      <a href="presse.html">Presse</a>
-      <a href="contact.html">Contact</a>
+      <a href="/actualites">Actualités</a>
+      <a href="/presse">Presse</a>
+      <a href="/contact">Contact</a>
     </nav>
     <a class="r-cta-pill" href="https://www.respi.info">Ouvrir l'app</a>
-    <button type="button" class="r-nav-toggle" aria-label="Ouvrir le menu" aria-controls="main-nav">
+    <button type="button" class="r-nav-toggle" aria-label="Ouvrir le menu" aria-controls="main-nav" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
   </div>
 </header>
+<!-- entete:fin -->
+<main id="contenu" tabindex="-1">
 
 <section class="page-head">
   <div class="page-head-inner">
@@ -90,11 +116,12 @@
     <p>
       Respi.info est une <strong>application gratuite</strong> pensée pour les personnes vivant avec une BPCO
       (bronchopneumopathie chronique obstructive). Score quotidien d'air et de pollens, coach respiratoire
-      au ton rassurant, Plan d'Action HAS prérempli, repérage des critères de Réhabilitation Respiratoire — sans pub, sans revente de données.
+      au ton rassurant, plan d'action prérempli sur le modèle de la HAS, repérage des critères de Réhabilitation Respiratoire, sans pub, sans revente de données.
     </p>
+    <p class="r-maj">Mis à jour le <time datetime="2026-10-19">19 octobre 2026</time></p>
     <div class="hero-cta" style="margin-top: 22px;">
       <a class="btn primary" href="https://www.respi.info">Ouvrir l'application</a>
-      <a class="btn secondary" href="downloads/Respi.info_OnePager_Patients.pdf" target="_blank" rel="noopener">Télécharger la fiche A4</a>
+      <a class="btn secondary" href="/downloads/Respi.info_OnePager_Patients.pdf" target="_blank" rel="noopener">Télécharger la fiche A4</a>
     </div>
   </div>
 </section>
@@ -105,12 +132,10 @@
     <h2 class="h-serif">La BPCO, <em>en bref.</em></h2>
     <p class="lead" style="margin-top: 14px;">
       La BPCO est une maladie respiratoire chronique progressive, caractérisée par une obstruction
-      partiellement réversible des voies aériennes. Elle touche en France <strong>3,5 millions de personnes</strong>
-      (dont une grande partie ignore le diagnostic), et provoque environ
-      <strong>17 000 décès par an</strong> (source <a href="https://www.santepubliquefrance.fr" target="_blank" rel="noopener">Santé publique France</a>).
+      partiellement réversible des voies aériennes. En France, environ <strong>3,5 millions de personnes</strong> seraient atteintes selon une estimation de 2010, un chiffre probablement sous-estimé car beaucoup de malades ignorent leur diagnostic. En 2017, <strong>17 000 décès</strong> lui étaient imputables, comme cause initiale ou associée (source <a href="https://www.inserm.fr/dossier/bronchopneumopathie-chronique-obstructive-bpco/" target="_blank" rel="noopener">Inserm</a>).
     </p>
     <p>
-      Les recommandations <strong>GOLD 2024</strong> (international) et <strong>HAS 2024</strong> (France)
+      Les recommandations <strong>GOLD 2026</strong> (international) et <strong>HAS</strong> (France)
       insistent sur trois leviers majeurs : l'arrêt des facteurs d'exposition (tabac, polluants),
       la <strong>Réhabilitation Respiratoire</strong> (programme structuré avec kiné respi, APA,
       ETP, soutien psychologique), et la possession d'un <strong>Plan d'Action écrit</strong> pour
@@ -127,16 +152,16 @@
       <article class="r-card">
         <div class="r-card-eyebrow">1. Météo respiratoire</div>
         <h3>Adaptée à ton GOLD A/B/E</h3>
-        <p>Le score 0–100 prend en compte ta classification GOLD, ton oxygénothérapie éventuelle, tes traitements (CSI/LAMA/LABA). Pollution, pollens, vent, vigilance Météo France.</p>
+        <p>Le score 0 à 100 prend en compte ta classification GOLD, ton oxygénothérapie éventuelle, tes traitements (CSI/LAMA/LABA). Pollution, pollens, vent, vigilance Météo France.</p>
       </article>
       <article class="r-card">
-        <div class="r-card-eyebrow card-eyebrow--sauge">2. Coach IA rassurant</div>
+        <div class="r-card-eyebrow card-eyebrow--sauge">2. Coach respiratoire rassurant</div>
         <h3>Anti-essoufflement, anti-isolement</h3>
         <p>Cohérence cardiaque (4 min), gestes du quotidien (faire le lit, s'habiller), techniques de toux contrôlée. Garde-fous : redirection 15 / SAMU si signaux d'exacerbation sévère.</p>
       </article>
       <article class="r-card">
-        <div class="r-card-eyebrow card-eyebrow--ambre">3. Plan d'Action HAS BPCO</div>
-        <h3>HAS 2024 + GOLD 2024</h3>
+        <div class="r-card-eyebrow card-eyebrow--ambre">3. plan d'action BPCO sur le modèle de la HAS</div>
+        <h3>HAS + GOLD 2026</h3>
         <p>Zones verte / jaune / orange / rouge prérempli grâce à ton historique (essoufflement habituel, traitements de secours, antibioprophylaxie). Édité avec ton pneumologue, imprimable A4.</p>
       </article>
       <article class="r-card">
@@ -167,13 +192,24 @@
     <h2 class="h-serif">Tout est <em>tracé.</em></h2>
     <p>
       Le contenu thérapeutique sur la BPCO dans Respi.info s'appuie sur :
-      <strong><a href="https://www.has-sante.fr" target="_blank" rel="noopener">HAS 2024</a></strong> (parcours BPCO),
-      <strong><a href="https://goldcopd.org" target="_blank" rel="noopener">GOLD 2024</a></strong> (recommandations internationales),
+      <strong><a href="https://www.has-sante.fr" target="_blank" rel="noopener">HAS</a></strong> (parcours BPCO),
+      <strong><a href="https://goldcopd.org" target="_blank" rel="noopener">GOLD 2026</a></strong> (recommandations internationales),
       <strong><a href="https://splf.fr" target="_blank" rel="noopener">SPLF</a></strong>,
       <strong><a href="https://www.ffaair.org" target="_blank" rel="noopener">FFAAIR</a></strong>,
       <strong><a href="https://www.em-consulte.com" target="_blank" rel="noopener">EM-Consulte</a></strong> (ergothérapie, kiné respi).
-      Voir <a href="partenaires-sources.html">la page Sources</a>.
+      Voir <a href="/sources">la page Sources</a>.
     </p>
+  </div>
+</section>
+
+<section class="section" style="padding-top: 0;">
+  <div class="section-inner section-inner--narrow">
+    <aside class="r-avertissement" aria-label="Avertissement santé">
+      <p><strong>Cette page ne remplace pas un avis médical.</strong> Respi.info est un outil d'information et d'auto-suivi, pas un dispositif médical. Parle de toute question sur ta maladie ou ton traitement avec ton médecin ou ton équipe soignante. En cas de gêne respiratoire inhabituelle ou sévère, appelle le <strong>15</strong> ou le <strong>112</strong>.</p>
+    </aside>
+    <div class="r-asso">
+      <p><strong>Associations de patients.</strong> Pour trouver du soutien et échanger avec d'autres patients : <a href="https://sante-respiratoire.com" target="_blank" rel="noopener">Santé Respiratoire France</a> et la <a href="https://www.ffaair.org" target="_blank" rel="noopener">FFAAIR</a>.</p>
+    </div>
   </div>
 </section>
 
@@ -184,51 +220,64 @@
       <p>Crée ton compte gratuit, déclare ta BPCO et ton stade, et reçois ta première météo respiratoire personnalisée demain matin.</p>
       <div class="hero-cta center">
         <a class="btn light" href="https://www.respi.info">Ouvrir l'application</a>
-        <a class="btn outline-light" href="faq.html">Voir la FAQ</a>
+        <a class="btn outline-light" href="/faq">Voir la FAQ</a>
       </div>
     </div>
   </div>
 </section>
+</main>
 
+<!-- pied:debut -->
 <footer class="site-footer">
   <div class="site-footer-inner">
     <div>
-      <a href="index.html" class="brand" style="margin-bottom: 16px;">
-        <img src="assets/logo.png" alt="Respi.info" style="filter: brightness(0) invert(1);" />
-        <span class="brand-txt" style="color: #fff;">Respi.info<small style="color: rgba(255,255,255,0.6);">Respirer mieux, vivre plus</small></span>
+      <a href="/" class="brand" style="margin-bottom: 16px;">
+        <img src="/assets/logo-76.png" alt="" width="38" height="38" />
+        <span class="brand-txt" style="color: #fff;">Respi.info<small style="color: rgba(255,255,255,0.75);">Respirer mieux, vivre plus</small></span>
       </a>
-      <p class="baseline">Application gratuite. Édité par <strong>JOOY</strong>, association loi 1901. Respi.info n'est pas un dispositif médical.</p>
-    </div>
-        <div>
-      <h4>Pathologies</h4>
-      <a href="asthme.html">Asthme</a>
-      <a href="bpco.html">BPCO</a>
-      <a href="fibrose.html">Fibrose pulmonaire</a>
-      <a href="htap.html">HTAP</a>
-      <a href="bronchectasies.html">Bronchectasies / DDB</a>
-      <a href="pneumopathie-hypersensibilite.html">Pneumopathie d'hypersensibilité</a>
-      <a href="mucoviscidose.html">Mucoviscidose</a>
+      <p class="baseline">
+        Application gratuite pour les personnes vivant avec une maladie respiratoire chronique,
+        une allergie, un asthme ou exposées à la pollution.
+        Éditée par <strong>JOOY</strong>, association loi 1901, sans publicité ni revente de données.
+      </p>
     </div>
     <div>
-      <h4>Le projet</h4>
-      <a href="fonctionnement.html">Le parcours</a>
-      <a href="faq.html">FAQ</a>
-      <a href="sources.html">Sources</a>
-      <a href="partenaires.html">Partenaires</a>
-      <a href="soutenir.html">Nous soutenir</a>
-      <a href="contact.html">Nous écrire</a>
+      <p class="site-footer-title">Pathologies</p>
+      <a href="/asthme">Asthme</a>
+      <a href="/bpco">BPCO</a>
+      <a href="/fibrose">Fibrose pulmonaire</a>
+      <a href="/htap">HTAP</a>
+      <a href="/bronchectasies">Bronchectasies (DDB)</a>
+      <a href="/pneumopathie-hypersensibilite">Pneumopathie d'hypersensibilité</a>
+      <a href="/mucoviscidose">Mucoviscidose</a>
     </div>
     <div>
-      <h4>Légal</h4>
+      <p class="site-footer-title">Le projet</p>
+      <a href="/fonctionnement">Le parcours</a>
+      <a href="/actualites">Actualités</a>
+      <a href="/faq">FAQ</a>
+      <a href="/sources">Sources</a>
+      <a href="/partenaires">Partenaires</a>
+      <a href="/charte-editoriale">Charte éditoriale</a>
+      <a href="/soutenir">Nous soutenir</a>
+      <a href="/contact">Nous écrire</a>
+    </div>
+    <div>
+      <p class="site-footer-title">Informations</p>
+      <a href="/presse">Espace presse</a>
+      <a href="/telechargements">Téléchargements</a>
+      <a href="/rss.xml">Flux RSS des actualités</a>
       <a href="https://www.respi.info/legal/mentions" target="_blank" rel="noopener">Mentions légales</a>
       <a href="https://www.respi.info/legal/privacy" target="_blank" rel="noopener">Confidentialité</a>
-    </div></div>
+    </div>
+  </div>
   <div class="site-footer-bottom">
-    <span>© 2026 JOOY — Respi.info.</span>
-    <span>En cas d'urgence : <strong>15 (SAMU)</strong> ou <strong>112</strong>.</span>
+    <span>© 2026 JOOY, Respi.info.</span>
+    <span>Respi.info n'est pas un dispositif médical et ne remplace pas l'avis d'un professionnel de santé. En cas d'urgence : <strong>15 (SAMU)</strong> ou <strong>112</strong>.</span>
   </div>
 </footer>
+<!-- pied:fin -->
 
-<script src="assets/nav.js?v=20260502b"></script>
+<script src="/assets/nav.js?v=20261019"></script>
 </body>
 </html>
