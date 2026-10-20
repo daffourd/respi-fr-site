@@ -306,8 +306,10 @@ const ALT_DEFAUT = {
   pratique: "Visuel Respi.info vert sauge, mention Conseil pratique et adresse fr.respi.info/actualites",
 };
 const ORGANISATION = { "@type": "Organization", "@id": `${SITE}/#organization`, name: "JOOY, Respi.info", url: `${SITE}/`, logo: `${SITE}/assets/logo-512.png` };
-// Avertissement santé : ligne discrète en bas d'article, jamais en encadré en tête (demande de Vincent Daffourd, 20/10/2026)
-const AVERTISSEMENT = `<p class="r-maj">Cet article informe et ne remplace pas l'avis de ton médecin ou de ton équipe soignante. En cas d'aggravation brutale (essoufflement inhabituel, douleur thoracique, lèvres bleues), appelle le 15.</p>`;
+// Avertissement santé : petite cartouche discrète en fin d'article, numéros cliquables, jamais en tête ni au milieu (demande de Vincent Daffourd, 20/10/2026)
+const AVERTISSEMENT = `<aside class="r-avertissement-bas" aria-label="Avertissement santé">
+      <p>Cet article informe et ne remplace pas l'avis de ton médecin ou de ton équipe soignante. En cas d'aggravation brutale (essoufflement inhabituel, douleur thoracique, lèvres bleues), appelle le <a href="tel:15"><strong>15</strong></a> ou le <a href="tel:112"><strong>112</strong></a>.</p>
+    </aside>`;
 
 function head({ titre, description, url, image, imageAlt, ogType = "website", jsonld, extra = "" }) {
   return `<!doctype html>
@@ -341,7 +343,7 @@ ${extra}  <link rel="alternate" type="application/rss+xml" title="Actualités Re
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/assets/styles.css?v=${VERSION_ASSETS}" />
-  <link rel="stylesheet" href="/assets/actualites.css?v=${VERSION_ASSETS}" />
+  <link rel="stylesheet" href="/assets/actualites.css?v=${VERSION_ASSETS}-2" />
   <script type="application/ld+json">
 ${JSON.stringify(jsonld, null, 2).replace(/</g, "\\u003c")}
   </script>

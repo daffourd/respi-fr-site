@@ -46,7 +46,7 @@ Corps en Markdown simple.
 - `mis_a_jour: AAAA-MM-JJ` : facultatif, seulement après une correction.
 - Une ligne `source:` par source, au format `Titre, Média | https://...` (la dernière virgule sépare le titre du média).
 - Markdown admis : `##` et `###`, listes `-` ou `1.`, **gras**, *italique*, liens `[texte](https://...)` ou `[texte](/bpco)`, citations courtes `>`. Tout HTML est refusé.
-- Pas de titre `#` dans le corps : le titre vient de l'en-tête. Le gabarit ajoute seul les sources numérotées, le lien vers l'application, la ligne de charte éditoriale, l'avertissement santé (une ligne discrète tout en bas de l'article, jamais d'encadré en tête ou au milieu du texte) et 3 articles liés. Ne jamais remettre cet avertissement en encadré ni l'écrire dans le corps de l'article.
+- Pas de titre `#` dans le corps : le titre vient de l'en-tête. Le gabarit ajoute seul les sources numérotées, le lien vers l'application, la ligne de charte éditoriale, l'avertissement santé (une petite cartouche discrète tout en fin d'article, numéros 15 et 112 en gras et cliquables, jamais en tête ni au milieu du texte) et 3 articles liés. Ne jamais remettre cet avertissement en encadré ni l'écrire dans le corps de l'article.
 
 ## 4. Structures types
 
