@@ -6,7 +6,17 @@
     <atom:link href="https://fr.respi.info/rss.xml" rel="self" type="application/rss+xml" />
     <description>Santé respiratoire : un article de fond le matin et un conseil pratique l'après-midi, sourcés.</description>
     <language>fr-FR</language>
-    <lastBuildDate>Mon, 19 Oct 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 20 Oct 2026 05:00:00 GMT</lastBuildDate>
+    <item>
+      <title>Chauffage au bois : protéger ses poumons des fumées l'hiver</title>
+      <link>https://fr.respi.info/actualites/2026-10-20-chauffage-bois-particules-fines-poumons</link>
+      <guid isPermaLink="true">https://fr.respi.info/actualites/2026-10-20-chauffage-bois-particules-fines-poumons</guid>
+      <pubDate>Tue, 20 Oct 2026 05:00:00 GMT</pubDate>
+      <category>Article de fond</category>
+      <category>Qualité de l'air</category>
+      <category>Vie quotidienne</category>
+      <description>Le chauffage au bois reprend avec le froid. Pourquoi ses particules fines gênent les bronches fragiles et quels gestes simples réduisent les fumées chez toi.</description>
+    </item>
     <item>
       <title>Aérer son logement en automne selon la qualité de l'air</title>
       <link>https://fr.respi.info/actualites/2026-10-19-aerer-logement-automne-qualite-air</link>

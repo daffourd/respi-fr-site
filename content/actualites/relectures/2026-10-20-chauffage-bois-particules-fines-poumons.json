@@ -1,0 +1,40 @@
+{
+  "article": "2026-10-20-chauffage-bois-particules-fines-poumons",
+  "verdict": "PUBLIER",
+  "sha256": "683dfe2f4df64f93a5f919573bc43b6148b40168930207ba228402d6ca409bf6",
+  "relu_le": "2026-10-20T04:16:36+00:00",
+  "relecteur": "Relecteur IA indépendant (sous-agent distinct du rédacteur)",
+  "sources_verifiees": [
+    {
+      "url": "https://www.atmo-auvergnerhonealpes.fr/article/chauffage-au-bois",
+      "ok": true,
+      "constat": "« le chauffage résidentiel au bois est le principal contributeur aux émissions de particules fines » ; « un appareil labellisé flamme verte 5* émet environ 100 fois moins de particules dans l'air qu'une cheminée à foyer ouvert » ; « émet du benzo(a)pyrène, du monoxyde de carbone (CO) [...] Ces polluants sont reconnus cancérigènes pour l'homme » ; « Les fonds Air Bois proposent, sur certains territoires, une aide financière aux particuliers ». Page sans date, d'où « consultée en octobre 2026 », correct."
+    },
+    {
+      "url": "https://www.atmo-grandest.eu/actualite/passons-lhiver-de-bon-poele-les-chiffres-cles-du-chauffage-au-bois",
+      "ok": true,
+      "constat": "Publié le 13 novembre 2023 : « un appareil qui date de 1996 ou avant émet 5 fois plus de particules qu'un appareil performant » ; populations sensibles : « Les enfants, les personnes âgées, les personnes souffrant de maladies respiratoires et les femmes enceintes » ; allumage par le haut : « jusqu'à 6x moins de particules que l'allumage par le bas » ; bois « rentré près du foyer 24 à 48 heures avant sa combustion »."
+    },
+    {
+      "url": "https://www.atmo-grandest.eu/actualite/chauffage-au-bois-7-regles-pour-mieux-se-chauffer-et-moins-polluer",
+      "ok": true,
+      "constat": "Publié le 31 janvier 2023 : bois humide « fournit moins d'énergie » et « libère sensiblement plus de substances polluantes » ; « bois feuillu dense : hêtre, charme, châtaignier, chêne, frêne, robinier » ; « éviter le bois souillé, peint, vernis » ; « ne brûlez pas de déchets » ; allumage inversé (petites bûches en haut, résineux sec et cube d'allumage dessus, fermer la porte) ; fumée « blanche », « vitre [...] s'encrasse peu » ; tirage trop faible si « épaisse fumée », « ouvrez immédiatement les entrées d'air », « vérifiez que le conduit de fumée est étanche et n'est pas encrassé » ; « le ramonage aussi est obligatoire » ; chaudière : « l'entretien annuel par une personne qualifiée est obligatoire »."
+    },
+    {
+      "url": "https://invs.santepubliquefrance.fr/air/pollution-atmospherique-quels-sont-les-risques",
+      "ok": true,
+      "constat": "Mise à jour 29 janvier 2025 : court terme, peut « aggraver des pathologies respiratoires chroniques (asthme, bronchite…) », effets « le jour même ou dans les jours qui suivent » ; long terme : « une réduction de la capacité respiratoire, une augmentation de la réactivité bronchique », asthme, « infections respiratoires inférieures », BPCO ; effets « bien plus importants qu'à court terme »."
+    },
+    {
+      "url": "https://inpes.santepubliquefrance.fr/index.php/presse/pollution-de-lair-ambiant-nouvelles-estimations-de-son-impact-sur-la-sante-des-francais",
+      "ok": true,
+      "constat": "Publié le 14 avril 2021 : « chaque année près de 40 000 décès seraient attribuables à une exposition des personnes âgées de 30 ans et plus » aux PM2,5 (période 2016-2019) ; « perte d'espérance de vie de près de 8 mois »."
+    },
+    {
+      "url": "https://www.normandie.ars.sante.fr/monoxyde-de-carbone-7",
+      "ok": true,
+      "constat": "Date affichée 8 juin 2026 (page créée en 2017, donc « mise à jour en juin 2026 » acceptable) : « la première cause de mortalité par intoxication accidentelle dans l'habitat », « une centaine de décès en France chaque année » ; « Faire ramoner et vérifier l'étanchéité des conduits » avant l'hiver ; « Aérer quotidiennement les pièces de vie [...] pendant 10 minutes au minimum » ; « Laisser libres les entrées et sorties d'air (grilles d'aération) » ; symptômes « maux de têtes, nausées, fatigue, malaises » ; aérer, évacuer, appeler « 112 [...] 15 SAMU »."
+    }
+  ],
+  "corrections": []
+}

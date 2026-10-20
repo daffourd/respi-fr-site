@@ -1,8 +1,27 @@
 {
-  "maj": "2026-10-19T14:00:00+02:00",
+  "maj": "2026-10-20T07:00:00+02:00",
   "site": "https://fr.respi.info",
   "rss": "https://fr.respi.info/rss.xml",
   "articles": [
+    {
+      "slug": "2026-10-20-chauffage-bois-particules-fines-poumons",
+      "titre": "Chauffage au bois : protéger ses poumons des fumées l'hiver",
+      "description": "Le chauffage au bois reprend avec le froid. Pourquoi ses particules fines gênent les bronches fragiles et quels gestes simples réduisent les fumées chez toi.",
+      "date": "2026-10-20",
+      "heure": "07:00",
+      "publie_le": "2026-10-20T07:00:00+02:00",
+      "mis_a_jour": null,
+      "type": "fond",
+      "type_libelle": "Article de fond",
+      "thematiques": [
+        "qualite-air",
+        "vie-quotidienne"
+      ],
+      "temps_lecture_min": 5,
+      "url": "https://fr.respi.info/actualites/2026-10-20-chauffage-bois-particules-fines-poumons",
+      "image": "https://fr.respi.info/assets/og/fond.png",
+      "image_alt": "Visuel Respi.info vert sauge avec la mention Article de fond, illustrant un poêle à bois et la qualité de l'air en hiver"
+    },
     {
       "slug": "2026-10-19-aerer-logement-automne-qualite-air",
       "titre": "Aérer son logement en automne selon la qualité de l'air",
