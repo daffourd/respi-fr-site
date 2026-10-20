@@ -1,0 +1,25 @@
+{
+  "article": "2026-10-20-se-laver-les-mains-virus-hiver",
+  "verdict": "PUBLIER",
+  "sha256": "7eabbf8ad1bff257b8c86ea85af66a2fb23fc3da2a836fab20d4079c926a9e8b",
+  "relu_le": "2026-10-20T10:44:06+00:00",
+  "relecteur": "Relecteur IA indépendant (sous-agent distinct du rédacteur)",
+  "sources_verifiees": [
+    {
+      "url": "https://www.sante.fr/gestes-barrieres/pourquoi-quand-et-comment-bien-se-laver-les-mains",
+      "ok": true,
+      "constat": "Page publiée le 02/10/2025 (modifiée le 06/07/2026). « Élimine les germes présents sur nos mains. » Savon liquide de préférence, frotter 30 secondes ongles, bout des doigts, paume, extérieur des mains, jointures et poignets ; « se rincer les mains à l'eau et les sécher avec une serviette propre ou à l'air libre » ; « Une solution hydro-alcoolique peut aussi être utilisée sur des mains non souillées par une friction pendant 30 secondes. » Transmission par contact avec une personne ou un objet puis le visage. Moments avant (bébé, repas, blessure, soins à une personne à la maison) et après (se moucher, tousser, éternuer, visite à un malade, sortie, transports en commun, toilettes, caresser un animal) : conformes à l'article."
+    },
+    {
+      "url": "https://www.paca.ars.sante.fr/les-gestes-barrieres-pour-lutter-contre-la-transmission-des-virus-respiratoires",
+      "ok": true,
+      "constat": "Publiée le 11 décembre 2025 (domaine ars.sante.fr en liste officielle). « L'utilisation de mouchoir à usage unique et le fait de tousser ou d'éternuer dans son coude » ; « Le port du masque en présence de symptômes, dans les lieux très fréquentés » et « en présence de personnes fragiles et à risque de formes graves » ; « L'aération et la ventilation régulière des espaces clos ». « Une fois combinés, ces gestes simples constituent un bouclier de protection efficace » justifie « fonctionne mieux associé aux autres gestes barrières »."
+    },
+    {
+      "url": "https://www.santepubliquefrance.fr/virus-hivernaux/les-enjeux-de-sante",
+      "ok": true,
+      "constat": "« Les virus de l'hiver sont chaque année à l'origine d'épidémies de grippe, de gastro-entérite et de bronchiolite. » ; « Mais la grippe peut être grave, voire mortelle, en particulier chez les personnes fragiles. » ; gestes recommandés dont utiliser un mouchoir à usage unique, le jeter puis se laver les mains."
+    }
+  ],
+  "corrections": []
+}

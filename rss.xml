@@ -6,7 +6,17 @@
     <atom:link href="https://fr.respi.info/rss.xml" rel="self" type="application/rss+xml" />
     <description>Santé respiratoire : un article de fond le matin et un conseil pratique l'après-midi, sourcés.</description>
     <language>fr-FR</language>
-    <lastBuildDate>Tue, 20 Oct 2026 05:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 20 Oct 2026 12:00:00 GMT</lastBuildDate>
+    <item>
+      <title>Se laver les mains : le geste simple contre les virus de l'hiver</title>
+      <link>https://fr.respi.info/actualites/2026-10-20-se-laver-les-mains-virus-hiver</link>
+      <guid isPermaLink="true">https://fr.respi.info/actualites/2026-10-20-se-laver-les-mains-virus-hiver</guid>
+      <pubDate>Tue, 20 Oct 2026 12:00:00 GMT</pubDate>
+      <category>Conseil pratique</category>
+      <category>Vie quotidienne</category>
+      <category>Aidants</category>
+      <description>Chaque hiver, des virus causent grippe et bronchiolite. Un lavage des mains de 30 secondes, aux bons moments, limite leur transmission. Le geste, pas à pas.</description>
+    </item>
     <item>
       <title>Chauffage au bois : protéger ses poumons des fumées l'hiver</title>
       <link>https://fr.respi.info/actualites/2026-10-20-chauffage-bois-particules-fines-poumons</link>

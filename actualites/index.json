@@ -1,8 +1,27 @@
 {
-  "maj": "2026-10-20T07:00:00+02:00",
+  "maj": "2026-10-20T14:00:00+02:00",
   "site": "https://fr.respi.info",
   "rss": "https://fr.respi.info/rss.xml",
   "articles": [
+    {
+      "slug": "2026-10-20-se-laver-les-mains-virus-hiver",
+      "titre": "Se laver les mains : le geste simple contre les virus de l'hiver",
+      "description": "Chaque hiver, des virus causent grippe et bronchiolite. Un lavage des mains de 30 secondes, aux bons moments, limite leur transmission. Le geste, pas à pas.",
+      "date": "2026-10-20",
+      "heure": "14:00",
+      "publie_le": "2026-10-20T14:00:00+02:00",
+      "mis_a_jour": null,
+      "type": "pratique",
+      "type_libelle": "Conseil pratique",
+      "thematiques": [
+        "vie-quotidienne",
+        "aidants"
+      ],
+      "temps_lecture_min": 3,
+      "url": "https://fr.respi.info/actualites/2026-10-20-se-laver-les-mains-virus-hiver",
+      "image": "https://fr.respi.info/assets/og/pratique.png",
+      "image_alt": "Visuel Respi.info avec la mention Conseil pratique, illustrant des mains lavées à l'eau et au savon au-dessus d'un lavabo"
+    },
     {
       "slug": "2026-10-20-chauffage-bois-particules-fines-poumons",
       "titre": "Chauffage au bois : protéger ses poumons des fumées l'hiver",
