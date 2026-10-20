@@ -306,10 +306,8 @@ const ALT_DEFAUT = {
   pratique: "Visuel Respi.info vert sauge, mention Conseil pratique et adresse fr.respi.info/actualites",
 };
 const ORGANISATION = { "@type": "Organization", "@id": `${SITE}/#organization`, name: "JOOY, Respi.info", url: `${SITE}/`, logo: `${SITE}/assets/logo-512.png` };
-const AVERTISSEMENT = `<aside class="r-avertissement" aria-label="Avertissement santé">
-  <p><strong>Cet article informe et ne remplace pas l'avis de ton médecin ou de ton équipe soignante.</strong>
-  En cas d'aggravation brutale (essoufflement inhabituel, douleur thoracique, lèvres bleues), appelle le <strong>15</strong>.</p>
-</aside>`;
+// Avertissement santé : ligne discrète en bas d'article, jamais en encadré en tête (demande de Vincent Daffourd, 20/10/2026)
+const AVERTISSEMENT = `<p class="r-maj">Cet article informe et ne remplace pas l'avis de ton médecin ou de ton équipe soignante. En cas d'aggravation brutale (essoufflement inhabituel, douleur thoracique, lèvres bleues), appelle le 15.</p>`;
 
 function head({ titre, description, url, image, imageAlt, ogType = "website", jsonld, extra = "" }) {
   return `<!doctype html>
@@ -448,7 +446,6 @@ function pageArticle(a, tous) {
 </section>
 <section class="section">
   <article class="section-inner section-inner--narrow r-article">
-${AVERTISSEMENT}
 ${a.html}
     <h2 class="h-serif">Sources</h2>
     <ol class="r-sources">
@@ -459,6 +456,7 @@ ${sources}
       <a class="btn primary" href="https://www.respi.info">Voir ma météo respiratoire du jour</a>
     </div>
     <p class="r-charte-ligne">Article rédigé avec l'aide d'une intelligence artificielle, contrôlé automatiquement puis relu par un second système indépendant avant publication. <a href="/charte-editoriale">Rédaction encadrée par notre charte éditoriale</a>. Une erreur ? <a href="/contact?sujet=correction">Signale-la</a>.</p>
+    ${AVERTISSEMENT}
   </article>
 </section>${blocLies}
 </main>
