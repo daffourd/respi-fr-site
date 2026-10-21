@@ -27,7 +27,7 @@ import path from "node:path";
 import crypto from "node:crypto";
 import {
   TYPES, THEMATIQUES, CONDITIONS, DOMAINES_OFFICIELS, DOMAINES_RECONNUS,
-  INTERDITS_TYPO, INTERDITS_SANTE, INTERDITS_PERSONNES, RE_MARQUES, A_EVITER,
+  INTERDITS_TYPO, INTERDITS_SANTE, INTERDITS_PERSONNES, RE_MARQUES, A_EVITER, MAX_ARTICLES_PAR_JOUR,
 } from "./regles-editoriales.mjs";
 import { ENTETE, PIED, MARQUEURS, VERSION_ASSETS } from "./gabarits.mjs";
 
@@ -248,6 +248,28 @@ function markdown(md) {
 /* ------------------------------------------------------------------ */
 /* 3. Calendrier éditorial (content/evenements.json)                   */
 /* ------------------------------------------------------------------ */
+// File des sujets d'actualité (content/sujets-a-venir.json) : partagée par les robots pour étaler les sujets sur la semaine.
+function validerFileSujets() {
+  const f = "content/sujets-a-venir.json";
+  const p = path.join(ROOT, f);
+  if (!fs.existsSync(p)) return;
+  let data;
+  try { data = JSON.parse(lire(p)); } catch (e) { err(f, `JSON invalide (${e.message})`); return; }
+  if (!Array.isArray(data.sujets)) { err(f, "clé « sujets » (tableau) manquante"); return; }
+  data.sujets.forEach((x, i) => {
+    const ou = `sujet ${i + 1}`;
+    if (!x || typeof x !== "object") { err(f, `${ou} : objet attendu`); return; }
+    if (!x.sujet || x.sujet.length < 10) err(f, `${ou} : « sujet » manquant`);
+    if (!["fond", "pratique"].includes(x.type)) err(f, `${ou} : type fond ou pratique attendu`);
+    if (!dateValide(x.date_prevue)) err(f, `${ou} : date_prevue AAAA-MM-JJ attendue`);
+    if (!/^https:\/\/\S+$/.test(x.source_url || "")) err(f, `${ou} : source_url https attendue`);
+    if (!["prevu", "publie", "abandonne"].includes(x.statut)) err(f, `${ou} : statut prevu, publie ou abandonne attendu`);
+    const texte = JSON.stringify(x);
+    for (const r of INTERDITS_TYPO) { const m = texte.match(r.re); if (m) err(f, `${ou} : ${r.msg} (« ${m[0]} »)`); }
+  });
+}
+
+/* ------------------------------------------------------------------ */
 function validerEvenements() {
   const f = "content/evenements.json";
   if (!fs.existsSync(EVENEMENTS)) { warn(f, "fichier absent : les robots choisiront un sujet d'actualité"); return; }
@@ -258,8 +280,10 @@ function validerEvenements() {
   const creneaux = new Map();
   const reserver = (date, type, ou) => {
     const k = `${date}|${type}`;
-    if (creneaux.has(k)) err(f, `${ou} : le créneau ${type} du ${date} est déjà pris par ${creneaux.get(k)} (un fond et un pratique au plus par jour)`);
-    else creneaux.set(k, ou);
+    const pris = creneaux.get(k) || [];
+    const max = (TYPES[type] && TYPES[type].maxParJour) || 1;
+    if (pris.length >= max) err(f, `${ou} : le ${date}, déjà ${pris.length} article(s) ${type} réservé(s) par ${pris.join(", ")} (${max} au plus par jour)`);
+    else creneaux.set(k, [...pris, ou]);
   };
   const decaler = (d, n) => { const x = new Date(d + "T12:00:00Z"); x.setUTCDate(x.getUTCDate() + n); return x.toISOString().slice(0, 10); };
   data.evenements.forEach((e, i) => {
@@ -497,7 +521,7 @@ function pageListe({ articles, base, numero, total, titreH1, intro, titre, descr
     </nav>` : "";
   return head({
     titre: numero > 1 ? `${titre} (page ${numero})` : titre, description, url, image: OG.site,
-    imageAlt: "Visuel Respi.info : Actualités respiratoires, un article de fond et un conseil pratique chaque jour", jsonld,
+    imageAlt: "Visuel Respi.info : Actualités respiratoires, articles de fond et conseils pratiques au fil de l'actualité", jsonld,
     extra: `${numero > 1 ? `  <link rel="prev" href="${SITE}${lienPage(numero - 1)}" />\n` : ""}${numero < total ? `  <link rel="next" href="${SITE}${lienPage(numero + 1)}" />\n` : ""}`,
   }) + `
 <main id="contenu" tabindex="-1">
@@ -578,12 +602,20 @@ for (const f of fichiers) {
   validerArticle(f, brut, lu.meta, lu.corps);
   articles.push({ ...lu.meta, thematiques: lu.meta.thematiques || [], slug: path.basename(f, ".md"), fichier: f, html: markdown(lu.corps), mots: compterMots(lu.corps) });
 }
-const parJourType = new Map();
+// Volume adapté à l'actualité, dans la limite des plafonds par type et par jour ; deux articles ne partagent jamais la même date et heure.
+const parJourType = new Map(), parJour = new Map(), parHoraire = new Map();
 for (const a of articles) {
   const cle = `${a.date}|${a.type}`;
-  if (parJourType.has(cle)) err(a.fichier, `deux articles « ${a.type} » le ${a.date} (avec ${parJourType.get(cle)}) : un fond et un pratique au maximum par jour`);
-  else parJourType.set(cle, a.fichier);
+  const n = (parJourType.get(cle) || 0) + 1; parJourType.set(cle, n);
+  const max = (TYPES[a.type] && TYPES[a.type].maxParJour) || 1;
+  if (n > max) err(a.fichier, `plus de ${max} article(s) « ${a.type} » le ${a.date}`);
+  const t = (parJour.get(a.date) || 0) + 1; parJour.set(a.date, t);
+  if (t > MAX_ARTICLES_PAR_JOUR) err(a.fichier, `plus de ${MAX_ARTICLES_PAR_JOUR} articles le ${a.date}`);
+  const h = `${a.date} ${a.heure}`;
+  if (parHoraire.has(h)) err(a.fichier, `même date et même heure que ${parHoraire.get(h)} : décaler l'heure (par exemple 14:30)`);
+  else parHoraire.set(h, a.fichier);
 }
+validerFileSujets();
 // Fichiers de relecture orphelins
 if (fs.existsSync(RELECTURES)) for (const r of fs.readdirSync(RELECTURES).filter((x) => x.endsWith(".json")))
   if (!fichiers.includes(r.replace(/\.json$/, ".md"))) warn(`relectures/${r}`, "relecture sans article correspondant (à supprimer)");
@@ -601,7 +633,7 @@ if (pause) {
 
 const publies = [...articles].sort((a, b) => (b.date + b.heure + b.type).localeCompare(a.date + a.heure + a.type));
 const themesUtilises = Object.keys(THEMATIQUES).filter((t) => publies.some((a) => a.thematiques.includes(t)));
-const INTRO = "Le matin, un article de fond qui explique une actualité scientifique ou sanitaire et ce qu'elle change au quotidien. L'après-midi, un conseil pratique à appliquer tout de suite. Toujours sourcé, jamais un avis médical individuel.";
+const INTRO = "Le matin, des articles de fond qui expliquent une actualité scientifique ou sanitaire et ce qu'elle change au quotidien. L'après-midi, des conseils pratiques à appliquer tout de suite. Le rythme suit l'actualité. Toujours sourcé, jamais un avis médical individuel.";
 
 function paginer(liste, base, fichierBase, opts) {
   const total = Math.max(1, Math.ceil(liste.length / PAR_PAGE));
@@ -617,14 +649,14 @@ if (!erreurs.length) {
   paginer(publies, "/actualites", "actualites", {
     titreH1: "Santé respiratoire : <em>l'essentiel, chaque jour.</em>", intro: INTRO, actif: "/actualites",
     titre: "Actualités respiratoires : BPCO, asthme, qualité de l'air | Respi.info",
-    description: "Chaque jour, un article de fond et un conseil pratique sur la santé respiratoire : BPCO, asthme, allergies, pollution de l'air. Sources officielles citées.",
+    description: "Au fil de l'actualité, articles de fond et conseils pratiques sur la santé respiratoire : BPCO, asthme, allergies, pollution de l'air. Sources officielles.",
   });
   for (const t of Object.keys(TYPES)) {
     paginer(publies.filter((a) => a.type === t), `/actualites/type/${t}`, `actualites/type/${t}`, {
       titreH1: t === "fond" ? "Articles de fond" : "Conseils pratiques", actif: `/actualites/type/${t}`,
       intro: t === "fond" ? "Une actualité scientifique ou sanitaire expliquée simplement, et ce qu'elle change au quotidien." : "Un geste concret à appliquer aujourd'hui, souvent lié à la saison.",
       titre: `${t === "fond" ? "Articles de fond" : "Conseils pratiques"} sur la santé respiratoire | Respi.info`,
-      description: t === "fond" ? "Articles de fond Respi.info : recherche, recommandations officielles et qualité de l'air expliquées simplement pour les patients respiratoires." : "Conseils pratiques Respi.info : un geste concret par jour pour mieux respirer avec une BPCO, un asthme, une allergie ou face à la pollution.",
+      description: t === "fond" ? "Articles de fond Respi.info : recherche, recommandations officielles et qualité de l'air expliquées simplement pour les patients respiratoires." : "Conseils pratiques Respi.info : des gestes concrets, au fil de l'actualité, pour mieux respirer avec une BPCO, un asthme, une allergie ou face à la pollution.",
     });
   }
   for (const t of themesUtilises) {

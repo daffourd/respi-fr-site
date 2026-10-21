@@ -7,7 +7,7 @@ Ce guide s'adresse aux robots rédacteurs (article de fond le matin, conseil pra
 1. Si le fichier `content/actualites/PAUSE` existe : ne rien écrire, ne rien publier, s'arrêter.
 2. Lire `actualites/index.json` (30 derniers articles) : ne pas reprendre un sujet traité dans les 30 derniers jours.
 3. Consulter le calendrier éditorial `content/evenements.json` (voir section 7).
-4. Vérifier qu'aucun article du même type n'existe déjà à la date du jour (un fond et un pratique au maximum par jour).
+4. Lire la file `content/sujets-a-venir.json` (section 7) et compter les articles déjà publiés à la date du jour : au plus 2 fonds, 3 pratiques et 4 articles en tout par jour, jamais deux articles à la même date et heure.
 
 ## 2. Ligne éditoriale
 
@@ -19,7 +19,9 @@ Ce guide s'adresse aux robots rédacteurs (article de fond le matin, conseil pra
 
 **Article de fond (le matin, heure 07:00).** Une actualité scientifique ou sanitaire expliquée (nouvelle recommandation, étude publiée, campagne de santé publique, bilan de qualité de l'air, journée mondiale) et ce qu'elle change au quotidien. 700 à 1 400 mots.
 
-**Conseil pratique (l'après-midi, heure 14:00).** Un geste concret applicable aujourd'hui, saisonnier si possible (aération, pollens, froid, chaleur, ozone, activité physique adaptée, sommeil, aidants, préparation d'une consultation). 300 à 650 mots.
+**Conseil pratique (l'après-midi, heure 14:00).** Un geste concret applicable aujourd'hui, lié à l'actualité quand elle le justifie (épidémie, alerte pollution, fumées de feux de forêt, canicule, grand froid, journée mondiale, campagne de prévention), sinon saisonnier (aération, pollens, froid, chaleur, ozone, activité physique adaptée, sommeil, aidants, préparation d'une consultation). 300 à 650 mots.
+
+**Coller à l'actualité, adapter le volume.** Les robots partent de l'actualité réelle du jour, vérifiée sur une source officielle, et pas d'une liste figée : les exemples cités dans ce guide ne sont que des exemples. Le volume suit l'actualité : les jours calmes, un seul conseil pratique de saison suffit et l'article de fond peut être omis s'il n'y a rien de solide à expliquer ; les jours chargés, plusieurs sujets peuvent être publiés le même jour (heures décalées : 07:00, 07:30 pour les fonds ; 14:00, 14:30, 15:00 pour les pratiques) ou étalés sur la semaine grâce à la file `content/sujets-a-venir.json`. Le plus urgent passe en premier (alerte en cours), le reste est planifié. Jamais de remplissage : un article de plus n'est publié que s'il apporte une information ou un geste nouveaux.
 
 ## 3. Fichier d'article
 
@@ -67,7 +69,7 @@ Corps en Markdown simple.
 ## 5. Règles de sources
 
 - Au moins **3 sources** pour un fond (sur au moins 2 sites différents) et **2** pour un pratique.
-- Au moins **une source officielle** de la liste blanche `DOMAINES_OFFICIELS` de `scripts/regles-editoriales.mjs` : has-sante.fr, santepubliquefrance.fr, ansm.sante.fr, sante.gouv.fr, ameli.fr, sante.fr, vaccination-info-service.fr, inserm.fr, who.int, ecdc.europa.eu, eea.europa.eu, atmo-france.org et associations agréées, goldcopd.org, ginasthma.org, splf.fr, ersnet.org, pubmed, cochranelibrary.com, legifrance.gouv.fr, service-public.fr, lesouffle.org, vaincrelamuco.org, etc.
+- Au moins **une source officielle** de la liste blanche `DOMAINES_OFFICIELS` de `scripts/regles-editoriales.mjs` : has-sante.fr, santepubliquefrance.fr, ansm.sante.fr, sante.gouv.fr, ameli.fr, sante.fr, vaccination-info-service.fr, inserm.fr, who.int, ecdc.europa.eu, eea.europa.eu, atmo-france.org et associations agréées, goldcopd.org, ginasthma.org, splf.fr, ersnet.org, pubmed, cochranelibrary.com, legifrance.gouv.fr, service-public.fr, tous les sites en gouv.fr (préfectures, ARS, ministères), meteofrance.fr, pollens.fr (RNSA), lesouffle.org, vaincrelamuco.org, etc.
 - Les autres sources doivent figurer dans `DOMAINES_RECONNUS` (revues scientifiques, associations de patients). Un domaine absent des deux listes bloque le build : ne pas contourner, choisir une autre source. Pour ajouter un domaine, le justifier dans une demande séparée.
 - URL en `https`, page précise (pas une page d'accueil), jamais de lien raccourci ni de lien de redirection.
 - **Chaque source doit avoir été ouverte et lue** pendant la rédaction. Chaque chiffre du texte doit se retrouver sur une page citée, avec son année. Si un chiffre ne se vérifie pas, le retirer.
@@ -102,10 +104,13 @@ Chaque événement porte : `id`, `nom`, `date` (ou `date_debut` et `date_fin`), 
 **Procédure quotidienne du robot :**
 1. Chercher un événement **confirmé** dont la séquence prévoit un article du type du robot à la date du jour (J, J moins 7 ou suite). S'il existe, traiter ce sujet en respectant l'`angle` et les `messages_cles` (par exemple le rappel du 39 89 pendant le Mois sans tabac).
 2. Un événement `a_confirmer` n'est utilisé qu'après vérification de sa date sur `source_url` ou une autre source officielle. Sans confirmation, ne jamais annoncer de date précise ; choisir un autre sujet.
-3. Sinon, choisir un sujet d'actualité récente (moins de 15 jours) sur une source officielle, ou un geste de saison pour le conseil pratique.
+3. Chercher l'actualité réelle des derniers jours sur des sources officielles (Santé publique France, ARS, préfectures, Météo-France, Atmo France et AASQA, RNSA, ANSM, ANSES, HAS, ministère, OMS, journées mondiales et campagnes de prévention). Une alerte officielle en cours passe avant le calendrier et peut justifier de parler de la même maladie deux jours de suite.
+3 bis. Sinon, choisir un sujet d'actualité récente (moins de 15 jours) sur une source officielle, ou un geste de saison pour le conseil pratique.
 4. Toujours vérifier les faits du jour : un sujet prévu dans le calendrier ne dispense pas des règles de sources.
 
-Le build valide ce fichier (dates réelles, statuts, champs obligatoires, pas de double réservation d'un même créneau par deux événements confirmés).
+Le build valide ce fichier (dates réelles, statuts, champs obligatoires, pas plus de réservations d'un même jour que le plafond par type).
+
+**File des sujets (`content/sujets-a-venir.json`).** Partagée par les deux robots, elle permet d'étaler l'actualité sur la semaine. Chaque entrée : `sujet`, `type` (fond ou pratique), `date_prevue` (AAAA-MM-JJ, dans les 7 jours), `source_url` (source officielle https), `statut` (`prevu`, `publie`, `abandonne`), et facultativement `ajoute_le`, `article`, `raison`. Chaque robot traite d'abord les sujets `prevu` dont la date est arrivée (après avoir revérifié qu'ils sont toujours d'actualité), ajoute les nouveaux sujets qu'il ne publie pas le jour même, passe à `publie` ou `abandonne` ce qu'il a traité ou écarté, et retire les entrées closes de plus de 30 jours. Le build valide ce fichier.
 
 ## 8. Étapes de publication
 
@@ -115,7 +120,7 @@ Le build valide ce fichier (dates réelles, statuts, champs obligatoires, pas de
    `{"article": "...", "verdict": "PUBLIER" | "CORRIGER" | "REJETER", "sha256": "<empreinte du fichier .md final>", "relu_le": "...", "relecteur": "...", "sources_verifiees": [{"url": "...", "ok": true, "constat": "..."}], "corrections": []}`.
    Le build refuse l'article si le verdict n'est pas PUBLIER, si une source n'est pas confirmée, ou si le fichier a changé après la relecture (empreinte différente).
 4. `node scripts/build.mjs` puis `node scripts/build.mjs --check`.
-5. Committer l'article, sa relecture et les fichiers générés (`actualites.html`, `actualites/`, `rss.xml`, `sitemap.xml`), puis pousser.
+5. Committer l'article, sa relecture, la file `content/sujets-a-venir.json` si elle a changé et les fichiers générés (`actualites.html`, `actualites/`, `rss.xml`, `sitemap.xml`), puis pousser. Quand plusieurs articles sont publiés le même jour, chacun a sa propre relecture indépendante.
 
 Codes de sortie du build : 0 = succès, 1 = contenu non conforme (rien n'est écrit), 3 = PAUSE active et nouvel article refusé.
 

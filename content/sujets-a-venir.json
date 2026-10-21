@@ -1,0 +1,4 @@
+{
+  "explication": "File des sujets d'actualité repérés par les robots de Respi.info et pas encore traités. Un robot y ajoute ce qu'il ne publie pas le jour même (date_prevue dans les 7 jours), et passe le statut à publie (avec le nom de l'article) ou abandonne (avec la raison). Les sujets publies ou abandonnes de plus de 30 jours sont retirés.",
+  "sujets": []
+}

@@ -4,9 +4,11 @@
  */
 
 export const TYPES = {
-  fond: { label: "Article de fond", minMots: 700, maxMots: 1400, minSources: 3, minDomaines: 2, heureDefaut: "07:00" },
-  pratique: { label: "Conseil pratique", minMots: 300, maxMots: 650, minSources: 2, minDomaines: 1, heureDefaut: "14:00" },
+  fond: { label: "Article de fond", minMots: 700, maxMots: 1400, minSources: 3, minDomaines: 2, heureDefaut: "07:00", maxParJour: 2 },
+  pratique: { label: "Conseil pratique", minMots: 300, maxMots: 650, minSources: 2, minDomaines: 1, heureDefaut: "14:00", maxParJour: 3 },
 };
+// Plafond de sécurité : le volume suit l'actualité (moins les jours calmes, plus les jours chargés), sans dépasser ce total.
+export const MAX_ARTICLES_PAR_JOUR = 4;
 
 export const THEMATIQUES = {
   bpco: "BPCO",
@@ -43,11 +45,13 @@ export const DOMAINES_OFFICIELS = [
   "has-sante.fr", "santepubliquefrance.fr", "ansm.sante.fr", "sante.gouv.fr", "solidarites-sante.gouv.fr",
   "ameli.fr", "sante.fr", "vaccination-info-service.fr", "tabac-info-service.fr", "pour-les-personnes-agees.gouv.fr",
   "service-public.fr", "legifrance.gouv.fr", "ecologie.gouv.fr", "anses.fr", "inserm.fr", "ars.sante.fr",
-  "drees.solidarites-sante.gouv.fr", "academie-medecine.fr", "meteofrance.com",
+  "drees.solidarites-sante.gouv.fr", "academie-medecine.fr", "meteofrance.com", "meteofrance.fr",
+  // Tous les sites de l'État (ministères, préfectures, ARS) : alertes pollution, feux de forêt, canicule, grand froid
+  "gouv.fr",
   // Qualité de l'air et pollens (fédération et associations agréées)
   "atmo-france.org", "airparif.fr", "atmo-occitanie.org", "atmosud.org", "atmo-auvergnerhonealpes.fr",
   "atmo-nouvelleaquitaine.org", "airpl.org", "atmo-hdf.fr", "atmo-grandest.eu", "ligair.fr", "airbreizh.asso.fr",
-  "atmo-bfc.org", "atmo-normandie.fr", "qualitair-corse.org", "ambroisie-risque.info",
+  "atmo-bfc.org", "atmo-normandie.fr", "qualitair-corse.org", "ambroisie-risque.info", "pollens.fr",
   // Institutions internationales et européennes
   "who.int", "ecdc.europa.eu", "eea.europa.eu", "ema.europa.eu", "atmosphere.copernicus.eu",
   // Sociétés savantes et recommandations
