@@ -6,7 +6,18 @@
     <atom:link href="https://fr.respi.info/rss.xml" rel="self" type="application/rss+xml" />
     <description>Santé respiratoire : un article de fond le matin et un conseil pratique l'après-midi, sourcés.</description>
     <language>fr-FR</language>
-    <lastBuildDate>Tue, 20 Oct 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 21 Oct 2026 12:00:00 GMT</lastBuildDate>
+    <item>
+      <title>Marcher en automne : bouger chaque jour sans forcer son souffle</title>
+      <link>https://fr.respi.info/actualites/2026-10-21-marcher-automne-bouger-souffle</link>
+      <guid isPermaLink="true">https://fr.respi.info/actualites/2026-10-21-marcher-automne-bouger-souffle</guid>
+      <pubDate>Wed, 21 Oct 2026 12:00:00 GMT</pubDate>
+      <category>Conseil pratique</category>
+      <category>Activité physique</category>
+      <category>BPCO</category>
+      <category>Asthme</category>
+      <description>Avec la fraîcheur, l'envie de bouger baisse. Pourtant une marche quotidienne entretient le souffle. Comment s'y prendre, à quel rythme et quand s'arrêter.</description>
+    </item>
     <item>
       <title>Se laver les mains : le geste simple contre les virus de l'hiver</title>
       <link>https://fr.respi.info/actualites/2026-10-20-se-laver-les-mains-virus-hiver</link>

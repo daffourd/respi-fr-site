@@ -1,0 +1,35 @@
+{
+  "article": "2026-10-21-marcher-automne-bouger-souffle",
+  "verdict": "PUBLIER",
+  "sha256": "f89c97d8500a69c774e3daecf6370ff3f0dc8b09d153d7742f4818140064f7cb",
+  "relu_le": "2026-10-21T10:44:04+00:00",
+  "relecteur": "Relecteur IA indépendant (sous-agent distinct du rédacteur)",
+  "sources_verifiees": [
+    {
+      "url": "https://www.ameli.fr/assure/sante/themes/bpco-bronchite-chronique/vivre-bpco",
+      "ok": true,
+      "constat": "« l'activité physique fait partie du traitement de cette maladie » ; « Elle diminue les symptômes et améliore votre qualité de vie » ; « Avant de commencer une activité physique, demandez conseil à votre médecin » ; réadaptation respiratoire conseillée quand la BPCO rend l'effort difficile ; appeler le médecin en cas de toux plus importante, d'œdème des jambes, de fièvre."
+    },
+    {
+      "url": "https://www.ameli.fr/assure/sante/themes/activite-physique-sante/exercice-physique-recommande-quotidien",
+      "ok": true,
+      "constat": "« Ce qui compte est la quantité des activités réalisées plus que leur intensité » ; « commencez par marcher 10 minutes par jour » ; « des pauses de 5 à 10 minutes toutes les 2 heures » ; « Idéalement il faut bouger 20 à 30 minutes par jour » ; « augmentez progressivement la durée et/ou l'intensité » ; intensité modérée : « l'essoufflement est faible » ; « palpitations cardiaques ou d'essoufflement anormal » : consulter son médecin traitant sans attendre."
+    },
+    {
+      "url": "https://www.ameli.fr/assure/sante/themes/asthme-adulte/asthme-vivre-maladie/pratiquer-un-sport-en-etant-atteint-d-asthme",
+      "ok": true,
+      "constat": "Échauffement « pour habituer les bronches à l'activité et à la température ambiante » ; « un air froid et sec » parmi les facteurs de l'asthme d'effort ; « un pic de pollution ou un pic pollinique » ; tenir compte « des conditions climatiques et de la qualité de l'air », éviter « l'air froid, le pollen » ; « toujours sur soi son inhalateur de crise » ; « adapter l'intensité de son activité selon sa forme physique » ; « récupérer progressivement après l'effort »."
+    },
+    {
+      "url": "https://www.lesouffle.org/sport-et-asthme",
+      "ok": true,
+      "constat": "« arrêt de l'exercice en cas d'essoufflement anormal » ; « avoir toujours sur soi un traitement bronchodilatateur inhalé » ; « échauffement progressif »."
+    },
+    {
+      "url": "https://www.ameli.fr/assure/sante/themes/essoufflement-recent/je-suis-brutalement-essouffle-et-j-ai-du-mal-respirer-que-faire",
+      "ok": true,
+      "constat": "« Appelez immédiatement le 15 ou le 112 si des signes de gravité sont présents » : difficulté à parler, respiration très rapide, « coloration bleutée » des extrémités et des lèvres, « agitation, confusion, malaise » ; le 114 permet d'alerter les secours « par SMS ou par fax »."
+    }
+  ],
+  "corrections": []
+}

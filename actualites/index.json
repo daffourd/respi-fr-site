@@ -1,8 +1,28 @@
 {
-  "maj": "2026-10-20T14:00:00+02:00",
+  "maj": "2026-10-21T14:00:00+02:00",
   "site": "https://fr.respi.info",
   "rss": "https://fr.respi.info/rss.xml",
   "articles": [
+    {
+      "slug": "2026-10-21-marcher-automne-bouger-souffle",
+      "titre": "Marcher en automne : bouger chaque jour sans forcer son souffle",
+      "description": "Avec la fraîcheur, l'envie de bouger baisse. Pourtant une marche quotidienne entretient le souffle. Comment s'y prendre, à quel rythme et quand s'arrêter.",
+      "date": "2026-10-21",
+      "heure": "14:00",
+      "publie_le": "2026-10-21T14:00:00+02:00",
+      "mis_a_jour": null,
+      "type": "pratique",
+      "type_libelle": "Conseil pratique",
+      "thematiques": [
+        "activite-physique",
+        "bpco",
+        "asthme"
+      ],
+      "temps_lecture_min": 3,
+      "url": "https://fr.respi.info/actualites/2026-10-21-marcher-automne-bouger-souffle",
+      "image": "https://fr.respi.info/assets/og/pratique.png",
+      "image_alt": "Visuel Respi.info avec la mention Conseil pratique, illustrant une personne qui marche dans un parc en automne"
+    },
     {
       "slug": "2026-10-20-se-laver-les-mains-virus-hiver",
       "titre": "Se laver les mains : le geste simple contre les virus de l'hiver",
