@@ -1,0 +1,40 @@
+{
+  "article": "2026-10-22-vrs-vaccination-65-ans-maladie-respiratoire",
+  "verdict": "PUBLIER",
+  "sha256": "071482cfb3b4fa32b735d9680c1ad191fc0ab87688ff7a0d0b1dac999c9989d9",
+  "relu_le": "2026-10-22T04:28:26+00:00",
+  "relecteur": "Relecteur IA indépendant (sous-agent distinct du rédacteur)",
+  "sources_verifiees": [
+    {
+      "url": "https://www.vaccination-info-service.fr/Les-maladies-et-leurs-vaccins/Bronchiolites-et-infections-respiratoires-dues-aux-Virus-respiratoires-syncitiaux-VRS",
+      "ok": true,
+      "constat": "Mis à jour le 24.08.2026. Circule « généralement du mois d'octobre à la fin de l'hiver ». « La vaccination saisonnière des sujets âgés de 75 ans et plus » et des 65 ans et plus avec « pathologies respiratoires chroniques » ou cardiaques ; une dose « avant la période épidémique » ; « la nécessité d'un rappel chaque année n'a pas été établie » ; coadministration possible selon le vaccin à partir de 65 ans ; pas de « prise en charge par l'Assurance Maladie de ces vaccins à ce jour » chez les personnes âgées ; transmission « salive, éternuements, toux », contact direct ou surfaces ; signes « du simple rhume à une infection pulmonaire », infections « bénignes et vont guérir en 1 à 2 semaines » ; aggravation d'une maladie cardiaque ou pulmonaire, décès possible ; vaccins autorisés dès 60 ans."
+    },
+    {
+      "url": "https://www.sante.fr/node/19940247",
+      "ok": true,
+      "constat": "75 ans et plus ; 65 ans et plus avec « pathologies respiratoires chroniques (particulièrement Broncho pneumopathie chronique obstructive) ou cardiaques (particulièrement insuffisance cardiaque) » ; « la nécessité d'un rappel chaque année n'a pas été établie » ; « Il n'y a pas de prise en charge par l'Assurance Maladie de ces vaccins à ce jour » ; fièvre « parfois absente chez le sujet âgé »."
+    },
+    {
+      "url": "https://www.santepubliquefrance.fr/presse/grippe-covid-19-bronchiolite-se-proteger-contre-les-infections-respiratoires-de-lhiver",
+      "ok": true,
+      "constat": "Publié le 8 octobre 2026 : saison grippale 2025-2026, « près de 115 000 passages pour syndrome grippal », 12 140 décès en excès toutes causes pendant la période épidémique ; lavage des mains, aération, « porter un masque en cas de symptômes respiratoires »."
+    },
+    {
+      "url": "https://www.santepubliquefrance.fr/sites/default/files/2026-10/bullnat_ira_20261014.pdf",
+      "ok": true,
+      "constat": "Bulletin du 14 octobre 2026, semaine 41 (05 au 11 octobre 2026) : positivité VRS tous âges « restait à un niveau de base en ville et à l'hôpital » ; bronchiolite « à leur niveau de base dans toutes les régions en S41 ». L'article présente correctement cette donnée comme datée (début octobre), sans annoncer d'épidémie."
+    },
+    {
+      "url": "https://www.vaincrelamuco.org/2026/08/24/vaccins-contre-le-vrs-une-nouvelle-etape-vers-le-remboursement-3879",
+      "ok": true,
+      "constat": "24 août 2026 : la HAS a réévalué en juin 2026 les trois vaccins VRS de l'adulte, « Les trois vaccins disposent ainsi d'un avis favorable de la HAS » ; recommandés aux 75 ans et plus et 65 ans et plus avec maladies respiratoires ou cardiaques chroniques ; association « attentive aux prochaines étapes conduisant à la décision de remboursement »."
+    },
+    {
+      "url": "https://www.academie-medecine.fr/wp-content/uploads/2026/03/Communique-ANM-Remboursement-Vaccination-VRS-final-1.pdf",
+      "ok": true,
+      "constat": "31 mars 2026 : incidence chez les personnes âgées « mal connue et probablement sous-estimée en France » ; demande « D'informer la population sur la fréquence et la gravité » ; demande « le remboursement de la vaccination chez les personnes de plus de 75 ans et les sujets immunodéprimés »."
+    }
+  ],
+  "corrections": []
+}

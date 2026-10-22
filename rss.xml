@@ -6,7 +6,18 @@
     <atom:link href="https://fr.respi.info/rss.xml" rel="self" type="application/rss+xml" />
     <description>Santé respiratoire : un article de fond le matin et un conseil pratique l'après-midi, sourcés.</description>
     <language>fr-FR</language>
-    <lastBuildDate>Wed, 21 Oct 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 22 Oct 2026 05:00:00 GMT</lastBuildDate>
+    <item>
+      <title>VRS : un vaccin conseillé dès 65 ans si les poumons sont fragiles</title>
+      <link>https://fr.respi.info/actualites/2026-10-22-vrs-vaccination-65-ans-maladie-respiratoire</link>
+      <guid isPermaLink="true">https://fr.respi.info/actualites/2026-10-22-vrs-vaccination-65-ans-maladie-respiratoire</guid>
+      <pubDate>Thu, 22 Oct 2026 05:00:00 GMT</pubDate>
+      <category>Article de fond</category>
+      <category>BPCO</category>
+      <category>Traitements</category>
+      <category>Vie quotidienne</category>
+      <description>Le VRS, virus de la bronchiolite, peut être grave chez les adultes âgés ou malades des poumons. Qui est concerné par le vaccin et ce qu'il faut savoir en hiver.</description>
+    </item>
     <item>
       <title>Marcher en automne : bouger chaque jour sans forcer son souffle</title>
       <link>https://fr.respi.info/actualites/2026-10-21-marcher-automne-bouger-souffle</link>

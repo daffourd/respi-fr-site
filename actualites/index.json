@@ -1,8 +1,28 @@
 {
-  "maj": "2026-10-21T14:00:00+02:00",
+  "maj": "2026-10-22T07:00:00+02:00",
   "site": "https://fr.respi.info",
   "rss": "https://fr.respi.info/rss.xml",
   "articles": [
+    {
+      "slug": "2026-10-22-vrs-vaccination-65-ans-maladie-respiratoire",
+      "titre": "VRS : un vaccin conseillé dès 65 ans si les poumons sont fragiles",
+      "description": "Le VRS, virus de la bronchiolite, peut être grave chez les adultes âgés ou malades des poumons. Qui est concerné par le vaccin et ce qu'il faut savoir en hiver.",
+      "date": "2026-10-22",
+      "heure": "07:00",
+      "publie_le": "2026-10-22T07:00:00+02:00",
+      "mis_a_jour": null,
+      "type": "fond",
+      "type_libelle": "Article de fond",
+      "thematiques": [
+        "bpco",
+        "traitements",
+        "vie-quotidienne"
+      ],
+      "temps_lecture_min": 7,
+      "url": "https://fr.respi.info/actualites/2026-10-22-vrs-vaccination-65-ans-maladie-respiratoire",
+      "image": "https://fr.respi.info/assets/og/fond.png",
+      "image_alt": "Visuel Respi.info vert sauge avec la mention Article de fond, sur la vaccination contre le virus respiratoire syncytial chez l'adulte"
+    },
     {
       "slug": "2026-10-21-marcher-automne-bouger-souffle",
       "titre": "Marcher en automne : bouger chaque jour sans forcer son souffle",
