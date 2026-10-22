@@ -1,4 +1,13 @@
 {
   "explication": "File des sujets d'actualité repérés par les robots de Respi.info et pas encore traités. Un robot y ajoute ce qu'il ne publie pas le jour même (date_prevue dans les 7 jours), et passe le statut à publie (avec le nom de l'article) ou abandonne (avec la raison). Les sujets publies ou abandonnes de plus de 30 jours sont retirés.",
-  "sujets": []
+  "sujets": [
+    {
+      "sujet": "Acariens en automne : limiter leur présence dans la chambre (asthme allergique)",
+      "type": "pratique",
+      "date_prevue": "2026-10-27",
+      "source_url": "https://www.sante.fr/comment-limiter-la-presence-dacariens-dans-son-logement",
+      "statut": "prevu",
+      "ajoute_le": "2026-10-22"
+    }
+  ]
 }
