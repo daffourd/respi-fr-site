@@ -1,0 +1,40 @@
+{
+  "article": "2026-10-22-tempete-austen-oxygene-coupure-electricite",
+  "verdict": "PUBLIER",
+  "sha256": "e675c25b33ab66b040274a388780a7f2ac03b7d15b5a7e72a7536a589c2c26db",
+  "relu_le": "2026-10-22T11:48:14+00:00",
+  "relecteur": "Relecteur IA indépendant (sous-agent distinct du rédacteur)",
+  "sources_verifiees": [
+    {
+      "url": "https://meteofrance.com/actualites/tempete-austen-vents-violents-ce-vendredi-sur-le-nord-ouest-du-pays",
+      "ok": true,
+      "constat": "Publié le 21/10/2026. Tempête sur le nord-ouest pendant la nuit du jeudi 22 au vendredi 23 octobre puis toute la journée de vendredi ; rafales de plus de 100 km/h sur le nord de la Bretagne, la Normandie et les Hauts-de-France, 70 à 90 km/h des Pays de la Loire à l'Île-de-France et la Champagne-Ardenne. « Des phénomènes dangereux sont prévus, suivez l'évolution de la situation en consultant la Vigilance météorologique. » Aucun niveau de vigilance n'est indiqué : l'article n'en annonce pas non plus (formulation conditionnelle « Quand une vigilance orange... est émise »). La carte de vigilance en direct n'a pas pu être lue (contenu dynamique), ce qui est sans conséquence puisque l'article n'affirme aucun niveau."
+    },
+    {
+      "url": "https://vigilance.meteofrance.fr/fr/consequences-et-conseils-en-cas-de-vigilance-orange",
+      "ok": true,
+      "constat": "Vent, vigilance orange : « Des coupures d'électricité et de téléphone peuvent affecter les réseaux de distribution pendant des durées relativement importantes. » Conseils : « Je limite mes déplacements », « Je prends garde aux chutes d'arbres et d'objets », « Je n'interviens pas sur les toits », « J'installe les groupes électrogènes à l'extérieur de la maison »."
+    },
+    {
+      "url": "https://www.grand-est.ars.sante.fr/patient-haut-risque-vital-soyez-informe-en-cas-de-coupure-electrique",
+      "ok": true,
+      "constat": "Fournisseur d'oxygène : « un service d'astreinte 24h/24 et 7j/7 » ; sur demande, « bouteille d'oxygène gazeux de secours » pour concentrateur fixe ou oxygène liquide ; dispositifs de secours ayant « une autonomie de deux heures au moins » ; PHRV : sous respirateur plus de 20 h par jour (autonomie de quatre heures ou moins), enfants en nutrition parentérale à domicile, certificat médical, dossier envoyé à l'ARS, inscription valable un an ; « Ce dispositif ne garantit pas que les patients à haut risque vital seront exemptés des coupures d'électricité. »"
+    },
+    {
+      "url": "https://www.occitanie.ars.sante.fr/patient-haut-risque-vital-demarches-suivre-pour-etre-informe-en-cas-de-coupure-sur-le-reseau",
+      "ok": true,
+      "constat": "« patients sous respirateur ayant une autonomie inférieure ou égale à quatre heures par jour » ; « Le dispositif est activé pour une durée d'un an » ; matériel « disposant de moyens d'alimentation électriques propres » assurant une autonomie pour une durée déterminée et connue à l'avance ; connaître les « démarches à effectuer pour se faire hospitaliser d'urgence »."
+    },
+    {
+      "url": "https://ansm.sante.fr/uploads/2021/03/11/64200b285675bf190d364fdaf0a4e4b8.pdf",
+      "ok": true,
+      "constat": "« Le risque d'incendie est très important avec l'oxygène. » ; « Toute source de feu est à prohiber : moteur, étincelles, circuit électrique, cigarette, flamme nue » ; « Ne pas fumer près de la bouteille et du patient »."
+    },
+    {
+      "url": "https://www.ameli.fr/assure/sante/themes/essoufflement-recent/je-suis-brutalement-essouffle-et-j-ai-du-mal-respirer-que-faire",
+      "ok": true,
+      "constat": "Appeler le 15 ou le 112 devant : respiration très rapide, difficulté à parler ou impossibilité de finir ses phrases, extrémités et lèvres « bleutées », sueurs, agitation, confusion, malaise. Le 114 permet aux personnes ayant des difficultés à entendre ou à parler d'alerter les secours par SMS."
+    }
+  ],
+  "corrections": []
+}

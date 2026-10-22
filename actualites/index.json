@@ -1,8 +1,29 @@
 {
-  "maj": "2026-10-22T07:00:00+02:00",
+  "maj": "2026-10-22T14:00:00+02:00",
   "site": "https://fr.respi.info",
   "rss": "https://fr.respi.info/rss.xml",
   "articles": [
+    {
+      "slug": "2026-10-22-tempete-austen-oxygene-coupure-electricite",
+      "titre": "Tempête Austen : se préparer à une coupure de courant sous oxygène",
+      "description": "La tempête Austen touche le nord-ouest dès ce soir. Sous oxygène ou ventilation à domicile, quelques gestes aident à traverser une coupure de courant.",
+      "date": "2026-10-22",
+      "heure": "14:00",
+      "publie_le": "2026-10-22T14:00:00+02:00",
+      "mis_a_jour": null,
+      "type": "pratique",
+      "type_libelle": "Conseil pratique",
+      "thematiques": [
+        "bpco",
+        "fibrose",
+        "aidants",
+        "vie-quotidienne"
+      ],
+      "temps_lecture_min": 4,
+      "url": "https://fr.respi.info/actualites/2026-10-22-tempete-austen-oxygene-coupure-electricite",
+      "image": "https://fr.respi.info/assets/og/pratique.png",
+      "image_alt": "Visuel Respi.info avec la mention Conseil pratique, illustrant un logement pendant une tempête et un appareil d'oxygène à domicile"
+    },
     {
       "slug": "2026-10-22-vrs-vaccination-65-ans-maladie-respiratoire",
       "titre": "VRS : un vaccin conseillé dès 65 ans si les poumons sont fragiles",

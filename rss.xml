@@ -6,7 +6,19 @@
     <atom:link href="https://fr.respi.info/rss.xml" rel="self" type="application/rss+xml" />
     <description>Santé respiratoire : un article de fond le matin et un conseil pratique l'après-midi, sourcés.</description>
     <language>fr-FR</language>
-    <lastBuildDate>Thu, 22 Oct 2026 05:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 22 Oct 2026 12:00:00 GMT</lastBuildDate>
+    <item>
+      <title>Tempête Austen : se préparer à une coupure de courant sous oxygène</title>
+      <link>https://fr.respi.info/actualites/2026-10-22-tempete-austen-oxygene-coupure-electricite</link>
+      <guid isPermaLink="true">https://fr.respi.info/actualites/2026-10-22-tempete-austen-oxygene-coupure-electricite</guid>
+      <pubDate>Thu, 22 Oct 2026 12:00:00 GMT</pubDate>
+      <category>Conseil pratique</category>
+      <category>BPCO</category>
+      <category>Fibrose pulmonaire</category>
+      <category>Aidants</category>
+      <category>Vie quotidienne</category>
+      <description>La tempête Austen touche le nord-ouest dès ce soir. Sous oxygène ou ventilation à domicile, quelques gestes aident à traverser une coupure de courant.</description>
+    </item>
     <item>
       <title>VRS : un vaccin conseillé dès 65 ans si les poumons sont fragiles</title>
       <link>https://fr.respi.info/actualites/2026-10-22-vrs-vaccination-65-ans-maladie-respiratoire</link>
