@@ -1,0 +1,30 @@
+{
+  "article": "2026-10-24-rhinovirus-rhume-automne-asthme-bpco",
+  "verdict": "PUBLIER",
+  "sha256": "559b8b7724cd7df07b6cb7e26345ec6a20b70ff97d09d0b256f90f5aa5466671",
+  "relu_le": "2026-10-24T04:31:51Z",
+  "relecteur": "Relecteur IA indépendant (sous-agent distinct du rédacteur)",
+  "sources_verifiees": [
+    {
+      "url": "https://www.santepubliquefrance.fr/sites/default/files/2026-10/bullnat_ira_20261021.pdf",
+      "ok": true,
+      "constat": "Bulletin le plus récent (publication 21 octobre 2026, semaine 42 du 12 au 18 octobre). Grippe : « L'ensemble des indicateurs de la grippe demeuraient à leur niveau de base », « Détections sporadiques de virus grippaux ». Covid-19 : « Indicateurs globalement stables ou en diminution », « faible impact sur le système de santé », « La détection du SARS-CoV-2 était en baisse dans les eaux usées ». Bronchiolite : recours aux soins en hausse dans l'Hexagone, plus marqué en ville, indicateurs au niveau de base. « Maintien d'une circulation de rhinovirus/entérovirus ». Légère augmentation du recours aux soins pour IRA chez les moins de 15 ans et les 65 ans et plus (SOS Médecins et urgences). Activité « principalement portée par les rhinovirus et le SARS-CoV-2, et dans une moindre mesure la grippe ». Gestes : masque dès les premiers symptômes (fièvre, nez qui coule ou toux), lavage des mains, aération. Campagne débutée « le 13 octobre 2026 dans l'Hexagone, en Guadeloupe, en Martinique et en Guyane »."
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3820304",
+      "ok": true,
+      "constat": "Scientifica 2013. « the most prevalent respiratory virus », « greater than 100 known serotypes », libération de chimiokines par l'épithélium « attracting inflammatory cells », BPCO : « clear evidence of impaired antiviral innate immune responses », asthme : résultats discordants. Enfants : « 62–81% positivity » contre « 12–41% of children who are well ». BPCO : « about one half of COPD exacerbations are associated with viral infections, the majority of which are due to RV ». Pics après la rentrée (Amérique du Nord) et autour de Noël (« Westernized countries »). « current treatment strategies are only partially effective »."
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7159474",
+      "ok": true,
+      "constat": "Allergy 2011 (66:458-468), revue GA2LEN-DARE. « Among infectious agents, human rhinoviruses are the most prevalent in regard to asthma exacerbations. » « In a North American study, 29% of asthma exacerbations in adults were associated with RV in a longitudinal arm and 36% in a cross-sectional one. »"
+    },
+    {
+      "url": "https://www.lesouffle.org/sites/default/files/2022-09/Brochure%20Asthme%20-%20mieux%20vivre%20avec%20-%202020_0.pdf",
+      "ok": true,
+      "constat": "Crise grave déclenchée notamment « à une infection respiratoire ou à une mauvaise observance du traitement de fond ». « Plan d'Action Personnalisé écrit et remis au patient ». Signes : grande difficulté à respirer qui « persiste malgré les bronchodilatateurs », lèvres et ongles qui bleuissent, difficultés à parler ou à marcher, confusion ou perte de connaissance ; « 15 depuis un poste fixe ou le 112 depuis un téléphone mobile », « Ne vous rendez pas à l'hôpital par vos propres moyens ». Aucun nom commercial de médicament."
+    }
+  ],
+  "corrections": []
+}

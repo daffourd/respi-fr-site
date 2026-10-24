@@ -6,7 +6,18 @@
     <atom:link href="https://fr.respi.info/rss.xml" rel="self" type="application/rss+xml" />
     <description>Santé respiratoire : un article de fond le matin et un conseil pratique l'après-midi, sourcés.</description>
     <language>fr-FR</language>
-    <lastBuildDate>Thu, 22 Oct 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 24 Oct 2026 05:00:00 GMT</lastBuildDate>
+    <item>
+      <title>Rhume d'automne : pourquoi il pèse sur l'asthme et la BPCO</title>
+      <link>https://fr.respi.info/actualites/2026-10-24-rhinovirus-rhume-automne-asthme-bpco</link>
+      <guid isPermaLink="true">https://fr.respi.info/actualites/2026-10-24-rhinovirus-rhume-automne-asthme-bpco</guid>
+      <pubDate>Sat, 24 Oct 2026 05:00:00 GMT</pubDate>
+      <category>Article de fond</category>
+      <category>Asthme</category>
+      <category>BPCO</category>
+      <category>Vie quotidienne</category>
+      <description>Les rhinovirus du rhume circulent en ce moment. Pourquoi ils réveillent l'asthme et la BPCO, et les signes qui doivent faire appeler un médecin ou le 15.</description>
+    </item>
     <item>
       <title>Tempête Austen : se préparer à une coupure de courant sous oxygène</title>
       <link>https://fr.respi.info/actualites/2026-10-22-tempete-austen-oxygene-coupure-electricite</link>

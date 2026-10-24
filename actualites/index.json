@@ -1,8 +1,28 @@
 {
-  "maj": "2026-10-22T14:00:00+02:00",
+  "maj": "2026-10-24T07:00:00+02:00",
   "site": "https://fr.respi.info",
   "rss": "https://fr.respi.info/rss.xml",
   "articles": [
+    {
+      "slug": "2026-10-24-rhinovirus-rhume-automne-asthme-bpco",
+      "titre": "Rhume d'automne : pourquoi il pèse sur l'asthme et la BPCO",
+      "description": "Les rhinovirus du rhume circulent en ce moment. Pourquoi ils réveillent l'asthme et la BPCO, et les signes qui doivent faire appeler un médecin ou le 15.",
+      "date": "2026-10-24",
+      "heure": "07:00",
+      "publie_le": "2026-10-24T07:00:00+02:00",
+      "mis_a_jour": null,
+      "type": "fond",
+      "type_libelle": "Article de fond",
+      "thematiques": [
+        "asthme",
+        "bpco",
+        "vie-quotidienne"
+      ],
+      "temps_lecture_min": 6,
+      "url": "https://fr.respi.info/actualites/2026-10-24-rhinovirus-rhume-automne-asthme-bpco",
+      "image": "https://fr.respi.info/assets/og/fond.png",
+      "image_alt": "Visuel Respi.info vert sauge avec la mention Article de fond, sur les rhinovirus du rhume et les maladies respiratoires en automne"
+    },
     {
       "slug": "2026-10-22-tempete-austen-oxygene-coupure-electricite",
       "titre": "Tempête Austen : se préparer à une coupure de courant sous oxygène",
