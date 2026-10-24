@@ -1,0 +1,30 @@
+{
+  "article": "2026-10-24-moisissures-degat-des-eaux-nettoyer-sans-irriter-bronches",
+  "verdict": "PUBLIER",
+  "sha256": "3f85633204a1fe91c7a485bc1af025fbcc6a667b56a2026b13d8a2b9a28306b7",
+  "relu_le": "2026-10-24T10:54:34+00:00",
+  "relecteur": "Relecteur IA indépendant (sous-agent distinct du rédacteur)",
+  "sources_verifiees": [
+    {
+      "url": "https://www.auvergne-rhone-alpes.ars.sante.fr/moisissures-dans-le-logement-comment-agir",
+      "ok": true,
+      "constat": "Page accessible (ars.sante.fr, liste officielle). Justifie : « L'exposition aux moisissures entraine des effets avérés sur la santé respiratoire » ; personnes sensibles « enfants et adultes asthmatiques », atopiques, « atteints de pathologies respiratoires chroniques » ; « des gants ménagers et, si possible, des lunettes de protection et un masque » ; « lingettes microfibres humidifiées », détergent ménager « à base de savon » ; « La désinfection des surfaces moisies après nettoyage est rarement nécessaire » ; Javel « diluée dans de l'eau froide », « jamais mélangé avec autre chose que de l'eau » ; « En cas d'apparition de symptômes respiratoires pendant le nettoyage, il faut alors le cesser immédiatement » ; professionnel si surface trop importante ou « eaux usées (risque d'infection) » ; « ouvrant en grand les fenêtres de chaque pièce au moins 10 minutes par jour », « ne boucher ni les entrées d'air ni les bouches d'extraction » ; « Chauffez le logement afin de limiter les zones froides, sièges de condensation »."
+    },
+    {
+      "url": "https://www.sante.fr/humidite-et-moisissures",
+      "ok": true,
+      "constat": "Page accessible (sante.fr, liste officielle). Justifie : « asséchez le plus rapidement possible » et fuite à colmater rapidement ; « Si nécessaire, jetez les matériaux poreux endommagés » ; « Évitez de procéder au nettoyage lorsque d'autres personnes sont dans la pièce, notamment les plus vulnérables » ; plus vulnérables « enfants, personnes asthmatiques, personnes allergiques » ; « irritation des yeux, du nez et de la gorge, une toux, une respiration sifflante ». Remarque non bloquante : la page cite aussi un nettoyage à l'eau de Javel pure laissée 24 heures, l'article suit à juste titre la consigne plus prudente de l'ARS."
+    },
+    {
+      "url": "https://meteofrance.com/episode-mediterraneen-ce-lundi-sur-lherault-et-le-gard-se-decalant-plus-a-lest-mardi",
+      "ok": true,
+      "constat": "Page accessible (meteofrance.com, liste officielle), datée du 19/10/2026. Justifie : épisode qui « peut se montrer particulièrement intense entre l'Hérault et le Gard », « de forts cumuls de pluie pouvant provoquer des ruissellements et inondations ». L'article en parle au passé (« annonçait ») sans présenter d'alerte en cours ni de niveau de vigilance : conforme."
+    },
+    {
+      "url": "https://www.ameli.fr/assure/sante/themes/essoufflement-recent/je-suis-brutalement-essouffle-et-j-ai-du-mal-respirer-que-faire",
+      "ok": true,
+      "constat": "Page accessible (ameli.fr, liste officielle). Justifie l'appel immédiat au 15 ou au 112 : « Sa respiration est très rapide », « Ses extrémités (ongles et doigts) et ses lèvres présentent une coloration bleutée », « troubles de la vigilance : agitation, confusion, malaise »."
+    }
+  ],
+  "corrections": []
+}

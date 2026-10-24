@@ -1,8 +1,29 @@
 {
-  "maj": "2026-10-24T07:00:00+02:00",
+  "maj": "2026-10-24T14:00:00+02:00",
   "site": "https://fr.respi.info",
   "rss": "https://fr.respi.info/rss.xml",
   "articles": [
+    {
+      "slug": "2026-10-24-moisissures-degat-des-eaux-nettoyer-sans-irriter-bronches",
+      "titre": "Moisissures après la pluie : nettoyer sans gêner ses bronches",
+      "description": "Infiltrations, dégâts des eaux : les moisissures arrivent vite. Comment sécher, nettoyer et aérer sans irriter tes bronches, et quand appeler un professionnel.",
+      "date": "2026-10-24",
+      "heure": "14:00",
+      "publie_le": "2026-10-24T14:00:00+02:00",
+      "mis_a_jour": null,
+      "type": "pratique",
+      "type_libelle": "Conseil pratique",
+      "thematiques": [
+        "asthme",
+        "allergies",
+        "bpco",
+        "vie-quotidienne"
+      ],
+      "temps_lecture_min": 3,
+      "url": "https://fr.respi.info/actualites/2026-10-24-moisissures-degat-des-eaux-nettoyer-sans-irriter-bronches",
+      "image": "https://fr.respi.info/assets/og/pratique.png",
+      "image_alt": "Visuel Respi.info avec la mention Conseil pratique, illustrant le nettoyage de moisissures sur un mur humide"
+    },
     {
       "slug": "2026-10-24-rhinovirus-rhume-automne-asthme-bpco",
       "titre": "Rhume d'automne : pourquoi il pèse sur l'asthme et la BPCO",

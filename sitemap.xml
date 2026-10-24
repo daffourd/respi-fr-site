@@ -20,15 +20,17 @@
   <url><loc>https://fr.respi.info/contact</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
   <url><loc>https://fr.respi.info/actualites</loc><lastmod>2026-10-24</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
   <url><loc>https://fr.respi.info/actualites/type/fond</loc><lastmod>2026-10-24</lastmod><changefreq>daily</changefreq><priority>0.6</priority></url>
-  <url><loc>https://fr.respi.info/actualites/type/pratique</loc><lastmod>2026-10-22</lastmod><changefreq>daily</changefreq><priority>0.6</priority></url>
+  <url><loc>https://fr.respi.info/actualites/type/pratique</loc><lastmod>2026-10-24</lastmod><changefreq>daily</changefreq><priority>0.6</priority></url>
   <url><loc>https://fr.respi.info/actualites/theme/bpco</loc><lastmod>2026-10-24</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://fr.respi.info/actualites/theme/asthme</loc><lastmod>2026-10-24</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://fr.respi.info/actualites/theme/allergies</loc><lastmod>2026-10-24</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://fr.respi.info/actualites/theme/qualite-air</loc><lastmod>2026-10-20</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://fr.respi.info/actualites/theme/fibrose</loc><lastmod>2026-10-22</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://fr.respi.info/actualites/theme/traitements</loc><lastmod>2026-10-22</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://fr.respi.info/actualites/theme/aidants</loc><lastmod>2026-10-22</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://fr.respi.info/actualites/theme/activite-physique</loc><lastmod>2026-10-21</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://fr.respi.info/actualites/theme/vie-quotidienne</loc><lastmod>2026-10-24</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://fr.respi.info/actualites/2026-10-24-moisissures-degat-des-eaux-nettoyer-sans-irriter-bronches</loc><lastmod>2026-10-24</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://fr.respi.info/actualites/2026-10-24-rhinovirus-rhume-automne-asthme-bpco</loc><lastmod>2026-10-24</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://fr.respi.info/actualites/2026-10-22-tempete-austen-oxygene-coupure-electricite</loc><lastmod>2026-10-22</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://fr.respi.info/actualites/2026-10-22-vrs-vaccination-65-ans-maladie-respiratoire</loc><lastmod>2026-10-22</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
