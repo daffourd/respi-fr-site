@@ -6,7 +6,17 @@
     <atom:link href="https://fr.respi.info/rss.xml" rel="self" type="application/rss+xml" />
     <description>Santé respiratoire : un article de fond le matin et un conseil pratique l'après-midi, sourcés.</description>
     <language>fr-FR</language>
-    <lastBuildDate>Sun, 25 Oct 2026 06:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 25 Oct 2026 13:00:00 GMT</lastBuildDate>
+    <item>
+      <title>Mois sans tabac approche : bien préparer son arrêt</title>
+      <link>https://fr.respi.info/actualites/2026-10-25-mois-sans-tabac-preparer-arret-semaine</link>
+      <guid isPermaLink="true">https://fr.respi.info/actualites/2026-10-25-mois-sans-tabac-preparer-arret-semaine</guid>
+      <pubDate>Sun, 25 Oct 2026 13:00:00 GMT</pubDate>
+      <category>Conseil pratique</category>
+      <category>BPCO</category>
+      <category>Vie quotidienne</category>
+      <description>Mois sans tabac revient en novembre 2026. Ces jours-ci, choisis ta date, note tes raisons, change tes habitudes et trouve de l'aide gratuite au 39 89.</description>
+    </item>
     <item>
       <title>Médicaments d'hiver : la surveillance des pénuries a repris</title>
       <link>https://fr.respi.info/actualites/2026-10-25-plan-hivernal-ansm-medicaments-penuries-2026-2027</link>

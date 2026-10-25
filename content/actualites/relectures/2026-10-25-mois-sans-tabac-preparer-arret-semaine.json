@@ -1,0 +1,25 @@
+{
+  "article": "2026-10-25-mois-sans-tabac-preparer-arret-semaine",
+  "verdict": "PUBLIER",
+  "sha256": "0338c83ace494650103b943fb18491655a35090868f8b402a9053ad2e4eba143",
+  "relu_le": "2026-10-25T11:57:00Z",
+  "relecteur": "Relecteur IA indépendant (sous-agent distinct du rédacteur)",
+  "sources_verifiees": [
+    {
+      "url": "https://www.santepubliquefrance.fr/en/press/smoke-free-month-2026-registration-now-open",
+      "ok": true,
+      "constat": "Communiqué du 1er octobre 2026 : « back for its 11th edition » ; « Starting today, smokers can register » (inscriptions ouvertes le 1er octobre) ; « Quitting smoking for 30 days increases the chances of long-term success by five times » ; « over 117,000 registrations in 2025 » ; « doubles the success rate ... compared to ... quit attempts without outside help » (aide = plus de chances) ; app e-coaching gratuite ; site tabac-info-service.fr « testimonials, Q&As ». Le numéro y apparaît « 39 894 » (appel de note 4 accolé au 39 89), confirmé 39 89 par les deux autres sources."
+    },
+    {
+      "url": "https://www.sante.fr/node/1134744",
+      "ok": true,
+      "constat": "« Si vous arrêtez d'un coup, choisissez une date et préparez votre arrêt avant cette date » ; « Pour être en meilleure santé ... pour faire des économies » ; « Toutes les raisons pour arrêter de fumer sont bonnes » ; café : « prendre une douche après votre café ou remplacer le café par un thé » ; « jeter vos cendriers, vos allumettes et vos briquets » ; « prévenir vos proches afin qu'ils vous soutiennent » ; « Refumer une cigarette ne veut pas dire échec » ; « En appelant le 39 89, vous pouvez vous faire suivre gratuitement par un tabacologue au téléphone » ; appli : « messages d'encouragement » et « tableau de bord pour observer votre progression » ; substituts « des patchs, des pastilles, des gommes » ; « remboursés par l'Assurance Maladie lorsqu'ils sont prescrits par un professionnel de santé » ; « Un professionnel de santé peut vous aider à choisir la stratégie efficace »."
+    },
+    {
+      "url": "https://www.hauts-de-france.ars.sante.fr/mois-sans-tabac-2026-11eme-edition",
+      "ok": true,
+      "constat": "« Pour la 11ème édition » ; « arrêter de fumer pendant 30 jours en novembre » ; inscription sur https://mois-sans-tabac.tabac-info-service.fr/ ; kit : « un programme d'accompagnement pendant 40 jours, de la phase de préparation à la phase d'arrêt. A télécharger sur le site https://www.tabac-info-service.fr/ ou à récupérer en pharmacie » ; « Le 39 89 : un accompagnement par un tabacologue, gratuit et personnalisé » ; « Un mois sans tabac multiplie par 5 les chances d'arrêter de fumer définitivement »."
+    }
+  ],
+  "corrections": []
+}

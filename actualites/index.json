@@ -1,8 +1,27 @@
 {
-  "maj": "2026-10-25T07:00:00+01:00",
+  "maj": "2026-10-25T14:00:00+01:00",
   "site": "https://fr.respi.info",
   "rss": "https://fr.respi.info/rss.xml",
   "articles": [
+    {
+      "slug": "2026-10-25-mois-sans-tabac-preparer-arret-semaine",
+      "titre": "Mois sans tabac approche : bien préparer son arrêt",
+      "description": "Mois sans tabac revient en novembre 2026. Ces jours-ci, choisis ta date, note tes raisons, change tes habitudes et trouve de l'aide gratuite au 39 89.",
+      "date": "2026-10-25",
+      "heure": "14:00",
+      "publie_le": "2026-10-25T14:00:00+01:00",
+      "mis_a_jour": null,
+      "type": "pratique",
+      "type_libelle": "Conseil pratique",
+      "thematiques": [
+        "bpco",
+        "vie-quotidienne"
+      ],
+      "temps_lecture_min": 3,
+      "url": "https://fr.respi.info/actualites/2026-10-25-mois-sans-tabac-preparer-arret-semaine",
+      "image": "https://fr.respi.info/assets/og/pratique.png",
+      "image_alt": "Visuel Respi.info vert sauge, mention Conseil pratique et adresse fr.respi.info/actualites"
+    },
     {
       "slug": "2026-10-25-plan-hivernal-ansm-medicaments-penuries-2026-2027",
       "titre": "Médicaments d'hiver : la surveillance des pénuries a repris",
