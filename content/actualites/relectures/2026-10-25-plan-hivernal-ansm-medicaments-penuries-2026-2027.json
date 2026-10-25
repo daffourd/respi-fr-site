@@ -1,0 +1,30 @@
+{
+  "article": "2026-10-25-plan-hivernal-ansm-medicaments-penuries-2026-2027",
+  "verdict": "PUBLIER",
+  "sha256": "337933271db2ed0b13534e9285dc691f734693c47a2d71effb6727529ac47164",
+  "relu_le": "2026-10-25T05:31:54Z",
+  "relecteur": "Relecteur IA indépendant (sous-agent distinct du rédacteur)",
+  "sources_verifiees": [
+    {
+      "url": "https://ansm.sante.fr/actualites/lansm-active-le-plan-2026-2027-de-suivi-des-medicaments-et-des-dispositifs-medicaux-de-lhiver",
+      "ok": true,
+      "constat": "Publié le 13/10/2026 (mis à jour le 16/10). « ce plan vise à anticiper, suivre et gérer les éventuelles pénuries de certains médicaments majeurs de l'hiver » ; quatrième année ; premier comité de suivi le 8 octobre 2026 ; 14 molécules dites « sentinelles », environ 180 médicaments, dont amoxicilline, amoxicilline-acide clavulanique, azithromycine, clarithromycine, paracétamol, prednisolone, fluticasone, salbutamol ; 79 types de DM et DMDIV « les plus utilisés dans la prise en charge à l'hôpital des formes graves », dont oxygénothérapie et ventilation ; fabricants et distributeurs priés d'informer l'ANSM « sans délai » ; « contexte favorable de disponibilité des médicaments » ; niveau « veille saisonnière » (niveau 1 sur 2) ; suivi des ventes, stocks et approvisionnements ; réunions avec associations de patients, professionnels de santé et acteurs de la chaîne."
+    },
+    {
+      "url": "https://ansm.sante.fr/uploads/2026/10/16/20261016-plan-hiver-saison-2026-2027.pdf",
+      "ok": true,
+      "constat": "Niveau 1 : « stade de surveillance avant identification de tensions ou ruptures d'approvisionnement », suivi des stocks et des ventes « de manière hebdomadaire », période de veille définie avec le suivi épidémiologique de SpF ; niveau 2 sur « décision collégiale ANSM / ministère chargé de la santé » ; mesures : réserver un médicament aux patients qui en ont le plus besoin sans alternative, contingentement quantitatif pour répartir les stocks sur le territoire, interdiction d'exportation par les grossistes-répartiteurs, encadrement de la délivrance, préparations magistrales et préparations spéciales sous réserve d'évolutions réglementaires ; communication évitant les risques de sur-stockage."
+    },
+    {
+      "url": "https://ansm.sante.fr/actualites/plan-hivernal-2025-2026-une-annee-marquee-par-labsence-de-tensions-sur-les-produits-de-sante-suivis",
+      "ok": true,
+      "constat": "Publié le 14/04/2026 : la disponibilité des 14 molécules sentinelles « a été pleinement assurée tout au long de la saison hivernale »."
+    },
+    {
+      "url": "https://www.santepubliquefrance.fr/infections-respiratoires-aigues/grippe/bulletin-national/infections-respiratoires-aigues-grippe-bronchiolite-covid-19-bulletin-du-21-octobre-2026",
+      "ok": true,
+      "constat": "Bulletin du 21/10/2026 : IRA « Indicateurs globalement stables et à leur niveau de base » ; grippe « Ensemble des indicateurs à leur niveau de base » ; bronchiolite au niveau de base « malgré une augmentation du recours aux soins pour bronchiolite » ; « Maintien d'une circulation de rhinovirus/entérovirus ». Situation calme, cohérente avec l'article publié le 25/10."
+    }
+  ],
+  "corrections": []
+}
