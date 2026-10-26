@@ -1,8 +1,29 @@
 {
-  "maj": "2026-10-25T14:00:00+01:00",
+  "maj": "2026-10-26T07:00:00+01:00",
   "site": "https://fr.respi.info",
   "rss": "https://fr.respi.info/rss.xml",
   "articles": [
+    {
+      "slug": "2026-10-26-pneumocoque-vaccination-adultes-maladie-respiratoire",
+      "titre": "Pneumocoque : la vaccination des adultes fragiles mise à jour",
+      "description": "La HAS a actualisé en 2026 la vaccination contre le pneumocoque. Qui est concerné, quel vaccin, où le faire : les repères pour les personnes au souffle fragile.",
+      "date": "2026-10-26",
+      "heure": "07:00",
+      "publie_le": "2026-10-26T07:00:00+01:00",
+      "mis_a_jour": null,
+      "type": "fond",
+      "type_libelle": "Article de fond",
+      "thematiques": [
+        "bpco",
+        "asthme",
+        "traitements",
+        "vie-quotidienne"
+      ],
+      "temps_lecture_min": 5,
+      "url": "https://fr.respi.info/actualites/2026-10-26-pneumocoque-vaccination-adultes-maladie-respiratoire",
+      "image": "https://fr.respi.info/assets/og/fond.png",
+      "image_alt": "Une personne âgée remonte sa manche avant une vaccination dans une pharmacie"
+    },
     {
       "slug": "2026-10-25-mois-sans-tabac-preparer-arret-semaine",
       "titre": "Mois sans tabac approche : bien préparer son arrêt",

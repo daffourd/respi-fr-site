@@ -1,0 +1,30 @@
+{
+  "article": "2026-10-26-pneumocoque-vaccination-adultes-maladie-respiratoire",
+  "verdict": "PUBLIER",
+  "sha256": "02cb025acf23ddb46f775207bdb1627bde7beac0e1d49fb751ba8d97f32c62bb",
+  "relu_le": "2026-10-26T05:23:06Z",
+  "relecteur": "Relecteur IA indépendant (sous-agent distinct du rédacteur)",
+  "sources_verifiees": [
+    {
+      "url": "https://professionnels.vaccination-info-service.fr/Toutes-les-actualites/HAS-actualisation-de-la-strategie-vaccinale-contre-les-pneumocoques",
+      "ok": true,
+      "constat": "Actualité du 04.08.2026 sur l'avis HAS du 30 juillet 2026 : VPC21 en préférence chez les adultes de 18 à 64 ans à risque et chez les 65 ans et plus ; pas de schéma de rattrapage pour les adultes déjà vaccinés par VPC20 ; VPC20 et VPC21 coadministrables avec les autres vaccins recommandés à ces âges ; recommandation spécifique pour les immunodéprimés en cours d'élaboration ; la HAS ne se prononce pas encore sur une vaccination itérative."
+    },
+    {
+      "url": "https://www.sante.fr/node/1428493",
+      "ok": true,
+      "constat": "« Le pneumocoque est la première cause de méningite chez l'enfant comme chez l'adulte » ; situations à risque : « insuffisance respiratoire chronique, bronchopneumopathie obstructive, emphysème, asthme sévère, mucoviscidose » ; « peuvent compliquer une infection virale comme la grippe » ; élargie aux 65 ans et plus « présentant ou non des facteurs de risque », « dose unique de vaccin (20-valent ou 21-valent) » ; « La nécessité d'un rappel n'a pas été établie à ce jour » ; cabinet de ville, pharmacie, hôpital ; carnet rempli par le professionnel ; « Pris en charge à 65% », reste « généralement remboursé par les complémentaires santé ». Page modifiée le 6 juillet 2026, cohérente avec l'avis HAS."
+    },
+    {
+      "url": "https://www.santepubliquefrance.fr/infections-a-pneumocoque/bulletin-national/infections-invasives-a-pneumocoques-bilan-2023",
+      "ok": true,
+      "constat": "Publié le 22 janvier 2025 : hausse du taux d'incidence des IIP en 2022 (+60 %) et 2023 (+16 %) après deux années de diminution liée au Covid-19, niveaux proches de 2019 ; couverture VPC20 de plus de 60 % des cas chez l'adulte contre plus de 30 % pour le VPC13."
+    },
+    {
+      "url": "https://www.iledefrance.ars.sante.fr/ou-se-faire-vacciner-en-ile-de-france",
+      "ok": true,
+      "constat": "« La plupart des vaccins du calendrier vaccinal peuvent être prescrits et administrés par » médecin, pharmacien, infirmier ou sage-femme à partir de 11 ans ; cite « la vaccination contre le pneumocoque recommandé aux personnes de 65 ans et plus »."
+    }
+  ],
+  "corrections": []
+}

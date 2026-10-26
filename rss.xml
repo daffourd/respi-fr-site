@@ -6,7 +6,19 @@
     <atom:link href="https://fr.respi.info/rss.xml" rel="self" type="application/rss+xml" />
     <description>Santé respiratoire : un article de fond le matin et un conseil pratique l'après-midi, sourcés.</description>
     <language>fr-FR</language>
-    <lastBuildDate>Sun, 25 Oct 2026 13:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 26 Oct 2026 06:00:00 GMT</lastBuildDate>
+    <item>
+      <title>Pneumocoque : la vaccination des adultes fragiles mise à jour</title>
+      <link>https://fr.respi.info/actualites/2026-10-26-pneumocoque-vaccination-adultes-maladie-respiratoire</link>
+      <guid isPermaLink="true">https://fr.respi.info/actualites/2026-10-26-pneumocoque-vaccination-adultes-maladie-respiratoire</guid>
+      <pubDate>Mon, 26 Oct 2026 06:00:00 GMT</pubDate>
+      <category>Article de fond</category>
+      <category>BPCO</category>
+      <category>Asthme</category>
+      <category>Traitements</category>
+      <category>Vie quotidienne</category>
+      <description>La HAS a actualisé en 2026 la vaccination contre le pneumocoque. Qui est concerné, quel vaccin, où le faire : les repères pour les personnes au souffle fragile.</description>
+    </item>
     <item>
       <title>Mois sans tabac approche : bien préparer son arrêt</title>
       <link>https://fr.respi.info/actualites/2026-10-25-mois-sans-tabac-preparer-arret-semaine</link>
