@@ -1,8 +1,27 @@
 {
-  "maj": "2026-10-26T07:00:00+01:00",
+  "maj": "2026-11-02T14:00:00+01:00",
   "site": "https://fr.respi.info",
   "rss": "https://fr.respi.info/rss.xml",
   "articles": [
+    {
+      "slug": "2026-11-02-envies-de-fumer-gestes-simples-passer-le-cap",
+      "titre": "Envies de fumer : des gestes simples pour passer le cap",
+      "description": "Mois sans tabac se vit en novembre 2026. Repère tes déclencheurs, change tes routines et appelle le 39 89 quand une envie de fumer devient difficile à tenir.",
+      "date": "2026-11-02",
+      "heure": "14:00",
+      "publie_le": "2026-11-02T14:00:00+01:00",
+      "mis_a_jour": null,
+      "type": "pratique",
+      "type_libelle": "Conseil pratique",
+      "thematiques": [
+        "bpco",
+        "vie-quotidienne"
+      ],
+      "temps_lecture_min": 3,
+      "url": "https://fr.respi.info/actualites/2026-11-02-envies-de-fumer-gestes-simples-passer-le-cap",
+      "image": "https://fr.respi.info/assets/og/pratique.png",
+      "image_alt": "Visuel Respi.info vert sauge, mention Conseil pratique et adresse fr.respi.info/actualites"
+    },
     {
       "slug": "2026-10-26-pneumocoque-vaccination-adultes-maladie-respiratoire",
       "titre": "Pneumocoque : la vaccination des adultes fragiles mise à jour",

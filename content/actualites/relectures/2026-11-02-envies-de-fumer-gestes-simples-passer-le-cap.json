@@ -1,0 +1,30 @@
+{
+  "article": "2026-11-02-envies-de-fumer-gestes-simples-passer-le-cap.md",
+  "verdict": "PUBLIER",
+  "sha256": "165ee11da14553ab4199df1bef6d8f994e7165e3a6f2c5f81082c721e6e53b90",
+  "relu_le": "2026-11-02T11:51:58+00:00",
+  "relecteur": "Relecteur IA indépendant (sous-agent distinct du rédacteur)",
+  "sources_verifiees": [
+    {
+      "url": "https://www.santepubliquefrance.fr/sites/default/files/2026-10/cp_mois-sans-tabac_20261001.pdf",
+      "ok": true,
+      "constat": "Arrêter de fumer pendant 30 jours multiplie par 5 les chances d'arrêter à long terme ; 11ème édition ; communiqué du 1er octobre 2026."
+    },
+    {
+      "url": "https://www.hauts-de-france.ars.sante.fr/mois-sans-tabac-2026-11eme-edition",
+      "ok": true,
+      "constat": "arrêter de fumer pendant 30 jours en novembre, être accompagné, grâce à de nombreux outils accessibles gratuitement ; 11ème édition."
+    },
+    {
+      "url": "https://www.sante.fr/node/1134744",
+      "ok": true,
+      "constat": "9 conseils pour arrêter de fumer : déclencheurs, café remplacé par un thé, raisons notées, récompense avec l'argent économisé, prévenir ses proches, appli (messages d'encouragement), gommes et pastilles pour envies soudaines, patchs, remboursement sur prescription, refumer ne veut pas dire échec."
+    },
+    {
+      "url": "https://www.tabac-info-service.fr/questions-reponses/04_questions-mises-en-ligne/j-ai-de-plus-en-plus-envie-de-fumer-au-fur-et-a-mesure-des-semaines",
+      "ok": true,
+      "constat": "compensations dans le domaine du plaisir pour éviter la frustration ; 39 89 gratuit avec un tabacologue, bilan du tabagisme, suivi téléphonique possible."
+    }
+  ],
+  "corrections": []
+}
