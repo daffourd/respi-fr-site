@@ -6,7 +6,18 @@
     <atom:link href="https://fr.respi.info/rss.xml" rel="self" type="application/rss+xml" />
     <description>Santé respiratoire : un article de fond le matin et un conseil pratique l'après-midi, sourcés.</description>
     <language>fr-FR</language>
-    <lastBuildDate>Mon, 02 Nov 2026 13:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 03 Nov 2026 06:00:00 GMT</lastBuildDate>
+    <item>
+      <title>Arrêter de fumer : ce qui change pour tes poumons</title>
+      <link>https://fr.respi.info/actualites/2026-11-03-arret-tabac-poumons-semaine-apres-semaine</link>
+      <guid isPermaLink="true">https://fr.respi.info/actualites/2026-11-03-arret-tabac-poumons-semaine-apres-semaine</guid>
+      <pubDate>Tue, 03 Nov 2026 06:00:00 GMT</pubDate>
+      <category>Article de fond</category>
+      <category>BPCO</category>
+      <category>Vie quotidienne</category>
+      <category>Activité physique</category>
+      <description>Mois sans tabac 2026 : ce que l'arrêt du tabac change pour le souffle, des premières heures aux premiers mois, et l'aide gratuite d'un tabacologue au 39 89.</description>
+    </item>
     <item>
       <title>Envies de fumer : des gestes simples pour passer le cap</title>
       <link>https://fr.respi.info/actualites/2026-11-02-envies-de-fumer-gestes-simples-passer-le-cap</link>

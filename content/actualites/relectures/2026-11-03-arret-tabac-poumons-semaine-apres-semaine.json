@@ -1,0 +1,35 @@
+{
+  "article": "2026-11-03-arret-tabac-poumons-semaine-apres-semaine.md",
+  "verdict": "PUBLIER",
+  "sha256": "4cc42e12871102fe388e4b3f0dbc5d568f4b60a702c74dc279674fe72be97307",
+  "relu_le": "2026-11-03T07:41:08+00:00",
+  "relecteur": "Relecteur IA indépendant (sous-agent distinct du rédacteur)",
+  "sources_verifiees": [
+    {
+      "url": "https://www.santepubliquefrance.fr/sites/default/files/2026-10/cp_mois-sans-tabac_20261001.pdf",
+      "ok": true,
+      "constat": "Communiqué daté du 1er octobre 2026. 11e édition, 30 jours multiplie par 5 les chances d'arrêter à long terme, réussite du sevrage à 1 an multipliée par 2, plus de 117 000 inscriptions en 2025, accompagnement gratuit par un tabacologue. Le communiqué donne le numéro sous la forme 39 894 (numéro d'aide à distance), l'article n'attribue le 39 89 qu'à Santé.fr et Tabac info service, ce qui est exact."
+    },
+    {
+      "url": "https://www.tabac-info-service.fr/je-trouve-ma-motivation/les-bienfaits-de-l-arret-du-tabac",
+      "ok": true,
+      "constat": "Dès 8 heures d'arrêt, il (le monoxyde de carbone) est divisé par deux et vous êtes mieux oxygéné. Quelques jours : goût et odorat. Premières semaines : toux, nettoyage de printemps. Quelques semaines : vous toussez moins, plus d'énergie. Quelques mois : de plus en plus de souffle."
+    },
+    {
+      "url": "https://www.tabac-info-service.fr/questions-reponses/04_questions-mises-en-ligne/encombrement-et-essoufflement-depuis-l-arret",
+      "ok": true,
+      "constat": "Phénomène appelé hyper-réactivité bronchique. En général, cela n'excède pas quelques semaines après l'arrêt du tabac."
+    },
+    {
+      "url": "https://www.sante.fr/node/1134744",
+      "ok": true,
+      "constat": "En appelant le 39 89, vous pouvez vous faire suivre gratuitement par un tabacologue au téléphone. Ces traitements sont remboursés par l'Assurance Maladie lorsqu'ils sont prescrits par un professionnel de santé. L'application propose un tableau de bord pour observer la progression."
+    },
+    {
+      "url": "https://www.vidal.fr/maladies/psychisme/arreter-fumer-cigarette-tabac/benefices.html",
+      "ok": true,
+      "constat": "72 heures : respirer devient plus facile, les bronches sont plus ouvertes. 2 à 10 semaines : la toux et la fatigue diminuent. 1 à 9 mois : les bronches retrouvent leurs fonctions, moins essoufflé après un effort. Domaine vidal.fr dans les domaines reconnus."
+    }
+  ],
+  "corrections": []
+}

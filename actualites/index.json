@@ -1,8 +1,28 @@
 {
-  "maj": "2026-11-02T14:00:00+01:00",
+  "maj": "2026-11-03T07:00:00+01:00",
   "site": "https://fr.respi.info",
   "rss": "https://fr.respi.info/rss.xml",
   "articles": [
+    {
+      "slug": "2026-11-03-arret-tabac-poumons-semaine-apres-semaine",
+      "titre": "Arrêter de fumer : ce qui change pour tes poumons",
+      "description": "Mois sans tabac 2026 : ce que l'arrêt du tabac change pour le souffle, des premières heures aux premiers mois, et l'aide gratuite d'un tabacologue au 39 89.",
+      "date": "2026-11-03",
+      "heure": "07:00",
+      "publie_le": "2026-11-03T07:00:00+01:00",
+      "mis_a_jour": null,
+      "type": "fond",
+      "type_libelle": "Article de fond",
+      "thematiques": [
+        "bpco",
+        "vie-quotidienne",
+        "activite-physique"
+      ],
+      "temps_lecture_min": 5,
+      "url": "https://fr.respi.info/actualites/2026-11-03-arret-tabac-poumons-semaine-apres-semaine",
+      "image": "https://fr.respi.info/assets/og/fond.png",
+      "image_alt": "Visuel Respi.info bleu nuit, mention Article de fond et adresse fr.respi.info/actualites"
+    },
     {
       "slug": "2026-11-02-envies-de-fumer-gestes-simples-passer-le-cap",
       "titre": "Envies de fumer : des gestes simples pour passer le cap",
