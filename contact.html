@@ -124,6 +124,8 @@
             class="r-contact-form"
             novalidate>
 
+        <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true">
+
         <p class="muted small mb-12">Tous les champs marqués d'une étoile sont obligatoires. Ton message arrive directement chez l'équipe Respi.info, qui te répond depuis sa propre adresse.</p>
 
         <div class="r-form-row">
@@ -217,8 +219,15 @@
     var form = document.getElementById('r-contact-form');
     var status = document.getElementById('r-form-status');
     if (!form) return;
+    var ouvert = Date.now();
     form.addEventListener('submit', function (e) {
       e.preventDefault();
+      // Pot de miel rempli ou envoi en moins de 4 secondes : robot, on ignore sans erreur visible.
+      if (form.elements['_gotcha'].value || Date.now() - ouvert < 4000) {
+        form.reset();
+        status.textContent = "Message envoyé. L'équipe te répond sous 48 h ouvrées.";
+        return;
+      }
       status.textContent = "Envoi en cours…";
       var data = new FormData(form);
       fetch(form.action, {
