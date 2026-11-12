@@ -15,7 +15,7 @@
 .r-article h3 { font-size: 20px; margin: 1.4em 0 0.4em; color: var(--bleu-encre); }
 .r-article ul, .r-article ol { padding-left: 1.3em; margin: 0.6em 0 1.1em; }
 .r-article li { margin: 0.35em 0; }
-.r-article blockquote { border-left: 4px solid var(--sauge-deep); background: var(--sauge-doux); margin: 1.2em 0; padding: 0.8em 1.1em; border-radius: 0 10px 10px 0; }
+.r-article blockquote { background: var(--sauge-doux); margin: 1.2em 0; padding: 0.8em 1.1em; border-radius: 10px; }
 .r-article a { color: var(--bleu-deep); text-decoration: underline; text-underline-offset: 2px; }
 .r-sources { font-size: 16px; padding-left: 1.4em; }
 .r-sources li { margin: 0.5em 0; overflow-wrap: anywhere; }
