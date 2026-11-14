@@ -6,10 +6,22 @@
     {
       "source": "/(.*)",
       "headers": [
-        { "key": "X-Content-Type-Options", "value": "nosniff" },
-        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
-        { "key": "Permissions-Policy", "value": "camera=(), microphone=(), geolocation=(), payment=()" },
-        { "key": "Strict-Transport-Security", "value": "max-age=63072000; includeSubDomains" }
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "Permissions-Policy",
+          "value": "camera=(), microphone=(), geolocation=(), payment=()"
+        },
+        {
+          "key": "Strict-Transport-Security",
+          "value": "max-age=63072000; includeSubDomains"
+        }
       ]
     },
     {
@@ -201,11 +213,6 @@
       "permanent": true
     },
     {
-      "source": "/charte-editoriale",
-      "destination": "https://www.jooy.info/actualites",
-      "permanent": true
-    },
-    {
       "source": "/contact",
       "destination": "https://www.jooy.info/#contact",
       "permanent": true
@@ -213,101 +220,6 @@
     {
       "source": "/partenaires-sources",
       "destination": "https://www.jooy.info/guides",
-      "permanent": true
-    },
-    {
-      "source": "/actualites",
-      "destination": "https://www.jooy.info/actualites",
-      "permanent": true
-    },
-    {
-      "source": "/actualites-page-2",
-      "destination": "https://www.jooy.info/actualites",
-      "permanent": true
-    },
-    {
-      "source": "/rss.xml",
-      "destination": "https://www.jooy.info/actualites/rss.xml",
-      "permanent": true
-    },
-    {
-      "source": "/actualites/2026-10-19-aerer-logement-automne-qualite-air",
-      "destination": "https://www.jooy.info/actualites/aerer-logement-5-a-10-minutes-air-interieur",
-      "permanent": true
-    },
-    {
-      "source": "/actualites/2026-10-19-vaccination-grippe-covid-2026-2027",
-      "destination": "https://www.jooy.info/actualites/vaccination-grippe-2026-2027-enfants-maladies-respiratoires",
-      "permanent": true
-    },
-    {
-      "source": "/actualites/2026-10-20-chauffage-bois-particules-fines-poumons",
-      "destination": "https://www.jooy.info/actualites/chauffage-bois-particules-fines-bons-gestes",
-      "permanent": true
-    },
-    {
-      "source": "/actualites/2026-10-20-se-laver-les-mains-virus-hiver",
-      "destination": "https://www.jooy.info/actualites/lavage-des-mains-enfants-virus-hiver",
-      "permanent": true
-    },
-    {
-      "source": "/actualites/2026-10-21-marcher-automne-bouger-souffle",
-      "destination": "https://www.jooy.info/actualites/bpco-activite-physique-rehabilitation-respiratoire",
-      "permanent": true
-    },
-    {
-      "source": "/actualites/2026-10-22-tempete-austen-oxygene-coupure-electricite",
-      "destination": "https://www.jooy.info/actualites/tempete-coupure-electricite-oxygene-respirateur-domicile",
-      "permanent": true
-    },
-    {
-      "source": "/actualites/2026-10-22-vrs-vaccination-65-ans-maladie-respiratoire",
-      "destination": "https://www.jooy.info/actualites/vrs-vaccins-adultes-seniors-maladies-respiratoires-mobilisation",
-      "permanent": true
-    },
-    {
-      "source": "/actualites/2026-10-24-moisissures-degat-des-eaux-nettoyer-sans-irriter-bronches",
-      "destination": "https://www.jooy.info/actualites/moisissures-logement-humidite-sante-respiratoire",
-      "permanent": true
-    },
-    {
-      "source": "/actualites/2026-10-25-mois-sans-tabac-preparer-arret-semaine",
-      "destination": "https://www.jooy.info/actualites/mois-sans-tabac-2026-proteger-souffle-enfants",
-      "permanent": true
-    },
-    {
-      "source": "/actualites/2026-10-26-pneumocoque-vaccination-adultes-maladie-respiratoire",
-      "destination": "https://www.jooy.info/actualites/pneumocoque-vaccin-nourrisson-has-nouveau-schema-2-4-6-11-mois",
-      "permanent": true
-    },
-    {
-      "source": "/actualites/2026-11-02-envies-de-fumer-gestes-simples-passer-le-cap",
-      "destination": "https://www.jooy.info/actualites/mois-sans-tabac-2026-proteger-souffle-enfants",
-      "permanent": true
-    },
-    {
-      "source": "/actualites/2026-11-03-arret-tabac-poumons-semaine-apres-semaine",
-      "destination": "https://www.jooy.info/actualites/mois-sans-tabac-2026-proteger-souffle-enfants",
-      "permanent": true
-    },
-    {
-      "source": "/actualites/2026-10-24-rhinovirus-rhume-automne-asthme-bpco",
-      "destination": "https://www.jooy.info/guides/asthme",
-      "permanent": true
-    },
-    {
-      "source": "/actualites/2026-10-25-plan-hivernal-ansm-medicaments-penuries-2026-2027",
-      "destination": "https://www.jooy.info/actualites",
-      "permanent": true
-    },
-    {
-      "source": "/actualites/theme/:path*",
-      "destination": "https://www.jooy.info/actualites",
-      "permanent": true
-    },
-    {
-      "source": "/actualites/type/:path*",
-      "destination": "https://www.jooy.info/actualites",
       "permanent": true
     }
   ]
