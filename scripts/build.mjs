@@ -358,6 +358,10 @@ const ALT_DEFAUT = {
   pratique: "Visuel Respi.info vert sauge, mention Conseil pratique et adresse fr.respi.info/actualites",
 };
 const ORGANISATION = { "@type": "Organization", "@id": `${SITE}/#organization`, name: "JOOY, Respi.info", url: `${SITE}/`, logo: `${SITE}/assets/logo-512.png` };
+// Signature des articles quotidiens : « La rédaction Respi.info », jamais un nom de personne (décision de Vincent Daffourd, 14/11/2026).
+// Le président de JOOY est nommé comme directeur de la publication (garant), pas comme auteur.
+const REDACTION = { "@type": "Organization", "@id": `${SITE}/#redaction`, name: "La rédaction Respi.info", url: `${SITE}/charte-editoriale`, parentOrganization: { "@id": `${SITE}/#organization` } };
+const DIRECTEUR_PUBLICATION = "Vincent Daffourd, président de l'association JOOY, éditrice de Respi.info";
 // Avertissement santé : petite cartouche discrète en fin d'article, numéros cliquables, jamais en tête ni au milieu (demande de Vincent Daffourd, 20/10/2026)
 const AVERTISSEMENT = `<aside class="r-avertissement-bas" aria-label="Avertissement santé">
       <p>Cet article informe et ne remplace pas l'avis de ton médecin ou de ton équipe soignante. En cas d'aggravation brutale (essoufflement inhabituel, douleur thoracique, lèvres bleues), appelle le <a href="tel:15"><strong>15</strong></a> ou le <a href="tel:112"><strong>112</strong></a>.</p>
@@ -458,7 +462,7 @@ function pageArticle(a, tous) {
         "@type": "Article", "@id": url + "#article", headline: a.title, description: a.description,
         image: [image], datePublished: publie, dateModified: modifie, inLanguage: "fr-FR",
         articleSection: TYPES[a.type].label, keywords: a.thematiques.map((t) => THEMATIQUES[t]).join(", "),
-        wordCount: a.mots, isAccessibleForFree: true, author: ORGANISATION, publisher: ORGANISATION, mainEntityOfPage: url,
+        wordCount: a.mots, isAccessibleForFree: true, author: REDACTION, publisher: ORGANISATION, mainEntityOfPage: url,
         citation: a.sources.map((s) => ({ "@type": "CreativeWork", name: s.titre, publisher: s.media, url: s.url })),
       },
       {
@@ -494,7 +498,7 @@ function pageArticle(a, tous) {
     ${badge(a.type)}
     <h1>${esc(a.title)}</h1>
     <p>${esc(a.description)}</p>
-    <p class="r-meta"><time datetime="${publie}">Publié le ${dateFr(a.date)} à ${a.heure.replace(":", " h ")}</time>${a.mis_a_jour ? `<span>Mis à jour le <time datetime="${a.mis_a_jour}">${dateFr(a.mis_a_jour)}</time></span>` : ""}<span>${tempsLecture(a.mots)} min de lecture</span></p>
+    <p class="r-meta"><span>Par <a href="/charte-editoriale">la rédaction Respi.info</a></span><time datetime="${publie}">Publié le ${dateFr(a.date)} à ${a.heure.replace(":", " h ")}</time>${a.mis_a_jour ? `<span>Mis à jour le <time datetime="${a.mis_a_jour}">${dateFr(a.mis_a_jour)}</time></span>` : ""}<span>${tempsLecture(a.mots)} min de lecture</span></p>
     <ul class="r-tags" aria-label="Thématiques">${a.thematiques.map((t) => `<li>${lienTheme(t)}</li>`).join("")}</ul>
   </div>
 </section>
@@ -509,7 +513,7 @@ ${sources}
       <p><strong>Respi.info, l'application gratuite qui croise chaque matin la qualité de l'air, les pollens, la météo et ta maladie respiratoire.</strong></p>
       <a class="btn primary" href="https://www.respi.info">Voir ma météo respiratoire du jour</a>
     </div>
-    <p class="r-charte-ligne">Article rédigé avec l'aide d'une intelligence artificielle, contrôlé automatiquement puis relu par un second système indépendant avant publication. <a href="/charte-editoriale">Rédaction encadrée par notre charte éditoriale</a>. Une erreur ? <a href="/contact?sujet=correction">Signale-la</a>.</p>
+    <p class="r-charte-ligne">Article rédigé avec l'aide d'une intelligence artificielle, contrôlé automatiquement puis relu par un second système indépendant avant publication. <a href="/charte-editoriale">Rédaction encadrée par notre charte éditoriale</a>. Une erreur ? <a href="/contact?sujet=correction">Signale-la</a>. Directeur de la publication : ${esc(DIRECTEUR_PUBLICATION)}.</p>
     ${AVERTISSEMENT}
   </article>
 </section>${blocLies}
