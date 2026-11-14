@@ -6,7 +6,17 @@
     <atom:link href="https://fr.respi.info/rss.xml" rel="self" type="application/rss+xml" />
     <description>Santé respiratoire : un article de fond le matin et un conseil pratique l'après-midi, sourcés.</description>
     <language>fr-FR</language>
-    <lastBuildDate>Tue, 03 Nov 2026 06:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 14 Nov 2026 13:30:00 GMT</lastBuildDate>
+    <item>
+      <title>L'application Respi.info change de look : ce qui est nouveau</title>
+      <link>https://fr.respi.info/actualites/2026-11-14-application-respi-info-nouveau-design</link>
+      <guid isPermaLink="true">https://fr.respi.info/actualites/2026-11-14-application-respi-info-nouveau-design</guid>
+      <pubDate>Sat, 14 Nov 2026 13:30:00 GMT</pubDate>
+      <category>Conseil pratique</category>
+      <category>Vie quotidienne</category>
+      <category>Éducation thérapeutique</category>
+      <description>Nouveau design, textes plus grands, cinq onglets, prévisions à 48 heures, journal repensé, SMS au 114 : ce qui change dans l'application Respi.info, et où.</description>
+    </item>
     <item>
       <title>Arrêter de fumer : ce qui change pour tes poumons</title>
       <link>https://fr.respi.info/actualites/2026-11-03-arret-tabac-poumons-semaine-apres-semaine</link>

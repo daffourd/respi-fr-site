@@ -48,6 +48,7 @@ Corps en Markdown simple.
 - `mis_a_jour: AAAA-MM-JJ` : facultatif, seulement après une correction.
 - Une ligne `source:` par source, au format `Titre, Média | https://...` (la dernière virgule sépare le titre du média).
 - Markdown admis : `##` et `###`, listes `-` ou `1.`, **gras**, *italique*, liens `[texte](https://...)` ou `[texte](/bpco)`, citations courtes `>`. Tout HTML est refusé.
+- Captures de l'application (articles validés par Vincent Daffourd seulement) : une ligne seule `![texte alternatif de 15 à 200 caractères](/assets/actualites/nom.jpg "Légende")`, fichiers `nom-300.jpg`, `nom-600.jpg`, `nom-300.webp` et `nom-600.webp` dans `assets/actualites/`. Les captures consécutives s'affichent côte à côte dans un cadre de téléphone. Toujours un profil fictif, jamais de données réelles.
 - Pas de titre `#` dans le corps : le titre vient de l'en-tête. Le gabarit ajoute seul les sources numérotées, le lien vers l'application, la ligne de charte éditoriale, l'avertissement santé (une petite cartouche discrète tout en fin d'article, numéros 15 et 112 en gras et cliquables, jamais en tête ni au milieu du texte) et 3 articles liés. Ne jamais remettre cet avertissement en encadré ni l'écrire dans le corps de l'article.
 
 ## 4. Structures types

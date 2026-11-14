@@ -1,8 +1,27 @@
 {
-  "maj": "2026-11-03T07:00:00+01:00",
+  "maj": "2026-11-14T14:30:00+01:00",
   "site": "https://fr.respi.info",
   "rss": "https://fr.respi.info/rss.xml",
   "articles": [
+    {
+      "slug": "2026-11-14-application-respi-info-nouveau-design",
+      "titre": "L'application Respi.info change de look : ce qui est nouveau",
+      "description": "Nouveau design, textes plus grands, cinq onglets, prévisions à 48 heures, journal repensé, SMS au 114 : ce qui change dans l'application Respi.info, et où.",
+      "date": "2026-11-14",
+      "heure": "14:30",
+      "publie_le": "2026-11-14T14:30:00+01:00",
+      "mis_a_jour": null,
+      "type": "pratique",
+      "type_libelle": "Conseil pratique",
+      "thematiques": [
+        "vie-quotidienne",
+        "etp"
+      ],
+      "temps_lecture_min": 3,
+      "url": "https://fr.respi.info/actualites/2026-11-14-application-respi-info-nouveau-design",
+      "image": "https://fr.respi.info/assets/og/pratique.png",
+      "image_alt": "Visuel Respi.info avec la mention Conseil pratique, présentant le nouveau design de l'application"
+    },
     {
       "slug": "2026-11-03-arret-tabac-poumons-semaine-apres-semaine",
       "titre": "Arrêter de fumer : ce qui change pour tes poumons",

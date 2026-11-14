@@ -1,0 +1,21 @@
+{
+  "article": "2026-11-14-application-respi-info-nouveau-design",
+  "verdict": "PUBLIER",
+  "sha256": "0e5669e8dd7a8a04880c0434612105c2d3a953688760218baa81800199093cb7",
+  "relu_le": "2026-11-14T09:00:06Z",
+  "relecteur": "Vincent Daffourd",
+  "sources_verifiees": [
+    {
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F33954",
+      "ok": true,
+      "constat": "Vérifié par le relecteur IA indépendant le 14/11/2026 : « Urgence médicale : le 15 (Samu) » ; « Le 112 est utilisable dans tous les pays de l'Union européenne » ; « Tous les appels vers ces numéros sont gratuits et géolocalisés. » Page vérifiée le 25 août 2026."
+    },
+    {
+      "url": "https://www.monparcourshandicap.gouv.fr/information-et-orientation/vos-numeros-utiles",
+      "ok": true,
+      "constat": "Vérifié par le relecteur IA indépendant le 14/11/2026 : « Vous avez des difficultés à parler ou entendre : le numéro 114 est un numéro d'urgence dédié aux sourds et aux malentendants » ; « Vous pouvez l'appeler ou envoyez un SMS gratuitement. » ; « Disponible 24 heures sur 24 et 7 jours sur 7. »"
+    }
+  ],
+  "corrections": [],
+  "note": "Les informations sur l'application Respi.info (onglets, prévisions, Coach, Journal, Profil, Confort visuel) ont été validées par Vincent Daffourd, président de JOOY, le 14/11/2026. Elles correspondent aux changements fusionnés dans l'application du 10 au 12 novembre 2026. Captures réalisées avec un profil fictif. Corrections du relecteur IA indépendant appliquées avant validation : heure, mention chiffrée des fiches, phrase sur les seuils du Coach retirée."
+}

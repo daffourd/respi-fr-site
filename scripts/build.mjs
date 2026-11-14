@@ -190,6 +190,13 @@ function validerArticle(fichier, brut, meta, corps) {
     const d = domaine(url);
     if (!(d && (d === "respi.info" || d.endsWith(".respi.info") || dansListe(d, DOMAINES_OFFICIELS) || dansListe(d, DOMAINES_RECONNUS)))) err(fichier, `lien du texte vers un domaine hors liste blanche « ${d} »`);
   }
+  for (const l of corps.split(/\r?\n/)) {
+    if (!l.startsWith("![")) continue;
+    const m = l.match(RE_CAPTURE);
+    if (!m) { err(fichier, `image mal formée « ${l.slice(0, 80)} » (attendu : ![texte alternatif de 15 à 200 caractères](/assets/actualites/nom.jpg "Légende"))`); continue; }
+    for (const suf of ["-300.jpg", "-600.jpg", "-300.webp", "-600.webp"]) if (!fs.existsSync(path.join(ROOT, m[2].slice(1) + suf))) err(fichier, `image manquante ${m[2]}${suf}`);
+    verifierTexte(fichier, "texte alternatif d'image", m[1] + " " + (m[3] || ""));
+  }
   verifierTexte(fichier, "titre", meta.title || "");
   verifierTexte(fichier, "description", meta.description || "");
   verifierTexte(fichier, "image_alt", meta.image_alt || "");
@@ -225,15 +232,36 @@ function inline(s) {
   h = h.replace(/\*\*(?=\S)(.+?)\*\*/g, "<strong>$1</strong>").replace(/(^|[^*\p{L}])\*(?=\S)([^*]+?)\*(?![*\p{L}])/gu, "$1<em>$2</em>");
   return h.replace(/\u0000(\d+)\u0000/g, (_, i) => liens[+i].replace(/\*\*(?=\S)(.+?)\*\*/g, "<strong>$1</strong>"));
 }
+// Captures d'écran de l'application dans un cadre de téléphone :
+// ![texte alternatif](/assets/actualites/<nom>.jpg "Légende") seul sur sa ligne.
+// Fichiers attendus : <nom>-300.jpg, <nom>-600.jpg, <nom>-300.webp, <nom>-600.webp.
+const RE_CAPTURE = /^!\[([^\]]{15,200})\]\((\/assets\/actualites\/[a-z0-9-]+)\.jpg(?:\s+"([^"]{2,80})")?\)$/;
+function dimensionsJpeg(f) {
+  const b = fs.readFileSync(f); let i = 2;
+  while (i < b.length) {
+    if (b[i] !== 0xff) { i++; continue; }
+    const m = b[i + 1], n = b.readUInt16BE(i + 2);
+    if (m >= 0xc0 && m <= 0xcf && m !== 0xc4 && m !== 0xc8 && m !== 0xcc) return { h: b.readUInt16BE(i + 5), w: b.readUInt16BE(i + 7) };
+    i += 2 + n;
+  }
+  return null;
+}
+function capture(alt, base, legende) {
+  const d = dimensionsJpeg(path.join(ROOT, base.slice(1) + "-600.jpg")) || { w: 600, h: 1300 };
+  return `  <figure class="r-capture"><div class="r-iphone-frame r-iphone-frame--small"><span class="r-iphone-buttons" aria-hidden="true"></span><picture><source type="image/webp" srcset="${base}-300.webp 300w, ${base}-600.webp 600w" sizes="(max-width: 520px) 150px, 210px" /><img src="${base}-600.jpg" srcset="${base}-300.jpg 300w, ${base}-600.jpg 600w" sizes="(max-width: 520px) 150px, 210px" width="${d.w}" height="${d.h}" alt="${esc(alt)}" loading="lazy" decoding="async" /></picture></div>${legende ? `<figcaption>${esc(legende)}</figcaption>` : ""}</figure>`;
+}
 function markdown(md) {
-  const out = []; let liste = null; let para = []; let cit = [];
+  const out = []; let liste = null; let para = []; let cit = []; let caps = [];
+  const flushK = () => { if (caps.length) { out.push(`<div class="r-captures">\n${caps.join("\n")}\n</div>`); caps = []; } };
   const flushP = () => { if (para.length) { out.push(`<p>${inline(para.join(" "))}</p>`); para = []; } };
   const flushL = () => { if (liste) { out.push(`<${liste.t}>\n${liste.items.map((i) => `  <li>${inline(i)}</li>`).join("\n")}\n</${liste.t}>`); liste = null; } };
   const flushC = () => { if (cit.length) { out.push(`<blockquote><p>${inline(cit.join(" "))}</p></blockquote>`); cit = []; } };
-  const tout = () => { flushP(); flushL(); flushC(); };
+  const tout = () => { flushP(); flushL(); flushC(); flushK(); };
   for (const l of md.split(/\r?\n/)) {
     let m;
-    if (!l.trim()) { tout(); continue; }
+    if (!l.trim()) { if (!caps.length) tout(); continue; }
+    if ((m = l.match(RE_CAPTURE))) { flushP(); flushL(); flushC(); caps.push(capture(m[1], m[2], m[3])); continue; }
+    flushK();
     if ((m = l.match(/^(#{2,3})\s+(.*)$/))) { tout(); const n = m[1].length; out.push(`<h${n}${n === 2 ? ' class="h-serif"' : ""}>${inline(m[2].trim())}</h${n}>`); continue; }
     if ((m = l.match(/^\s*[-*]\s+(.*)$/))) { flushP(); flushC(); if (!liste || liste.t !== "ul") { flushL(); liste = { t: "ul", items: [] }; } liste.items.push(m[1]); continue; }
     if ((m = l.match(/^\s*\d+[.)]\s+(.*)$/))) { flushP(); flushC(); if (!liste || liste.t !== "ol") { flushL(); liste = { t: "ol", items: [] }; } liste.items.push(m[1]); continue; }
